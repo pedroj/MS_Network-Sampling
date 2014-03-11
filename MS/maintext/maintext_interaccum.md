@@ -6,14 +6,14 @@
 
 #Sampling interaction networks#
 
-####Pedro Jordano1 ####
+###Pedro Jordano^1 ####
 
-######1, Integrative Ecology Group, Estación Biológica de Doñana, Consejo Superior de Investigaciones Científicas (EBD-CSIC), Avenida Americo Vespucio s/n, E-41092 Sevilla, Spain
+#####*1, Integrative Ecology Group, Estación Biológica de Doñana, Consejo Superior de Investigaciones Científicas (EBD-CSIC), Avenida Americo Vespucio s/n, E-41092 Sevilla, Spain*
 
 
 
 *Correspondence*: Pedro Jordano, Fax: + 34 954 62 11 25.
-E-mail: jordano@ebd.csic.es 
+E-mail: `jordano@ebd.csic.es` 
  
 *Running headline*: Sampling networks
 
