@@ -1,9 +1,3 @@
-
-
-
-
-
-
 #Sampling interaction networks#
 
 ###Pedro Jordano^1 ####
@@ -20,20 +14,34 @@ E-mail: `jordano@ebd.csic.es`
 *Keywords*: complex networks, mutualism, plant-animal interactions, frugivory, pollination, seed dispersal, food webs
 
 ------------
-ABSTRACT  
+  
+### ABSTRACT  
 
 Sampling ecological interactions presents similar challenges, problems, potential biases, and constraints as sampling individuals and species in biodiversity inventories. Interactions are just pairwise relationships among individuals of two unrelated species, such as those among plants and their seed dispersers in frugivory interactions or those among plants and their pollinators. Sampling interactions is a fundamental step to build robustly estimated interaction networks, yet few analyses have attempted a formal approach to their sampling protocols. 
-Here a provide a formal approach to interaction sampling by building an explicit analogue to individuals and species sampling, thus extending diversity-monitoring approaches  to the characterization of complex networks of ecological interactions.
+Here I provide a formal approach to interaction sampling by building an explicit analogue to individuals and species sampling, thus extending diversity-monitoring approaches  to the characterization of complex networks of ecological interactions.
 
 
 ---
-INTRODUCTION
+  
+### INTRODUCTION
 
-Biodiversity assessment typically aims at sampling individuals in collections and determining the number of species represented. Given that, by definition, samples are incomplete, these collections enumerate a lower number of the species actually present. The ecological literature dealing with robust estimators of species richness and diversity in collections of individuals is immense, and a number of useful approaches have been used to obtain such estimates (Magurran, Gotelli and Graves, Colwell and Gotelli, Hortal). 
+```
+Biodiversity sampling is a labour-intensive activity, and sampling is often not 
+sufficient to detect all or even most of the species present in an assemblage.   
 
-The intro should emphasize the relevance of samplig interactions in addition to sampling species and higher taxa in biodiversity assessment programs. Interactions are a component of biodiversity and in this ms we aim to show that most problems associated to sampling interactions in natural communities have to do with problems associated to sampling diversity. Fortunately, all the whole battery of biodiversity-related tools used by ecologists to sample biodiversity (species, *sensu stricto*) acn be extended and applied to the sampling of interactions. Analogs are common between these approaches.
+Gotelli & Colwell (2011).
+```
 
-Interactions in natural ecosystems can be a much better indicator of the richness and diversity of ecosystem functions than a simple list of taxa. Thus, sampling interactions should be a central issue when identifying and diagnosing ecosystem services (e.g., pollination, natural seeding by frugivores, etc.).
+ 
+
+Biodiversity assessment typically aims at sampling individuals in collections and determining the number of species represented. Given that, by definition, samples are incomplete, these collections enumerate a lower number of the species actually present. The ecological literature dealing with robust estimators of species richness and diversity in collections of individuals is immense, and a number of useful approaches have been used to obtain such estimates [#Magurran:1988][#Gotelli:2001][#Gotelli:2011][#Hortal:2006]. I can't emphasize enough the relevance of sampling interactions in addition to sampling species and higher taxa in biodiversity assessment programs. Interactions among species are a major component of biodiversity and here I aim to show that most problems associated to sampling interactions in natural communities have to do with problems associated to sampling diversity. Interactions in natural ecosystems can be a much better indicator of the richness and diversity of ecosystem functions than a simple list of taxa. Thus, sampling interactions should be a central issue when identifying and diagnosing ecosystem services (e.g., pollination, natural seeding by frugivores, etc.). Fortunately, all the whole battery of biodiversity-related tools used by ecologists to sample biodiversity (species, *sensu stricto*) can be extended and applied to the sampling of interactions. Analogs are common between these approaches.   
+Briefly, $S_{obs}$ is the total number of species observed in a sample, or in a set of samples. $S_{est}$ is the estimated number of species in the community represented by the sample, or by the set of samples, where $est$ indicates an estimator. With abundance data, let $S_k$ be the number of species each represented by exactly $k$ individuals in a single sample. Thus, $S_0$ is the number of undetected species (species present in the community but not included in the sample), $S_1$ is the number of singleton species, $S_2$ is the number of doubleton species, etc. The total number of individuals in the sample would be: $$n = 􏰢\sum_{k=1}^{S_{obs}}S_k$$ .   
+
+A frequently used asymptotic, bias corrected, estimator is $S_{Chao}$ [#Hortal:2006][#Colwell:2009]:   
+
+$$S_{Chao}= S_{obs} + \frac{S_1 (S_1 −1)}{2(S_2 +1)}$$    
+
+Now let's consider the situation with samples of interactions. When we sample interactions in the field we record the int presence of two species that interact in some way, i.e., a frugivorous pigeon visits a fruiting tree and detaches and ingests the fruit. For example, Snow and Snow[#Snow:1988] recorded an interaction whenever they saw a bird "touching" a fruit on  a plant.  In a similar way interactions between pollinators and plants are tallied by recording any visit of a pollinator entering a flower and touching the androceum and/or the gyneceum. We observe and record feeding observations, visitation, occupancy, presence in pollen loads or in fecal samples, etc., to accumulate pairwise interactions, i.e., lists of species partners and the frequencies with which we observe them.    
 
 Sampling interactions requires filling the cells of an interaction matrix with data. The matrix is a 2D representation of the interactions among A animal species (rows) and P plant species (columns). An interaction matrix AP consists of an array of zeroes or ones, or an array of zeroes and numbers- if the data are quantified. These figures illustrate the values of the pairwise interactions visualized in the AP matrix.
 
@@ -104,10 +112,6 @@ Missing links are a characteristic feature of all plant-animal interaction netwo
 
 **Acknowledgements**. I am indebted to Alfredo Valido, Jordi Bascompte, Thomas Lewinshon, John N. Thompson, Nick Gotelli, Carsten Dormann, and Paulo R. Guimarães Jr. for useful and thoughtful comments and discussion at different stages of this manuscript. The study was supported by a Junta de Andalucía Excellence Grant (RNM-5731), as well as a Severo Ochoa Excellence Award from the Ministerio de Economía y Competitividad (SEV-2012-0262). The Agencia de Medio Ambiente, Junta de Andalucía, provided generous facilities that made possible my long-term field work in different natural parks.
 
-------
-### REFERENCES ###
-
-
 ---
 ### Tables and Figures ###
 Table 1. ***.
@@ -132,8 +136,24 @@ Missing links are a characteristic feature of all plant-animal interaction netwo
 ### References for Online Material ###
 
 
----
- 
+------
+### REFERENCES ###
+
+[#Magurran:1988]: Magurran AE. 1988. Ecological diversity and its measurement. Princeton, US: Princeton University Press.   
+
+[#Gotelli:2001]: Gotelli N, Colwell R. 2001. Quantifying biodiversity: procedures and pitfalls in the measurement and comparison of species richness. Ecology Letters, 4: 379–91.   
+
+[#Gotelli:2011]: Gotelli NJ, Colwell RK. 2011. Estimating species richness. In Biological Diversity Frontiers in Measurement and Assessment, eds. AE Magurran, BJ McGill, pp. 39–54. Oxford, UK.
+
+[#Hortal:2006]: Hortal J, Borges P, Gaspar C. 2006. Evaluating the performance of species richness estimators: sensitivity to sample grain size. Journal of Animal Ecology 75: 274–87.
+
+[#Colwell:2009]: Colwell RK. 2009. EstimateS: Statistical estimation of species richness and shared species from samples user’s guide and application.`http://purl.oclc.org/estimates`.    
+
+[#Snow:1988]: Snow B, Snow D. 1988. Birds and Berries. Calton, UK: Poyser.     
+
+
+
+
 
 
 
