@@ -42,7 +42,11 @@ Gotelli & Colwell (2011).
 
  
 
-Biodiversity assessment typically aims at sampling individuals in collections and determining the number of species represented. Given that, by definition, samples are incomplete, these collections enumerate a lower number of the species actually present. The ecological literature dealing with robust estimators of species richness and diversity in collections of individuals is immense, and a number of useful approaches have been used to obtain such estimates [#Magurran:1988mm][#Gotelli:2001uo][#Hortal:2006dc][#Gotelli:2011tb]. I can't emphasize enough the relevance of sampling interactions in addition to sampling species and higher taxa in biodiversity assessment programs. Interactions among species are a major component of biodiversity and here I aim to show that most problems associated to sampling interactions in natural communities have to do with problems associated to sampling diversity. Interactions in natural ecosystems can be a much better indicator of the richness and diversity of ecosystem functions than a simple list of taxa. Thus, sampling interactions should be a central issue when identifying and diagnosing ecosystem services (e.g., pollination, natural seeding by frugivores, etc.). Fortunately, all the whole battery of biodiversity-related tools used by ecologists to sample biodiversity (species, *sensu stricto*) can be extended and applied to the sampling of interactions. Analogs are common between these approaches. And sampling interactions entails exactly the same problems, limitations, constraints, and potential biases as sampling individual organisms and species diversity [#E31/2562].   
+Biodiversity assessment typically aims at sampling individuals in collections and determining the number of species represented. Given that, by definition, samples are incomplete, these collections enumerate a lower number of the species actually present. The ecological literature dealing with robust estimators of species richness and diversity in collections of individuals is immense, and a number of useful approaches have been used to obtain such estimates [#Magurran:1988mm][#Gotelli:2001uo][#Hortal:2006dc][#Gotelli:2011tb]. I can't emphasize enough the relevance of sampling interactions in addition to sampling species and higher taxa in biodiversity assessment programs. Interactions among species are a major component of biodiversity and here I aim to show that most problems associated to sampling interactions in natural communities have to do with problems associated to sampling diversity. Interactions in natural ecosystems can be a much better indicator of the richness and diversity of ecosystem functions than a simple list of taxa. Thus, sampling interactions should be a central issue when identifying and diagnosing ecosystem services (e.g., pollination, natural seeding by frugivores, etc.). Fortunately, all the whole battery of biodiversity-related tools used by ecologists to sample biodiversity (species, *sensu stricto*) can be extended and applied to the sampling of interactions. Analogs are common between these approaches. Monitoring interactions is analogous to any biodiversity sampling (i.e., a species inventory [#E31/2562][#Jordano:2009c]) and is subject to similar methodological shortcomings, especially under-sampling [#Coddington:2009fi][#Vazquez:2009p82][#Dorado:2011cf]. When we study mutualistic networks, our goal is to inventor pairwise interactions. And sampling interactions entails exactly the same problems, limitations, constraints, and potential biases as sampling individual organisms and species diversity.    
+
+The number of distinct pairwise interaction that we can record in a landscape (an area of relatively homogeneous vegetation, analogous to the one we would use to monitor species diversity) is equivalent to the number of distinct classes in which we can classify the recorded encounters among individuals of two different species.  We walk in the forest and see a blackbird picking an ivy fruit and ingesting it. We have a record for $Tm-Hh$ interaction; we keep advancing and record again a blackbird feeding on hawthorn fruits so we record a $Tm-Cm$ interaction; as we advance we encounter another ivy plant and record a blackcap swallowing a fruit so we now have a new $Sa-Hh$ interaction, and so on.  At the end we have a series of classes (e.g., $Sa-Hh$), along with their observed frequencies. Bunge & Fitzpatrick [#Bunge:1993ux] review the main aspects and approaches to estimate the number of distinct classes $C$ in a sample of observations. 
+
+Our sampling above would have resulted in a vector $n= [n_1 ... n_C]'$ where $n_i$ is the number of records in the  $i^{th}$ class. As stressed by Bunge & Fitzpatrick (1993), however, the $i^{th}$ class would appear in the sample if and only if $n_i > 0$, and we don't know _a priori_ which $n_i$ are zero. So, $n$ is not observable. Rather, what we get is a vector   $c= [c_1 ... c_n]'$ where $c_j$ is the number of classes represented $j$ times in our sampling: $c_1$ is the number of singletons, $c_2$ is the number of twin pairs, $c_3$ the number of triplets, etc. 
 
 ### Asymptotic diversity estimates
 Let's assume a sampling of the diversity in a specific locality, over relatively homogeneous landscape where we aim at determining the number of species present for a particular group of organisms. To do that we carry out transects or plot samplings across the landscape, adequately replicated so we obtain a number of samples. Briefly, $S_{obs}$ is the total number of species observed in a sample, or in a set of samples. $S_{est}$ is the estimated number of species in the community represented by the sample, or by the set of samples, where $est$ indicates an estimator. With abundance data, let $S_k$ be the number of species each represented by exactly $k$ individuals in a single sample. Thus, $S_0$ is the number of undetected species (species present in the community but not included in the sample), $S_1$ is the number of singleton species, $S_2$ is the number of doubleton species, etc. The total number of individuals in the sample would be:    
@@ -52,12 +56,16 @@ A frequently used asymptotic, bias corrected, estimator is $S_{Chao}$ [#Hortal:2
 
 $$S_{Chao}= S_{obs} + \frac{S_1 (S_1 −1)}{2(S_2 +1)}$$    
 
-A plot of the cumulative number of species recorded,  $S_n$, as a function of some measure of sampling effort (say, $n$ samples taken) yields the species accumulation curve or collector's curve [#Colwell:199vt]. Such a curve eventually reaches an asymptote converging with $S_{est}$.
+Another frequently used alternative is the Chao2 estimator,  $S_{Chao2}$ [#Gotelli:2001uo], which has been reported to have a limited bias for small sample sizes [#Colwell:1994vt][#Chao:2005wp]:   
+
+$$S_{Chao2}= S_{obs} + \frac{S_1^2}{2S_2}$$ 
+
+A plot of the cumulative number of species recorded,  $S_n$, as a function of some measure of sampling effort (say, $n$ samples taken) yields the species accumulation curve  (SAC) or collector's curve [#Colwell:1994vt]. Such a curve eventually reaches an asymptote converging with $S_{est}$. In an analogous way, interaction accumulation curves (IAC), analogous to SACs, can be used to assess the robustness of interactions sampling for plant-animal community datasets [#E31/2562][#Jordano:2009c][#Olesen:2011a]. 
 
 ### Sampling interactions
-Now let's consider the situation with samples of interactions. When we sample interactions in the field we record the int presence of two species that interact in some way, i.e., a frugivorous pigeon visits a fruiting tree and detaches and ingests the fruit. For example, Snow and Snow[#Snow:1988iu] recorded an interaction whenever they saw a bird "touching" a fruit on  a plant.  In a similar way interactions between pollinators and plants are tallied by recording any visit of a pollinator entering a flower and touching the androceum and/or the gyneceum. We observe and record feeding observations, visitation, occupancy, presence in pollen loads or in fecal samples, etc., to accumulate pairwise interactions, i.e., lists of species partners and the frequencies with which we observe them.    
+Now let's consider the situation with samples of interactions. When we sample interactions in the field we record the int presence of two species that interact in some way, i.e., a frugivorous pigeon visits a fruiting tree and detaches and ingests the fruit. For example, Snow and Snow[#Snow:1988iu] recorded an interaction whenever they saw a bird "touching" a fruit on  a plant.  In a similar way interactions between pollinators and plants are tallied by recording any visit of a pollinator entering a flower and touching the androceum and/or the gyneceum. We observe and record feeding observations, visitation, occupancy, presence in pollen loads or in fecal samples, etc., to accumulate pairwise interactions, i.e., lists of species partners and the frequencies with which we observe them. Therefore, estimating the sampling completeness of plant–animal interactions for the whole network, requires estimating the number (richness) of distinct pairwise interactions accumulated as sampling effort is increased, pooling the data for all plant and animal species.
 
-Sampling interactions requires filling the cells of an interaction matrix with data. The matrix is a 2D representation of the interactions among $A$ animal species (rows) and $P$ plant species (columns). An interaction matrix $AP$ consists of an array of zeroes or ones, or an array of zeroes and numbers- if the data are quantified. These figures illustrate the values of the pairwise interactions visualized in the $AP$ matrix.
+Sampling interactions requires filling the cells of an interaction matrix with data. The matrix, $AP$,  is a 2D representation of the interactions among $A$ animal species (rows) and $P$ plant species (columns) [#E31/2562][#Bascompte:2014to]. An interaction matrix $AP$ consists of an array of zeroes or ones, or an array of zeroes and numbers- if the data (interaction frequencies) are quantified. These figures illustrate the values of the pairwise interactions visualized in the $AP$ matrix.
 
 We need to define two basic steps in the sampling of interactions: 1) which type of interactions we sample; and 2) which type of record we get to document the existence of an interaction.
 
@@ -78,19 +86,19 @@ We can discuss whether zoo-centric or phytocentric potentially bias the estimati
 
 The basic method we can propose to estimate sampling effort and explicitly show the analogues with rarefaction analysis in biodiversity research is to vectorize the interaction matrix AP so that we get a vector of all the possible pairwise interactions that can occur in a community of A animal species and P plant species.
 
-The new 'species' we aim to sample are the interactions. So, if we have in our community *Turdus merula* (*Tm*) and *Rosa canina* (*Rc*) and *Prunus mahaleb* (*Pm*), our problem will be to sample 2 new species: *TmRc* and *TmPm*. In general, if we have $A= 1... i$ animal species and $P = 1... j$ plant spcies, we'll have a vector of 'new' species to sample: $A1P1, A1P2,... A2P1, A2P2, ... AiPj$.
+The new 'species' we aim to sample are the interactions. So, if we have in our community *Turdus merula* (*Tm*) and *Rosa canina* (*Rc*) and *Prunus mahaleb* (*Pm*), our problem will be to sample 2 new species: *TmRc* and *TmPm*. In general, if we have $$A= 1... i$$ , animal species and $$P = 1... j$$ plant spcies, we'll have a vector of 'new' species to sample: $$A1P1, A1P2,... A2P1, A2P2, ... AiPj$$.
 
 We can represent the successive samples where we can potentially get records of these interactions in a matrix with the vectorized interaction matrix and columns representing the successive samples we take:
 
 | Interaction  | Sample1 | Sample2 |  Sample3 |
 | :----------- | :-----: | :-----: | :-----:  |
-| A_1P_2       |    12   |    2    |     0    |
-| A_1P_2       |     0   |    0    |     0    |  
+| A1 - P2       |    12   |    2    |     0    |
+| A1 - P2       |     0   |    0    |     0    |  
 | ...          |    ...  |   ...   |    ...   |  
-| A_5P_3       |     5   |    0    |     1    |  
-| A_5P_4       |     1   |    0    |     1    |  
+| A5 - P3       |     5   |    0    |     1    |  
+| A5 - P4       |     1   |    0    |     1    |  
 | ...          |    ...  |   ...   |    ...   |  
-| $A_iP_i$     |     1   |    0    |     1    |  
+| A~i - P~i     |     1   |    0    |     1    |  
 [Table 1. A vectorized interaction matrix.]
 
 
@@ -106,7 +114,7 @@ We can discuss whether rarefaction estimates for interactions would be better ob
 ####Sampling and robustness of network parameters
 % PJ: 2May2010
 
-Monitoring interactions is analogous to any biodiversity sampling (i.e., a species inventory; \citealt{Jor09}) and is subject to similar methodological shortcomings, especially under-sampling \citep{Coddington:2009,Vazquez:2009,Dorado:2011}. When we study mutualistic networks, our goal is to inventor pairwise interactions. Rather than sampling individuals that add species to our inventory, we observe and record feeding observations, visitation, occupancy, presence in pollen loads or in faecal samples, etc., to accumulate pairwise interactions, i.e., lists of species partners. Our goal is to reduce the number of missing cells in our interaction matrices used to tally interactions and to explain the forbidden ones. Interaction accumulation curves (IAC), analogous to species accumulation curves (SAC), can be used to assess the robustness of interactions sampling for plant-animal community datasets \citep{Jor09,Olesen:2010a}. For instance, a random accumulator function (library vegan in the R Package; \citep{R10}) which finds the mean IAC and its standard deviation from random permutations of the data, or subsampling without replacement \citep{GotCol01} can be used to estimate the expected number of pairwise interactions included in a given sampling of records (Fig. 1C). We start with a vectorized interaction matrix \citep{Jor09} representing the pairwise interactions (rows) recorded during a cumulative number of censuses or sampling periods (columns), in a way analogous to a biodiversity sampling matrix with species as rows and sampling units (e.g., quadrats) as columns. This procedure plots the accumulation curve for the expected number of pairwise interactions recorded with increasing sampling effort (Fig. 1C).
+For instance, a random accumulator function (library vegan in the R Package; \citep{R10}) which finds the mean IAC and its standard deviation from random permutations of the data, or subsampling without replacement \citep{GotCol01} can be used to estimate the expected number of pairwise interactions included in a given sampling of records (Fig. 1C). We start with a vectorized interaction matrix \citep{Jor09} representing the pairwise interactions (rows) recorded during a cumulative number of censuses or sampling periods (columns), in a way analogous to a biodiversity sampling matrix with species as rows and sampling units (e.g., quadrats) as columns. This procedure plots the accumulation curve for the expected number of pairwise interactions recorded with increasing sampling effort (Fig. 1C).
 
 
 Not all potential links among species in ecological networks can be recorded during sampling. Often, adjacency matrices are used to characterize complex networks, and these matrices are frequently sparse, i.e., they are densely populated with zeroes. Unobserved interactions are represented by zeroes and belong to two categories. Missing interactions actually exist but may require additional sampling or a variety of methods to be observed. Forbidden links, on the other hand, arise due to biological constraints limiting interactions and remain unobservable in nature, irrespectively of sampling effort \citep{JBO03,Olesen:2010a}. Forbidden links are non-occurrences of pairwise interactions that can be accounted for by biological constraints, such as spatio-temporal uncoupling, size or reward mismatching, foraging constraints (e.g., accessibility), and physiological-biochemical constraints \citep{Jordano:1987,Olesen:2010a}. Temporal uncoupling, for example, takes place when phenophases of potentially interacting species do not overlap \citealt[e.g.,][]{Fabina:2010} (Fig. 1A, B). Thus forbidden links can be defined as structural zeroes in the adjacency matrix describing a complex network. Therefore, the potential links that can actually be observed in an interaction matrix of \textit{A} and \textit{P} animal and plant species is well below the total size of the matrix, \textit{AP}. Two elements of inference are required in the analysis of missing interactions in plant-animal interaction networks: first, a critical analysis of sampling robustness; second, detailed natural history information on the participant species that allows the inference of biological constraints.
@@ -159,18 +167,33 @@ Missing links are a characteristic feature of all plant-animal interaction netwo
 
 [#Gotelli:2011tb]: Gotelli, N.J. & Colwell, R.K. (2011). Estimating species richness. Biological Diversity Frontiers in Measurement and Assessment (eds A.E. Magurran & B.J. McGill), pp. 39–54. Oxford University Press, Oxford, UK.
 
-[#Hortal:2006dc]: Hortal, J., Borges, P. & Gaspar, C. (2006). Evaluating the performance of species richness estimators: sensitivity to sample grain size. Journal of Animal Ecology, 75, 274–287.
+[#Bunge:1993ux]: Bunge, J. & Fitzpatrick, M. (1993). Estimating the number of species: a review. Journal of the American Statistical Association, 88, 364–373.
+
+[#Jordano:2009c]: Jordano, P., Vázquez, D. & Bascompte, J. (2009). Redes complejas de interacciones planta---animal, Editorial Universitarian. (R. Medel, R. Dirzo & R. Zamora, Eds.). Editorial Universitaria, Santiago, Chile.
+
+[#Hortal:2006dc]: Hortal, J., Borges, P. & Gaspar, C. (2006). Evaluating the performance of species richness estimators: sensitivity to sample grain size. Journal of Animal Ecology, 75, 274–287.    
+
+[#Coddington:2009fi]: Coddington, J.A., Agnarsson, I., Miller, J.A., Kuntner, M. & Hormiga, G. (2009). Undersampling bias: the null hypothesis for singleton species in tropical arthropod surveys. Journal Of Animal Ecology, 78, 573–584.
+
+[#Vazquez:2009p82]: Vázquez, D.P., Chacoff, N.P. & Cagnolo, L. (2009). Evaluating multiple determinants of the structure of plant-animal mutualistic networks. Ecology, 90, 2039–2046.     
+
+[#Dorado:2011cf]: Dorado, J., Vazquez, D.P., Stevani, E.L. & Chacoff, N.P. (2011). Rareness and specialization in plant-pollinator networks. Ecology, 92, 19–25.
+
+[#Olesen:2011a]: Olesen, J.M., Bascompte, J., Dupont, Y.L., Elberling, H. & Jordano, P. (2011). Missing and forbidden links in mutualistic networks. Proceedings Of The Royal Society B-Biological Sciences, 278, 725–732.
 
 [#Colwell:2009]: Colwell RK. (2009). EstimateS: Statistical estimation of species richness and shared species from samples user’s guide and application.`http://purl.oclc.org/estimates`.    
 
 [#Snow:1988iu]: Snow, B., Snow, D. (1988). Birds and Berries. Poyser: Calton, UK.     
 
-[#Colwell:199vt]: Colwell, R. & Coddington, J. (1994). Estimating terrestrial biodiversity through extrapolation. Philosophical Transactions Of The Royal Society Of London Series B-Biological Sciences, 345, 101–118.
+[#Colwell:1994vt]: Colwell, R. & Coddington, J. (1994). Estimating terrestrial biodiversity through extrapolation. Philosophical Transactions of the Royal Society of London Series B-Biological Sciences, 345, 101–118.
 
 [#E31/2562]: Jordano, P. (1987). Patterns of mutualistic interactions in pollination and seed dispersal: connectance, dependence asymmetries, and coevolution. The American Naturalist, 129, 657–677.   
 
 [#Chao:2005wp]: Chao, A. (2005). Species richness estimation. Encyclopedia of Statistical Sciences pp. 7909–7916. New York, USA.    
 
+[#Chao:2009wq]: Chao, A., Colwell, R.K., Lin, C.-W. & Gotelli, N.J. (2009). Sufficient sampling for asymptotic minimum species richness estimators. Ecology, 90, 1125–1133.    
+
+[#Bascompte:2014to]: Bascompte, J. & Jordano, P. (2014). Mutualistic networks. Princeton University Press, Princeton, NJ.    
 
 
 
