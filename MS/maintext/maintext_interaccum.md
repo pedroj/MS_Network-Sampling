@@ -1,3 +1,11 @@
+---
+Title:   Sampling interactions manuscript  
+Author:   Pedro Jordano  
+Date:     February 24, 2015  
+Comment:  Manuscript draft for the sampling interactions study.   
+BibTeX:      refs   
+--- 
+  
 #Sampling interaction networks#
 
 ###Pedro Jordano^1 ####
@@ -34,19 +42,22 @@ Gotelli & Colwell (2011).
 
  
 
-Biodiversity assessment typically aims at sampling individuals in collections and determining the number of species represented. Given that, by definition, samples are incomplete, these collections enumerate a lower number of the species actually present. The ecological literature dealing with robust estimators of species richness and diversity in collections of individuals is immense, and a number of useful approaches have been used to obtain such estimates [#Magurran:1988mm][#Gotelli:2001uo][#Hortal:2006dc][#Gotelli:2011tb]. I can't emphasize enough the relevance of sampling interactions in addition to sampling species and higher taxa in biodiversity assessment programs. Interactions among species are a major component of biodiversity and here I aim to show that most problems associated to sampling interactions in natural communities have to do with problems associated to sampling diversity. Interactions in natural ecosystems can be a much better indicator of the richness and diversity of ecosystem functions than a simple list of taxa. Thus, sampling interactions should be a central issue when identifying and diagnosing ecosystem services (e.g., pollination, natural seeding by frugivores, etc.). Fortunately, all the whole battery of biodiversity-related tools used by ecologists to sample biodiversity (species, *sensu stricto*) can be extended and applied to the sampling of interactions. Analogs are common between these approaches.   
+Biodiversity assessment typically aims at sampling individuals in collections and determining the number of species represented. Given that, by definition, samples are incomplete, these collections enumerate a lower number of the species actually present. The ecological literature dealing with robust estimators of species richness and diversity in collections of individuals is immense, and a number of useful approaches have been used to obtain such estimates [#Magurran:1988mm][#Gotelli:2001uo][#Hortal:2006dc][#Gotelli:2011tb]. I can't emphasize enough the relevance of sampling interactions in addition to sampling species and higher taxa in biodiversity assessment programs. Interactions among species are a major component of biodiversity and here I aim to show that most problems associated to sampling interactions in natural communities have to do with problems associated to sampling diversity. Interactions in natural ecosystems can be a much better indicator of the richness and diversity of ecosystem functions than a simple list of taxa. Thus, sampling interactions should be a central issue when identifying and diagnosing ecosystem services (e.g., pollination, natural seeding by frugivores, etc.). Fortunately, all the whole battery of biodiversity-related tools used by ecologists to sample biodiversity (species, *sensu stricto*) can be extended and applied to the sampling of interactions. Analogs are common between these approaches. And sampling interactions entails exactly the same problems, limitations, constraints, and potential biases as sampling individual organisms and species diversity [#E31/2562].   
 
-Briefly, $S_{obs}$ is the total number of species observed in a sample, or in a set of samples. $S_{est}$ is the estimated number of species in the community represented by the sample, or by the set of samples, where $est$ indicates an estimator. With abundance data, let $S_k$ be the number of species each represented by exactly $k$ individuals in a single sample. Thus, $S_0$ is the number of undetected species (species present in the community but not included in the sample), $S_1$ is the number of singleton species, $S_2$ is the number of doubleton species, etc. The total number of individuals in the sample would be: $$n = 􏰢\sum_{k=1}^{S_{obs}}S_k$$ .   
+### Asymptotic diversity estimates
+Let's assume a sampling of the diversity in a specific locality, over relatively homogeneous landscape where we aim at determining the number of species present for a particular group of organisms. To do that we carry out transects or plot samplings across the landscape, adequately replicated so we obtain a number of samples. Briefly, $S_{obs}$ is the total number of species observed in a sample, or in a set of samples. $S_{est}$ is the estimated number of species in the community represented by the sample, or by the set of samples, where $est$ indicates an estimator. With abundance data, let $S_k$ be the number of species each represented by exactly $k$ individuals in a single sample. Thus, $S_0$ is the number of undetected species (species present in the community but not included in the sample), $S_1$ is the number of singleton species, $S_2$ is the number of doubleton species, etc. The total number of individuals in the sample would be:    
+$$n = 􏰢\sum_{k=1}^{S_{obs}}S_k$$    
 
-A frequently used asymptotic, bias corrected, estimator is $S_{Chao}$ [#Hortal:2006dc][#Colwell:2009]:   
+A frequently used asymptotic, bias corrected, estimator is $S_{Chao}$ [#Hortal:2006dc][#Chao:2005wp][#Colwell:2009]:   
 
 $$S_{Chao}= S_{obs} + \frac{S_1 (S_1 −1)}{2(S_2 +1)}$$    
 
 A plot of the cumulative number of species recorded,  $S_n$, as a function of some measure of sampling effort (say, $n$ samples taken) yields the species accumulation curve or collector's curve [#Colwell:199vt]. Such a curve eventually reaches an asymptote converging with $S_{est}$.
 
+### Sampling interactions
 Now let's consider the situation with samples of interactions. When we sample interactions in the field we record the int presence of two species that interact in some way, i.e., a frugivorous pigeon visits a fruiting tree and detaches and ingests the fruit. For example, Snow and Snow[#Snow:1988iu] recorded an interaction whenever they saw a bird "touching" a fruit on  a plant.  In a similar way interactions between pollinators and plants are tallied by recording any visit of a pollinator entering a flower and touching the androceum and/or the gyneceum. We observe and record feeding observations, visitation, occupancy, presence in pollen loads or in fecal samples, etc., to accumulate pairwise interactions, i.e., lists of species partners and the frequencies with which we observe them.    
 
-Sampling interactions requires filling the cells of an interaction matrix with data. The matrix is a 2D representation of the interactions among A animal species (rows) and P plant species (columns). An interaction matrix AP consists of an array of zeroes or ones, or an array of zeroes and numbers- if the data are quantified. These figures illustrate the values of the pairwise interactions visualized in the AP matrix.
+Sampling interactions requires filling the cells of an interaction matrix with data. The matrix is a 2D representation of the interactions among $A$ animal species (rows) and $P$ plant species (columns). An interaction matrix $AP$ consists of an array of zeroes or ones, or an array of zeroes and numbers- if the data are quantified. These figures illustrate the values of the pairwise interactions visualized in the $AP$ matrix.
 
 We need to define two basic steps in the sampling of interactions: 1) which type of interactions we sample; and 2) which type of record we get to document the existence of an interaction.
 
@@ -155,6 +166,10 @@ Missing links are a characteristic feature of all plant-animal interaction netwo
 [#Snow:1988iu]: Snow, B., Snow, D. (1988). Birds and Berries. Poyser: Calton, UK.     
 
 [#Colwell:199vt]: Colwell, R. & Coddington, J. (1994). Estimating terrestrial biodiversity through extrapolation. Philosophical Transactions Of The Royal Society Of London Series B-Biological Sciences, 345, 101–118.
+
+[#E31/2562]: Jordano, P. (1987). Patterns of mutualistic interactions in pollination and seed dispersal: connectance, dependence asymmetries, and coevolution. The American Naturalist, 129, 657–677.   
+
+[#Chao:2005wp]: Chao, A. (2005). Species richness estimation. Encyclopedia of Statistical Sciences pp. 7909–7916. New York, USA.    
 
 
 
