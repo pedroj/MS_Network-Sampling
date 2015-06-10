@@ -6,9 +6,9 @@ Comment:  Manuscript draft for the sampling interactions study.
 BibTeX:      refs   
 --- 
   
-#Sampling interaction networks#
+#Sampling interaction networks
 
-###Pedro Jordano^1 ####
+###Pedro Jordano^1
 
 #####*1, Integrative Ecology Group, Estación Biológica de Doñana, Consejo Superior de Investigaciones Científicas (EBD-CSIC), Avenida Americo Vespucio s/n, E-41092 Sevilla, Spain*
 
@@ -26,7 +26,7 @@ E-mail: `jordano@ebd.csic.es`
 ### ABSTRACT  
 
 Sampling ecological interactions presents similar challenges, problems, potential biases, and constraints as sampling individuals and species in biodiversity inventories. Interactions are just pairwise relationships among individuals of two unrelated species, such as those among plants and their seed dispersers in frugivory interactions or those among plants and their pollinators. Sampling interactions is a fundamental step to build robustly estimated interaction networks, yet few analyses have attempted a formal approach to their sampling protocols. 
-Here I provide a formal approach to interaction sampling by building an explicit analogue to individuals and species sampling, thus extending diversity-monitoring approaches  to the characterization of complex networks of ecological interactions.
+Here I provide a conceptual framework for interaction sampling by building an explicit analogue to individuals and species sampling, thus extending diversity-monitoring approaches to the characterization of complex networks of ecological interactions.  
 
 
 ---
@@ -47,13 +47,13 @@ Interactions in natural ecosystems can be a much better indicator of the richnes
 
 The number of distinct pairwise interaction that we can record in a landscape (an area of relatively homogeneous vegetation, analogous to the one we would use to monitor species diversity) is equivalent to the number of distinct classes in which we can classify the recorded encounters among individuals of two different species.  We walk in the forest and see a blackbird picking an ivy fruit and ingesting it: we have a record for $Tm-Hh$ interaction. We keep advancing and record again a blackbird feeding on hawthorn fruits so we record a $Tm-Cm$ interaction; as we advance we encounter another ivy plant and record a blackcap swallowing a fruit so we now have a new $Sa-Hh$ interaction, and so on.  At the end we have a series of classes (e.g., $Sa-Hh$), along with their observed frequencies. Bunge & Fitzpatrick [#Bunge:1993ux] review the main aspects and approaches to estimate the number of distinct classes $C$ in a sample of observations. The sampling of interactions in nature, as the sampling of species, is a cumulative process. We add new, distinct, interactions recorded as we increase sampling effort. We can obtain an Interaction Accumulation Curve ($IAC$) analogous to a Species cumulating Curve ($SAC$): the observed number of distinct pairwise interactions in a survey or collection as a function of the accumulated number of observations or samples[#Colwell:2009gv].   
 
-Our sampling above would have resulted in a vector $n= [n_1 ... n_C]'$ where $n_i$ is the number of records in the  $i^{th}$ class. As stressed by Bunge & Fitzpatrick (1993), however, the $i^{th}$ class would appear in the sample if and only if $n_i > 0$, and we don't know _a priori_ which $n_i$ are zero. So, $n$ is not observable. Rather, what we get is a vector   $c= [c_1 ... c_n]'$ where $c_j$ is the number of classes represented $j$ times in our sampling: $c_1$ is the number of singletons, $c_2$ is the number of twin pairs, $c_3$ the number of triplets, etc. The problem thus turns to be estimating the number of distinct classes $C$ from the vector of $c_j$ values.
+Our sampling above would have resulted in a vector $$n= [n_1 ... n_C]'$$ where $n_i$ is the number of records in the  $i^{th}$ class. As stressed by Bunge & Fitzpatrick (1993), however, the $i^{th}$ class would appear in the sample if and only if $n_i > 0$, and we don't know _a priori_ which $n_i$ are zero. So, $n$ is not observable. Rather, what we get is a vector   $c= [c_1 ... c_n]'$ where $c_j$ is the number of classes represented $j$ times in our sampling: $c_1$ is the number of singletons, $c_2$ is the number of twin pairs, $c_3$ the number of triplets, etc. The problem thus turns to be estimating the number of distinct classes $C$ from the vector of $c_j$ values.
 
 ### Asymptotic diversity estimates
-Let's assume a sampling of the diversity in a specific locality, over relatively homogeneous landscape where we aim at determining the number of species present for a particular group of organisms. To do that we carry out transects or plot samplings across the landscape, adequately replicated so we obtain a number of samples. Briefly, $S_{obs}$ is the total number of species observed in a sample, or in a set of samples. $S_{est}$ is the estimated number of species in the community represented by the sample, or by the set of samples, where $est$ indicates an estimator. With abundance data, let $S_k$ be the number of species each represented by exactly $k$ individuals in a single sample. Thus, $S_0$ is the number of undetected species (species present in the community but not included in the sample), $S_1$ is the number of singleton species, $S_2$ is the number of doubleton species, etc. The total number of individuals in the sample would be:    
+Let's assume a sampling of the diversity in a specific locality, over relatively homogeneous landscape where we aim at determining the number of species present for a particular group of organisms. To do that we carry out transects or plot samplings across the landscape, adequately replicated so we obtain a number of samples. Briefly, $S_{obs}$ is the total number of species observed in a sample, or in a set of samples. $S_{est}$ is the estimated number of species in the community represented by the sample, or by the set of samples, where $est$ indicates an estimator. With abundance data, let $S_k$ be the number of species each represented by exactly $k$ individuals in a single sample. Thus, $S_0$ is the number of undetected species (species present in the community but not included in the sample), $S_1$ is the number of singleton species, $$S_2$$ is the number of doubleton species, etc. The total number of individuals in the sample would be:    
 $$n = 􏰢\sum_{k=1}^{S_{obs}}S_k$$    
 
-A frequently used asymptotic, bias corrected, estimator is $S_{Chao}$ [#Hortal:2006dc][#Chao:2005wp][#Colwell:2009]:   
+A frequently used asymptotic, bias corrected, estimator is $$S_{Chao}$$ [#Hortal:2006dc][#Chao:2005wp][#Colwell:2009]:   
 
 $$S_{Chao}= S_{obs} + \frac{S_1 (S_1 −1)}{2(S_2 +1)}$$    
 
