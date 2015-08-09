@@ -1,17 +1,16 @@
 ---
-latex input:        mmd-article-header
-latex input:        mmd-article-begin-doc
-LaTeX Mode:         memoir  
+latex input:        jae-article-header
+LaTeX Mode:         article  
 Title:   Sampling interactions manuscript  
 Author:   Pedro Jordano  
 Date:     February 24, 2015  
 Comment:  Manuscript draft for the sampling interactions study.   
-Base Header Level:  1 
-BibTeX:      refs   
+Base Header Level:  2 
+BibTeX:      maintext   
 Bibliography Style:	jae
 ---
   
-#Sampling interaction networks
+#Sampling ecological interaction networks
 
 ###Pedro Jordano^1
 
@@ -49,13 +48,10 @@ Gotelli & Colwell (2011).
  
 Biodiversity assessment aims at sampling individuals in collections and determining the number of species represented. Given that, by definition, samples are incomplete, these collections enumerate a lower number of the species actually present. The ecological literature dealing with robust estimators of species richness and diversity in collections of individuals is immense, and a number of useful approaches have been used to obtain such estimates [#Magurran:1988mm][#Gotelli:2001uo][#Hortal:2006dc][#Gotelli:2011tb]. Recent effort has been also focused at defining essential biodiversity variables (EBV) [Pereira:2013ji] that can be sampled and measured repeatedly to complement biodiversity estimates. Yet sampling species or taxa-specific EBVs is just probing a single component of biodiversity; interactions among species are another fundamental component, the one that supports the existence of species [#Memmott:2006vy].  For example, the extinction of interactions represents a dramatic loss of biodiversity because it entails the loss of fundamental ecological functions [#ValienteBanuet:2014bw]. This missed component of biodiversity loss, the extinction of ecological interactions, very often accompanies, or even precedes, species disappearance. I can't emphasize enough the relevance of sampling interactions in addition to sampling species and higher taxa in biodiversity assessment programs. Interactions among species are a key component of biodiversity and here I aim to show that most problems associated to sampling interactions in natural communities have to do with problems associated to sampling species diversity. In the first part of this paper I provide a succinct overview of previous work addressing sampling issues for ecological interaction networks. In the second part I discuss specific rationales for sampling the biodiversity of ecological interactions.
 	Interactions in natural ecosystems can be a much better indicator of the richness and diversity of ecosystem functions than a simple list of taxa and their abundances and/or related biodiversity indicator variables (EBVs). Thus, sampling interactions should be a central issue when identifying and diagnosing ecosystem services (e.g., pollination, natural seeding by frugivores, etc.). Fortunately, all the whole battery of biodiversity-related tools used by ecologists to sample biodiversity (species, *sensu stricto*) can be extended and applied to the sampling of interactions. Analogs are evident between these approaches. Monitoring interactions is analogous to any biodiversity sampling (i.e., a species inventory [#E31/2562][#Jordano:2009c]) and is subject to similar methodological shortcomings, especially under-sampling [#Coddington:2009fi][#Vazquez:2009p82][#Dorado:2011cf]. When we study mutualistic networks, our goal is to make an inventory of the distinct pairwise interactions that made up the network. We are interested in having a complete list of all the pairwise interactions among species (e.g., all the distinct, species-species interactions, links, among the pollinators and flowering plants) that can exist in a given community. And sampling interactions entails exactly the same problems, limitations, constraints, and potential biases as sampling individual organisms and species diversity. 
-
-[Review part]
-	Earlier efforts to recognize and solve sampling problems in analyses of interactions stem from researchers interested in food web analyses and in determining the biases on undersampled food web metrics [#Bersier:2002p9371][#Brose:2003wv][#BanasekRichter:2004ik]. In addition, the myriad of natural history studies documenting animal diets, host-pathogen infection records, plant herbivory records, etc., are basic efforts to document interactions occurring in nature. All of them share the problem of sampling incompleteness influencing the patterns and metrics reported. Yet, despite the recognition that incomplete sampling may seriously bias the analysis of ecological networks [#E31/2562], only recent studies have explicitly acknowledged it and attempted to determine its influence [#Ollerton:2002jw][#Nielsen:2007][#Vazquez:2009p82][#Gibson:2011eh][#Olesen:2011a][#Chacoff:2012][#RiveraHutinel:2012vn][Fründ, McCann & Williams 2015]. Most studies provide no estimate of sampling effort, implicitly assuming that the reported network patterns and metrics are robust (i.e., additional sampling would not entail significant modifications of the reported results). 
-	To date, only a handful of studies have explicitly evaluated the effects of sampling incompleteness on the description of network structure. These studies found high variation in the number of detected species and total number of links and suggest that some metrics, i.e. aggregated statistics describing network patterns, are prone to sampling bias (e.g. Goldwasser & Roughgarden 1997, Martinez et al. 1999, Banašek-Richter, Cattin & Bersier 2004, Nielsen & Bascompte 2007, Rivera-Hutinel et al. 2012, Fründ, McCann & Williams 2015). Nevertheless, some important gaps remain to be addressed regarding the importance of sampling completeness. Notably, little is known about the influence of sampling effort on quantitative network structure, i.e. metrics calculated from networks that take into account the strength of interactions, and there has been no attempt at investigating the effects of sampling incompleteness on the understanding of the processes structuring ecological networks. Furthermore, practically all information about the influence of sampling on detected network structures are based on either simulated networks (e.g. Fründ, McCann & Williams 2015) or are from species-poor ecosystems, such as desert or temperate forests (e.g. Nielsen & Bascompte 2007; Chacoff et al. 2012, Rivera-Hutinel et al. 2012), whereas incomplete sampling should be greatest in networks from species-rich tropical regions (Ollerton & Cranmer 2002; Kissling & Schleuning 2015).
-
+	Earlier efforts to recognize and solve sampling problems in analyses of interactions stem from researchers interested in food web analyses and in determining the biases on undersampled food web metrics [#Martinez:1991aa][#Martinez:1993ti][#Bersier:2002p9371][#Brose:2003wv][#BanasekRichter:2004ik]. In addition, the myriad of natural history studies documenting animal diets, host-pathogen infection records, plant herbivory records, etc., are basic efforts to document interactions occurring in nature. All of them share the problem of sampling incompleteness influencing the patterns and metrics reported. Yet, despite the recognition that incomplete sampling may seriously bias the analysis of ecological networks [#E31/2562], only recent studies have explicitly acknowledged it and attempted to determine its influence [#Ollerton:2002jw][#Nielsen:2007][#Vazquez:2009p82][#Gibson:2011eh][#Olesen:2011a][#Chacoff:2012][#RiveraHutinel:2012vn][#Olito:2014gc][#Frund:2015ii]. Most studies provide no estimate of sampling effort, implicitly assuming that the reported network patterns and metrics are robust (i.e., additional sampling would not entail significant modifications of the reported results). Yet recent evidences point out that number of partner species detected, number of actual links, and some aggregate statistics describing network patterns, are prone to sampling bias [#Nielsen:2007][#Dorado:2011cf][#Olesen:2011a][#Chacoff:2012][#RiveraHutinel:2012vn][#Olito:2014gc][#Frund:2015ii]. Most of these evidences, however,  come from either theoretical, simulation, studies [#Frund:2015ii] or from relatively species-poor assemblages. Even for species-rich, tropical assemblages it might be erroneous to conclude that network data routinely come from insufficiently sampled datasets [#Ollerton:2002jw][#Chacoff:2012], given the extremely sparse nature of these interaction matrices because of the prevalence of forbidden links (which, by definition, cannot be documented despite extensive sampling effort). Thus, a number of relevant gaps remain to be addressed in relation to sampling completeness. For instance, to what extent mixed sampling protocols (i.e., combining different sampling techniques) can yield more representative results than just focal sampling of visitation/interaction records? Are available datasets really under sampled? 
+	
 ## Sampling interactions: methods
-When we sample interactions in the field we record the presence of two species that interact in some way, i.e., a frugivorous pigeon visits a fruiting tree and detaches and ingests the fruit of a given plant species. For example, Snow and Snow[#Snow:1988iu] recorded an interaction whenever they saw a bird "touching" a fruit on  a plant.  In a similar way, interactions between pollinators and plants are tallied by recording any visit of a pollinator entering a flower and touching the androceum and/or the gyneceum. We observe and record feeding observations, visitation, occupancy, presence in pollen loads or in fecal samples, etc.,  of individuals animals or plants to accumulate pairwise interactions, i.e., lists of species partners and the frequencies with which we observe them. Therefore, estimating the sampling completeness of plant–animal interactions for the whole network, requires estimating the number (richness) of distinct pairwise interactions accumulated as sampling effort is increased, pooling the data for all plant and animal species.
+When we sample interactions in the field we record the presence of two species that interact in some way, i.e., a frugivorous pigeon visits a fruiting tree and detaches and ingests the fruit of a given plant species. For example, Snow and Snow[#Snow:1988iu] recorded an interaction whenever they saw a bird "touching" a fruit on  a plant.  In a similar way, interactions between pollinators and plants are tallied by recording any visit of a pollinator entering a flower and touching the androceum and/or the gyneceum. We observe and record feeding observations, visitation, occupancy, presence in pollen loads or in fecal samples, etc.,  of individuals animals or plants to accumulate pairwise interactions, i.e., lists of species partners and the frequencies with which we observe them. Therefore, estimating the sampling completeness of plant-animal interactions for the whole network, requires estimating the number (richness) of distinct pairwise interactions accumulated as sampling effort is increased, pooling the data for all plant and animal species.
 	Sampling interactions requires filling the cells of an interaction matrix with data. The matrix, $AP$,  is a 2D representation of the interactions among $A$ animal species (rows) and $P$ plant species (columns) [#E31/2562][#Bascompte:2014to]. An interaction matrix $AP$ consists of an array of zeroes or ones, or an array of zeroes and numbers- if the data (interaction frequencies) are quantified. These figures illustrate the values of the pairwise interactions visualized in the $AP$ matrix.
 	We need to define two basic steps in the sampling of interactions: 1) which type of interactions we sample; and 2) which type of record we get to document the existence of an interaction. In step #1 there are two considerations we need to take into account. First is whether we are sampling the whole community of interactor species (all the animals, all the plants) or we sample a subset of them. Subsets can be: a) We sample all the potential plants interacting with a subset of the animals; b) We sample all the potential animal species interacting with a subset of the plant species; c) We sample a subset of  all the potential animal species interacting with a subset of all the plant species.
 
@@ -177,70 +173,75 @@ Missing links are a characteristic feature of all plant-animal interaction netwo
 
 --------------------------------------------------------------
 ## REFERENCES ##
-
-[#Magurran:1988mm]: Magurran, A.E. (1988) Ecological diversity and its measurement. Princeton University Press, Princeton, US.   
-
-[#Gotelli:2001uo]: Gotelli, N. & Colwell, R. (2001) Quantifying biodiversity: procedures and pitfalls in the measurement and comparison of species richness. Ecology Letters, 4, 379–391.   
-
-[#Gotelli:2011tb]: Gotelli, N.J. & Colwell, R.K. (2011) Estimating species richness. Biological Diversity Frontiers in Measurement and Assessment (eds A.E. Magurran & B.J. McGill), pp. 39–54. Oxford University Press, Oxford, UK.
-
-[#Bunge:1993ux]: Bunge, J. & Fitzpatrick, M. (1993) Estimating the number of species: a review. Journal of the American Statistical Association, 88, 364–373.
-
-[#Jordano:2009c]:  Jordano, P., Vázquez, D. & Bascompte, J. (2009) Redes complejas de interacciones planta---animal (eds R. Medel, R. Dirzo & R. Zamora, pp. 17–41. Editorial Universitaria, Santiago, Chile.
-
-[#Pereira:2013ji]: Pereira, H.M., Ferrier, S., Walters, M., Geller, G.N., Jongman, R.H.G., Scholes, R.J., Bruford, M.W., Brummitt, N., Butchart, S.H.M., Cardoso, A.C., Coops, N.C., Dulloo, E., Faith, D.P., Freyhof, J., Gregory, R.D., Heip, C., Hoft, R., Hurtt, G., Jetz, W., Karp, D.S., Mcgeoch, M.A., Obura, D., Onoda, Y., Pettorelli, N., Reyers, B., Sayre, R., Scharlemann, J.P.W., Stuart, S.N., Turak, E., Walpole, M. & Wegmann, M. (2013) Essential biodiversity variables. Science, 339, 277–278.
-
-[#ValienteBanuet:2014bw]: Valiente-Banuet, A., Aizen, M.A., Alcántara, J.M., Arroyo, J., Cocucci, A., Galetti, M., García, M.B., García, D., Gomez, J.M., Jordano, P., Medel, R., NAVARRO, L., Obeso, J.R., Oviedo, R., Ramírez, N., Rey, P.J., Traveset, A., Verdú, M. & Zamora, R. (2014) Beyond species loss: the extinction of ecological interactions in a changing world (M. Johnson, Ed.). Functional Ecology, 00: 000-000.  
-
-[#Memmott:2006vy]: Memmott, J., Alonso, D., Berlow, E., Dobson, A., Dunne, J.A., Solé, R.V. & Weitz, J.S. (2006) Biodiversity loss and ecological network structure. Ecological Networks Linking Structure to Dynamics in Food Webs (eds M. Pascual & J.A. Dunne pp. 325–347. Oxford University Press, Oxford, UK.
-
-[#BanasekRichter:2004ik]: Banasek-Richter, C., Cattin, M. & Bersier, L. (2004) Sampling effects and the robustness of quantitative and qualitative food-web descriptors. Journal Of Theoretical Biology, 226, 23–32.
-
-[#Hortal:2006dc]: Hortal, J., Borges, P. & Gaspar, C. (2006) Evaluating the performance of species richness estimators: sensitivity to sample grain size. Journal of Animal Ecology, 75, 274–287.    
-
-[#Colwell:2009gv]: Colwell, R.K. (2009) Biodiversity: concepts, patterns, and measurement. The Princeton Guide to Ecology Princeton University Press, Princeton.  
-
-[#Coddington:2009fi]: Coddington, J.A., Agnarsson, I., Miller, J.A., Kuntner, M. & Hormiga, G. (2009) Undersampling bias: the null hypothesis for singleton species in tropical arthropod surveys. Journal of Animal Ecology, 78, 573–584.
-
-[#Vazquez:2009p82]: Vázquez, D.P., Chacoff, N.P. & Cagnolo, L. (2009) Evaluating multiple determinants of the structure of plant-animal mutualistic networks. Ecology, 90, 2039–2046.     
-
-[#Bersier:2002p9371]: Bersier, L., Banasek-Richter, C. & Cattin, M. (2002) Quantitative descriptors of food-web matrices. Ecology, 83, 2394–2407.
-
-[#Dorado:2011cf]: Dorado, J., Vázquez, D.P., Stevani, E.L. & Chacoff, N.P. (2011) Rareness and specialization in plant-pollinator networks. Ecology, 92, 19–25.
-
-[#Chacoff:2012]: Chacoff, N.P., Vazquez, D.P., Lomascolo, S.B., Stevani, E.L., Dorado, J. & Padrón, B. (2012) Evaluating sampling completeness in a desert plant-pollinator network. Journal of Animal Ecology, 81, 190–200.
-
-[#Olesen:2011a]: Olesen, J.M., Bascompte, J., Dupont, Y.L., Elberling, H. & Jordano, P. (2011) Missing and forbidden links in mutualistic networks. Proceedings of the Royal Society B-Biological Sciences, 278, 725–732.
-
-[#Nielsen:2007]: Nielsen, A. & Bascompte, J. (2007) Ecological networks, nestedness and sampling effort. Journal of Ecology, 95, 1134–1141–1141.
-
-[#Colwell:2009]: Colwell RK. (2009) EstimateS: Statistical estimation of species richness and shared species from samples user’s guide and application.`http://purl.oclc.org/estimates`.    
-
-[#Snow:1988iu]: Snow, B., Snow, D. (1988) Birds and Berries. Poyser: Calton, UK.     
-
-[#Brose:2003wv]: Brose, U., Martinez, N. & Williams, R. (2003) Estimating species richness: Sensitivity to sample coverage and insensitivity to spatial patterns. Ecology, 84, 2364–2377.
-
-[#Colwell:1994vt]: Colwell, R. & Coddington, J. (1994) Estimating terrestrial biodiversity through extrapolation. Philosophical Transactions of the Royal Society of London Series B-Biological Sciences, 345, 101–118.
-
-[#E31/2562]: Jordano, P. (1987) Patterns of mutualistic interactions in pollination and seed dispersal: connectance, dependence asymmetries, and coevolution. The American Naturalist, 129, 657–677.   
-
-[#Gibson:2011eh]: Gibson, R.H., Knott, B., Eberlein, T. & Memmott, J. (2011) Sampling method influences the structure of plant–pollinator networks. Oikos, 120, 822–831.
-
-[#Chao:2005wp]: Chao, A. (2005) Species richness estimation. Encyclopedia of Statistical Sciences pp. 7909–7916. New York, USA.    
-
-[#Chao:2009wq]: Chao, A., Colwell, R.K., Lin, C.-W. & Gotelli, N.J. (2009) Sufficient sampling for asymptotic minimum species richness estimators. Ecology, 90, 1125–1133.    
+[#BanasekRichter:2004ik]: Banasek-Richter, C., Cattin, M. & Bersier, L. (2004) Sampling effects and the robustness of quantitative and qualitative food-web descriptors. Journal of Theoretical Biology, 226, 23-32.
 
 [#Bascompte:2014to]: Bascompte, J. & Jordano, P. (2014) Mutualistic networks. Princeton University Press, Princeton, NJ.    
 
-[#Ollerton:2002jw]: Ollerton, J. & Cranmer, L. (2002) Latitudinal trends in plant-pollinator interactions: are tropical plants more specialised? Oikos, 98, 340–350.
+[#Bersier:2002p9371]: Bersier, L., Banasek-Richter, C. & Cattin, M. (2002) Quantitative descriptors of food-web matrices. Ecology, 83, 2394-2407.   
 
-[#E31.7324_PDF]: Jordano, P., Bascompte, J. & Olesen, J. (2003) Invariant properties in coevolutionary networks of plant-animal interactions. Ecology Letters, 6, 69–81.
+[#Brose:2003wv]: Brose, U., Martinez, N. & Williams, R. (2003) Estimating species richness: Sensitivity to sample coverage and insensitivity to spatial patterns. Ecology, 84, 2364-2377.
+[#Bunge:1993ux]: Bunge, J. & Fitzpatrick, M. (1993) Estimating the number of species: a review. Journal of the American Statistical Association, 88, 364-373.   
 
-[#More:2012kx]: Moré, M., Amorim, F.W., Benitez-Vieyra, S., Medina, A.M., Sazima, M. & Cocucci, A.A. (2012) Armament imbalances: match and mismatch in plant-pollinator traits of highly specialized long-spurred orchids. PLoS ONE, 7, e41878.
+[#Chacoff:2012]: Chacoff, N.P., Vazquez, D.P., Lomascolo, S.B., Stevani, E.L., Dorado, J. & Padrón, B. (2012) Evaluating sampling completeness in a desert plant-pollinator network. Journal of Animal Ecology, 81, 190-200.     
 
-[#RiveraHutinel:2012vn]: Rivera-Hutinel, A., Bustamante, R.O., Marín, V.H. & Medel, R. (2012) Effects of sampling completeness on the structure of plant-pollinator networks. Ecology, 93, 1593–1603.
+[#Chao:2005wp]: Chao, A. (2005) Species richness estimation. Encyclopedia of Statistical Sciences pp. 7909-7916. New York, USA.    
 
+[#Chao:2009wq]: Chao, A., Colwell, R.K., Lin, C.-W. & Gotelli, N.J. (2009) Sufficient sampling for asymptotic minimum species richness estimators. Ecology, 90, 1125-1133.    
+
+[#Coddington:2009fi]: Coddington, J.A., Agnarsson, I., Miller, J.A., Kuntner, M. & Hormiga, G. (2009) Undersampling bias: the null hypothesis for singleton species in tropical arthropod surveys. Journal of Animal Ecology, 78, 573-584.    
+
+[#Cohen:1993aa]: Cohen, J.E., Beaver, R.A., Cousins, S.H., DeAngelis, D.L., Goldwasser, L., Heong, K.L., Holt, R.D., Kohn, A.J., Lawton, J.H., Martinez, N., O'Malley, R., Page, L.M., Patten, B.C., Pimm, S.L., Polis, G.A., Rejmanek, M., Schoener, T.W., Schoenly, K., Sprules, W.G., Teal, J.M., Ulanowicz, R.E., Warren, P.H., Wilbur, H.M. & Yodzis, P. (1993) Improving food webs. Ecology, 74, 252–258.    
+
+[#Colwell:1994vt]: Colwell, R. & Coddington, J. (1994) Estimating terrestrial biodiversity through extrapolation. Philosophical Transactions of the Royal Society of London Series B-Biological Sciences, 345, 101-118.     
+
+[#Colwell:2009gv]: Colwell, R.K. (2009) Biodiversity: concepts, patterns, and measurement. The Princeton Guide to Ecology Princeton University Press, Princeton.     
+
+[#Colwell:2009]: Colwell RK. (2009) EstimateS: Statistical estimation of species richness and shared species from samples user’s guide and application.`http://purl.oclc.org/estimates`.       
+
+[#Dorado:2011cf]: Dorado, J., Vázquez, D.P., Stevani, E.L. & Chacoff, N.P. (2011) Rareness and specialization in plant-pollinator networks. Ecology, 92, 19-25.      
+
+[#Frund:2015ii]: Frund, J., McCann, K.S. & Williams, N.M. (2015) Sampling bias is a challenge for quantifying specialization and network structure: lessons from a quantitative niche model. Oikos, 00: 000-000.      
+
+[#Gibson:2011eh]: Gibson, R.H., Knott, B., Eberlein, T. & Memmott, J. (2011) Sampling method influences the structure of plant-pollinator networks. Oikos, 120, 822-831.
+[#Gotelli:2001uo]: Gotelli, N. & Colwell, R. (2001) Quantifying biodiversity: procedures and pitfalls in the measurement and comparison of species richness. Ecology Letters, 4, 379-391.         
+
+[#Gotelli:2011tb]: Gotelli, N.J. & Colwell, R.K. (2011) Estimating species richness. Biological Diversity Frontiers in Measurement and Assessment (eds A.E. Magurran & B.J. McGill), pp. 39-54. Oxford University Press, Oxford, UK.      
+
+[#Hortal:2006dc]: Hortal, J., Borges, P. & Gaspar, C. (2006) Evaluating the performance of species richness estimators: sensitivity to sample grain size. Journal of Animal Ecology, 75, 274-287.          
+
+[#E31/2562]: Jordano, P. (1987) Patterns of mutualistic interactions in pollination and seed dispersal: connectance, dependence asymmetries, and coevolution. The American Naturalist, 129, 657-677.         
+
+[#E31.7324_PDF]: Jordano, P., Bascompte, J. & Olesen, J. (2003) Invariant properties in coevolutionary networks of plant-animal interactions. Ecology Letters, 6, 69-81.       
+
+[#Jordano:2009c]:  Jordano, P., Vázquez, D. & Bascompte, J. (2009) Redes complejas de interacciones planta--animal (eds R. Medel, R. Dirzo & R. Zamora, pp. 17-41. Editorial Universitaria, Santiago, Chile.      
+
+[#Magurran:1988mm]: Magurran, A.E. (1988) Ecological diversity and its measurement. Princeton University Press, Princeton, US.         
+
+[#Martinez:1991aa]: Martinez, N.D. (1991) Artifacts or attributes? Effects of resolution on the Little Rock lake food web. Ecological Monographs, 61, pp. 367-392.      
+
+[#Martinez:1993ti]: Martinez, N.D. (1993) Effects of resolution on food web structure. Oikos, 66, 403-412.      
+
+[#Memmott:2006vy]: Memmott, J., Alonso, D., Berlow, E., Dobson, A., Dunne, J.A., Solé, R.V. & Weitz, J.S. (2006) Biodiversity loss and ecological network structure. Ecological Networks Linking Structure to Dynamics in Food Webs (eds M. Pascual & J.A. Dunne pp. 325-347. Oxford University Press, Oxford, UK.      
+
+[#More:2012kx]: Moré, M., Amorim, F.W., Benitez-Vieyra, S., Medina, A.M., Sazima, M. & Cocucci, A.A. (2012) Armament imbalances: match and mismatch in plant-pollinator traits of highly specialized long-spurred orchids. PLoS ONE, 7, e41878.      
+
+[#Nielsen:2007]: Nielsen, A. & Bascompte, J. (2007) Ecological networks, nestedness and sampling effort. Journal of Ecology, 95, 1134-1141-1141.      
+
+[#Olesen:2011a]: Olesen, J.M., Bascompte, J., Dupont, Y.L., Elberling, H. & Jordano, P. (2011) Missing and forbidden links in mutualistic networks. Proceedings of the Royal Society B-Biological Sciences, 278, 725-732.        
+
+[#Olito:2014gc]: Olito, C. & Fox, J.W. (2014) Species traits and abundances predict metrics of plant-pollinator network structure, but not pairwise interactions. Oikos, 124, 428–436.        
+
+[#Ollerton:2002jw]: Ollerton, J. & Cranmer, L. (2002) Latitudinal trends in plant-pollinator interactions: are tropical plants more specialised? Oikos, 98, 340-350.        
+
+[#Pereira:2013ji]: Pereira, H.M., Ferrier, S., Walters, M., Geller, G.N., Jongman, R.H.G., Scholes, R.J., Bruford, M.W., Brummitt, N., Butchart, S.H.M., Cardoso, A.C., Coops, N.C., Dulloo, E., Faith, D.P., Freyhof, J., Gregory, R.D., Heip, C., Hoft, R., Hurtt, G., Jetz, W., Karp, D.S., Mcgeoch, M.A., Obura, D., Onoda, Y., Pettorelli, N., Reyers, B., Sayre, R., Scharlemann, J.P.W., Stuart, S.N., Turak, E., Walpole, M. & Wegmann, M. (2013) Essential biodiversity variables. Science, 339, 277-278.        
+
+[#RiveraHutinel:2012vn]: Rivera-Hutinel, A., Bustamante, R.O., Marín, V.H. & Medel, R. (2012) Effects of sampling completeness on the structure of plant-pollinator networks. Ecology, 93, 1593-1603.        
+
+[#Snow:1988iu]: Snow, B., Snow, D. (1988) Birds and Berries. Poyser: Calton, UK.     
+[#ValienteBanuet:2014bw]: Valiente-Banuet, A., Aizen, M.A., Alcántara, J.M., Arroyo, J., Cocucci, A., Galetti, M., García, M.B., García, D., Gomez, J.M., Jordano, P., Medel, R., Navarro, L., Obeso, J.R., Oviedo, R., Ramírez, N., Rey, P.J., Traveset, A., Verdú, M. & Zamora, R. (2014) Beyond species loss: the extinction of ecological interactions in a changing world (M. Johnson, Ed.). Functional Ecology, 00: 000-000.          
+
+[#Vazquez:2009p82]: Vázquez, D.P., Chacoff, N.P. & Cagnolo, L. (2009) Evaluating multiple determinants of the structure of plant-animal mutualistic networks. Ecology, 90, 2039-2046.             
 
 ### REFRENCES TO ADD ###
 
-[#Burkle:2012uz]: Burkle, L.A. & Knight, T.M. (2012) Shifts in pollinator composition and behavior cause slow interaction accumulation with area in plant-pollinator networks. Ecology, 93, 2329–2335.
+[#Burkle:2012uz]: Burkle, L.A. & Knight, T.M. (2012) Shifts in pollinator composition and behavior cause slow interaction accumulation with area in plant-pollinator networks. Ecology, 93, 2329-2335.
