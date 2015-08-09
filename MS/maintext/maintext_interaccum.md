@@ -1,11 +1,15 @@
 ---
+latex input:        mmd-article-header
+latex input:        mmd-article-begin-doc
+LaTeX Mode:         memoir  
 Title:   Sampling interactions manuscript  
 Author:   Pedro Jordano  
 Date:     February 24, 2015  
 Comment:  Manuscript draft for the sampling interactions study.   
+Base Header Level:  1 
 BibTeX:      refs   
-
---- 
+Bibliography Style:	jae
+---
   
 #Sampling interaction networks
 
@@ -35,8 +39,9 @@ Here I provide a review and conceptual framework for interaction sampling by bui
 ## Introduction
 
 ```
-Biodiversity sampling is a labour-intensive activity, and sampling is often not 
-sufficient to detect all or even most of the species present in an assemblage.   
+Biodiversity sampling is a labour-intensive activity,   
+and sampling is often not sufficient to detect all or   
+even most of the species present in an assemblage.   
 
 Gotelli & Colwell (2011).
 ```
@@ -78,7 +83,7 @@ Let's assume a sampling of the diversity in a specific locality, over relatively
 $$n = 􏰢\sum_{k=1}^{S_{obs}}S_k$$    
 A frequently used asymptotic, bias corrected, estimator is $S_{Chao}$ [#Hortal:2006dc][#Chao:2005wp][#Colwell:2009]:   
 	
-$$S_{Chao}= S_{obs} + \frac{S_1 (S_1 −1)}{2(S_2 +1)}$$    
+$$S_{Chao}= S_{obs} + \frac{S_1 (S_1-1)}{2(S_2+1)}$$    
 
 Another frequently used alternative is the Chao2 estimator,  $S_{Chao2}$ [#Gotelli:2001uo], which has been reported to have a limited bias for small sample sizes [#Colwell:1994vt][#Chao:2005wp]:   
 
