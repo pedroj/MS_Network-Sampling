@@ -1,3 +1,5 @@
+# Element-wise multiplication of two vectors.
+# Generating vectors for lognormal distributions
 ElementwiseMultiply <- function ( a, b )
 {
     c = NULL ;
