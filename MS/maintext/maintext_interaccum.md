@@ -58,7 +58,7 @@ When we sample interactions in the field we record the presence of two species t
 
 #####Fig. 1 here #####
 
-In step #2 above we face the problem of the type of record we take to sample interactions. This is important because it defines whether we approach the problem of filling up the interaction matrix in a "zoo-centric" way or in a "phyto-centric" way. Most recent analyses of plant-animal interaction networks are phyto-centric; just **% of plant-pollinator or plant-frugivore interaction datasets are zoo-centric (see, e.g.[#Eklof:2013ed][#Thebault:2010jv][#Schleuning:2012eg]).
+In step #2 above we face the problem of the type of record we take to sample interactions. This is important because it defines whether we approach the problem of filling up the interaction matrix in a "zoo-centric" way or in a "phyto-centric" way. Most recent analyses of plant-animal interaction networks are phyto-centric; just 3.45% of available plant-pollinator (*N*= 58) or  36.6% plant-frugivore (*N*= 22) interaction datasets are zoo-centric (see [#Schleuning:2012eg]). Moreover, most available datasets on host-parasite or plant-herbivore interactions are "host-centric" or phyto-centric (e.g., [#Thebault:2010jv][#Eklof:2013ed]). This maybe related to a variety of causes, like preferred methodologies by researchers working with a particular group or system, logistic limitations, or inherent taxonomic focus of the research questions. In any case we don't have a clear view of the potential biases that taxa-focused sampling may generate in observed network patterns, for example by generating consistently asymmetric interaction matrices [#Dormann:2009aa].
 Zoo-centric studies directly sample animal activity and document the plants 'touched' by the animal. E.g., analysis of pollen samples recovered from the body of pollinators, analysis of fecal samples of frugivores, radio-tracking data, etc. Phyto-centric studies take samples of focal individual plant species and document which animals 'arrive' or 'touch' the plants. Examples include focal watches of fruiting or flowering plants to record visitation by animals, raising insect herbivores from seed samples, identifying herbivory marks in samples of leaves, etc.
 
 	We can discuss whether zoo-centric or phytocentric sampling potentially bias the estimation of interactions.
@@ -198,6 +198,8 @@ Missing links are a characteristic feature of all plant-animal interaction netwo
 [#Colwell:2009]: Colwell RK. (2009) EstimateS: Statistical estimation of species richness and shared species from samples user’s guide and application.`http://purl.oclc.org/estimates`.       
 
 [#Dorado:2011cf]: Dorado, J., Vázquez, D.P., Stevani, E.L. & Chacoff, N.P. (2011) Rareness and specialization in plant-pollinator networks. Ecology, 92, 19-25.      
+
+[#Dormann:2009aa]: Dormann, C.F., Frund, J., Bluthgen, N. & Gruber, B. (2009) Indices, graphs and null models: Analyzing bipartite ecological networks. Open Ecology Journal, 2, 7–24.     
 
 [#Eklof:2013ed]: Eklöf, A., Jacob, U., Kopp, J., Bosch, J., Castro-Urgal, R., Chacoff, N.P., Dalsgaard, B., de Sassi, C., Galetti, M., Guimaraes, P.R., Lomáscolo, S.B., Martín González, A.M., Pizo, M.A., Rader, R., Rodrigo, A., Tylianakis, J.M., Vazquez, D.P. & Allesina, S. (2013) The dimensionality of ecological networks (ed J Dunne). Ecology Letters, 00, 000–000.
 
