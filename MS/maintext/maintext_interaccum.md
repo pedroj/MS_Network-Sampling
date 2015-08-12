@@ -61,11 +61,8 @@ When we sample interactions in the field we record the presence of two species t
 
 In step #2 above we face the problem of the type of record we take to sample interactions. This is important because it defines whether we approach the problem of filling up the interaction matrix in a "zoo-centric" way or in a "phyto-centric" way. Zoo-centric studies directly sample animal activity and document the plants 'touched' by the animal. For example, analysis of pollen samples recovered from the body of pollinators, analysis of fecal samples of frugivores, radio-tracking data, etc. Phyto-centric studies take samples of focal individual plant species and document which animals 'arrive' or 'touch' the plants. Examples include focal watches of fruiting or flowering plants to record visitation by animals, raising insect herbivores from seed samples, identifying herbivory marks in samples of leaves, etc.       
 Most recent analyses of plant-animal interaction networks are phyto-centric; just 3.45% of available plant-pollinator (*N*= 58) or  36.6% plant-frugivore (*N*= 22) interaction datasets are zoo-centric (see [#Schleuning:2012eg]). Moreover, most available datasets on host-parasite or plant-herbivore interactions are "host-centric" or phyto-centric (e.g., [#Thebault:2010jv][#Eklof:2013ed]). This maybe related to a variety of causes, like preferred methodologies by researchers working with a particular group or system, logistic limitations, or inherent taxonomic focus of the research questions. In any case we don't have a clear view of the potential biases that taxa-focused sampling may generate in observed network patterns, for example by generating consistently asymmetric interaction matrices [#Dormann:2009aa].      
-
+Interestingly enough, quite complete analyses of interaction networks can be obtained when combining both phyto-centric and zoo-centric sampling. For example, Bosch et al. [#Bosch:2009jga] showed that the addition of pollen load data on top of focal-plant sampling of pollinators unveiled a significant number of interactions, resulting in important network structural changes. Connectance increased 1.43-fold, mean plant connectivity went from 18.5 to 26.4, and mean pollinator connectivity from 2.9 to 4.1; moreover, extreme specialist pollinator species (singletons in the adjacency matrix) decreased 0.6-fold. Zoo-centric sampling has recently been extended with the use of DNA-barcoding, for example with plant-herbivore [#JuradoRivera:2009cp] and plant-frugivore interactions [#GozalezVaro:2014ij]. For mutualistic networks we would expect that zoo-centric sampling could help unveiling  interactions for rare species or for relatively common species which are difficult to sample by direct observation. Future methodological work may provide significant  advances showing how mixing different sampling strategies strengthens the completeness of network data. These mixed strategies may combine, for instance, focal analyses, pollen load or seed contents, camera traps, and DNA barcoding records. 
  
-
-	We can discuss whether zoo-centric or phytocentric sampling potentially bias the estimation of interactions.
-
 
 ## Sampling interactions: rationale
 Independently of whether we sample full communities of subset communities we face a problem: some of the interactions that we can visualize in the empty matrix $AP$ will simply not occur. Thus, independently of the sampling effort we put, we'll never document these pairwise interactions. With a total of $AP$ interactions possible, a fraction of them are impossible to record, because they are forbidden [#E31.7324_PDF][#Olesen:2011a]. Forbidden links are constraints for the establishment of new links, and mainly arise from the biological attributes of the species: no link can be established between a plant and an animal mutualist differing in phenology, i.e. the seeds of a winter-ripening plant cannot be dispersed by a frugivore that is a summer stopover migrant [#E31/2562]. Or, for instance, short-tongued pollinators cannot successfully reach the nectar in long-corolla flowers and pollinate them efficiently [#More:2012kx]. Forbidden links are thus represented as structural zeroes in the interaction matrix, i.e., matrix cells that cannot get a non-zero value. So, we need to account for the frequency of these structural zeros in our matrix before proceeding. For example, most measurements of connectance ($C= I/(AP)$) implicitly ignore the fact that by taking the full product $AP$ in the denominator they are underestimating the actual connectance value, i.e., the fraction of actual interactions $I$ relative to the *possible* ones, not to the total maximum $AP$.
@@ -182,6 +179,8 @@ Missing links are a characteristic feature of all plant-animal interaction netwo
 
 [#Bersier:2002p9371]: Bersier, L., Banasek-Richter, C. & Cattin, M. (2002) Quantitative descriptors of food-web matrices. Ecology, 83, 2394-2407.   
 
+[#Bosch:2009jga]: Bosch, J., Martín González, A.M., Rodrigo, A. & Navarro, D. (2009) Plant-pollinator networks: adding the pollinator’s perspective. Ecology Letters, 12, 409-419.
+
 [#Brose:2003wv]: Brose, U., Martinez, N. & Williams, R. (2003) Estimating species richness: Sensitivity to sample coverage and insensitivity to spatial patterns. Ecology, 84, 2364-2377.
 [#Bunge:1993ux]: Bunge, J. & Fitzpatrick, M. (1993) Estimating the number of species: a review. Journal of the American Statistical Association, 88, 364-373.   
 
@@ -195,7 +194,7 @@ Missing links are a characteristic feature of all plant-animal interaction netwo
 
 [#Cohen:1978]: Cohen, J.E. (1978) Food webs and niche space. Princeton University Press, Princeton, New Jersey, US.
 
-[#Cohen:1993aa]: Cohen, J.E., Beaver, R.A., Cousins, S.H., DeAngelis, D.L., Goldwasser, L., Heong, K.L., Holt, R.D., Kohn, A.J., Lawton, J.H., Martinez, N., O'Malley, R., Page, L.M., Patten, B.C., Pimm, S.L., Polis, G.A., Rejmanek, M., Schoener, T.W., Schoenly, K., Sprules, W.G., Teal, J.M., Ulanowicz, R.E., Warren, P.H., Wilbur, H.M. & Yodzis, P. (1993) Improving food webs. Ecology, 74, 252–258.    
+[#Cohen:1993aa]: Cohen, J.E., Beaver, R.A., Cousins, S.H., DeAngelis, D.L., Goldwasser, L., Heong, K.L., Holt, R.D., Kohn, A.J., Lawton, J.H., Martinez, N., O'Malley, R., Page, L.M., Patten, B.C., Pimm, S.L., Polis, G.A., Rejmanek, M., Schoener, T.W., Schoenly, K., Sprules, W.G., Teal, J.M., Ulanowicz, R.E., Warren, P.H., Wilbur, H.M. & Yodzis, P. (1993) Improving food webs. Ecology, 74, 252-258.    
 
 [#Colwell:1994vt]: Colwell, R. & Coddington, J. (1994) Estimating terrestrial biodiversity through extrapolation. Philosophical Transactions of the Royal Society of London Series B-Biological Sciences, 345, 101-118.     
 
@@ -205,14 +204,17 @@ Missing links are a characteristic feature of all plant-animal interaction netwo
 
 [#Dorado:2011cf]: Dorado, J., Vázquez, D.P., Stevani, E.L. & Chacoff, N.P. (2011) Rareness and specialization in plant-pollinator networks. Ecology, 92, 19-25.      
 
-[#Dormann:2009aa]: Dormann, C.F., Frund, J., Bluthgen, N. & Gruber, B. (2009) Indices, graphs and null models: Analyzing bipartite ecological networks. Open Ecology Journal, 2, 7–24.     
+[#Dormann:2009aa]: Dormann, C.F., Frund, J., Bluthgen, N. & Gruber, B. (2009) Indices, graphs and null models: Analyzing bipartite ecological networks. Open Ecology Journal, 2, 7-24.     
 
-[#Eklof:2013ed]: Eklöf, A., Jacob, U., Kopp, J., Bosch, J., Castro-Urgal, R., Chacoff, N.P., Dalsgaard, B., de Sassi, C., Galetti, M., Guimaraes, P.R., Lomáscolo, S.B., Martín González, A.M., Pizo, M.A., Rader, R., Rodrigo, A., Tylianakis, J.M., Vazquez, D.P. & Allesina, S. (2013) The dimensionality of ecological networks (ed J Dunne). Ecology Letters, 00, 000–000.
+[#Eklof:2013ed]: Eklöf, A., Jacob, U., Kopp, J., Bosch, J., Castro-Urgal, R., Chacoff, N.P., Dalsgaard, B., de Sassi, C., Galetti, M., Guimaraes, P.R., Lomáscolo, S.B., Martín González, A.M., Pizo, M.A., Rader, R., Rodrigo, A., Tylianakis, J.M., Vazquez, D.P. & Allesina, S. (2013) The dimensionality of ecological networks (ed J Dunne). Ecology Letters, 00, 000-000.
 
 [#Frund:2015ii]: Frund, J., McCann, K.S. & Williams, N.M. (2015) Sampling bias is a challenge for quantifying specialization and network structure: lessons from a quantitative niche model. Oikos, 00: 000-000.      
 
 [#Gibson:2011eh]: Gibson, R.H., Knott, B., Eberlein, T. & Memmott, J. (2011) Sampling method influences the structure of plant-pollinator networks. Oikos, 120, 822-831.
+
 [#Gotelli:2001uo]: Gotelli, N. & Colwell, R. (2001) Quantifying biodiversity: procedures and pitfalls in the measurement and comparison of species richness. Ecology Letters, 4, 379-391.         
+
+[#GonzalezVaro:2014ij]: González-Varo, J.P., Arroyo, J.M. & Jordano, P. (2014) Who dispersed the seeds? The use of DNA barcoding in frugivory and seed dispersal studies. Methods in Ecology and Evolution, 5, 806-814.
 
 [#Gotelli:2011tb]: Gotelli, N.J. & Colwell, R.K. (2011) Estimating species richness. Biological Diversity Frontiers in Measurement and Assessment (eds A.E. Magurran & B.J. McGill), pp. 39-54. Oxford University Press, Oxford, UK.      
 
@@ -223,6 +225,8 @@ Missing links are a characteristic feature of all plant-animal interaction netwo
 [#E31.7324_PDF]: Jordano, P., Bascompte, J. & Olesen, J. (2003) Invariant properties in coevolutionary networks of plant-animal interactions. Ecology Letters, 6, 69-81.       
 
 [#Jordano:2009c]:  Jordano, P., Vázquez, D. & Bascompte, J. (2009) Redes complejas de interacciones planta--animal (eds R. Medel, R. Dirzo & R. Zamora, pp. 17-41. Editorial Universitaria, Santiago, Chile.      
+
+[#JuradoRiver:2009cp]: Jurado-Rivera, J.A., Vogler, A.P., Reid, C.A.M., Petitpierre, E. & Gomez-Zurita, J. (2009) DNA barcoding insect-host plant associations. Proceedings of the Royal Society B - Biological Sciences, 276, 639-648.
 
 [#Magurran:1988mm]: Magurran, A.E. (1988) Ecological diversity and its measurement. Princeton University Press, Princeton, US.         
 
@@ -238,7 +242,7 @@ Missing links are a characteristic feature of all plant-animal interaction netwo
 
 [#Olesen:2011a]: Olesen, J.M., Bascompte, J., Dupont, Y.L., Elberling, H. & Jordano, P. (2011) Missing and forbidden links in mutualistic networks. Proceedings of the Royal Society B-Biological Sciences, 278, 725-732.        
 
-[#Olito:2014gc]: Olito, C. & Fox, J.W. (2014) Species traits and abundances predict metrics of plant-pollinator network structure, but not pairwise interactions. Oikos, 124, 428–436.        
+[#Olito:2014gc]: Olito, C. & Fox, J.W. (2014) Species traits and abundances predict metrics of plant-pollinator network structure, but not pairwise interactions. Oikos, 124, 428-436.        
 
 [#Ollerton:2002jw]: Ollerton, J. & Cranmer, L. (2002) Latitudinal trends in plant-pollinator interactions: are tropical plants more specialised? Oikos, 98, 340-350.        
 
@@ -246,21 +250,21 @@ Missing links are a characteristic feature of all plant-animal interaction netwo
 
 [#RiveraHutinel:2012vn]: Rivera-Hutinel, A., Bustamante, R.O., Marín, V.H. & Medel, R. (2012) Effects of sampling completeness on the structure of plant-pollinator networks. Ecology, 93, 1593-1603.        
 
-[#Schleuning:2012eg]: Schleuning, M., Frund, J., Klein, A.-M., Abrahamczyk, S., Alarcón, R., Albrecht, M., Andersson, G.K.S., Bazarian, S., Böhning-Gaese, K., Bommarco, R., Dalsgaard, B., Dehling, D.M., Gotlieb, A., Hagen, M., Hickler, T., Holzschuh, A., Kaiser-Bunbury, C.N., Kreft, H., Morris, R.J., Sandel, B., Sutherland, W.J., Svenning, J.-C., Tscharntke, T., Watts, S., Weiner, C.N., Werner, M., Williams, N.M., Winqvist, C., Dormann, C.F. & Blüthgen, N. (2012) Specialization of mutualistic interaction networks decreases toward tropical latitudes. Current Biology, 22, 1925–1931.
+[#Schleuning:2012eg]: Schleuning, M., Frund, J., Klein, A.-M., Abrahamczyk, S., Alarcón, R., Albrecht, M., Andersson, G.K.S., Bazarian, S., Böhning-Gaese, K., Bommarco, R., Dalsgaard, B., Dehling, D.M., Gotlieb, A., Hagen, M., Hickler, T., Holzschuh, A., Kaiser-Bunbury, C.N., Kreft, H., Morris, R.J., Sandel, B., Sutherland, W.J., Svenning, J.-C., Tscharntke, T., Watts, S., Weiner, C.N., Werner, M., Williams, N.M., Winqvist, C., Dormann, C.F. & Blüthgen, N. (2012) Specialization of mutualistic interaction networks decreases toward tropical latitudes. Current Biology, 22, 1925-1931.
 
-[#Schupp:2010]: Schupp, E.W., Jordano, P. & Gómez, J.M. (2010) Seed dispersal effectiveness revisited: a conceptual review. New Phytologist, 188, 333–353.
+[#Schupp:2010]: Schupp, E.W., Jordano, P. & Gómez, J.M. (2010) Seed dispersal effectiveness revisited: a conceptual review. New Phytologist, 188, 333-353.
 
 [#Snow:1988iu]: Snow, B., Snow, D. (1988) Birds and Berries. Poyser: Calton, UK.   
 
-[#Strogatz:2001wc]: Strogatz, S. (2001) Exploring complex networks. Nature, 410, 268–276.
+[#Strogatz:2001wc]: Strogatz, S. (2001) Exploring complex networks. Nature, 410, 268-276.
 
-[#Stumpf:2005tn]: Stumpf, M.P.H., Wiuf, C. & May, R.M. (2005) Subnets of scale-free networks are not scale-free: Sampling properties of networks. Proceedings of the National Academy of Sciences USA, 102, 4221–4224.
+[#Stumpf:2005tn]: Stumpf, M.P.H., Wiuf, C. & May, R.M. (2005) Subnets of scale-free networks are not scale-free: Sampling properties of networks. Proceedings of the National Academy of Sciences USA, 102, 4221-4224.
 
-[#Thebault:2010jv]: Thébault, E. & Fontaine, C. (2010) Stability of ecological communities and the architecture of mutualistic and trophic networks. Science, 329, 853–856.
+[#Thebault:2010jv]: Thébault, E. & Fontaine, C. (2010) Stability of ecological communities and the architecture of mutualistic and trophic networks. Science, 329, 853-856.
   
-[#ValienteBanuet:2014bw]: Valiente-Banuet, A., Aizen, M.A., Alcántara, J.M., Arroyo, J., Cocucci, A., Galetti, M., García, M.B., García, D., Gomez, J.M., Jordano, P., Medel, R., Navarro, L., Obeso, J.R., Oviedo, R., Ramírez, N., Rey, P.J., Traveset, A., Verdú, M. & Zamora, R. (2014) Beyond species loss: the extinction of ecological interactions in a changing world (M. Johnson, Ed.). Functional Ecology, 00: 000-000.          
+[#ValienteBanuet:2014bw]: Valiente-Banuet, A., Aizen, M.A., Alcántara, J.M., Arroyo, J., Cocucci, A., Galetti, M., García, M.B., García, D., Gomez, J.M., Jordano, P., Medel, R., Navarro, L., Obeso, J.R., Oviedo, R., Ramírez, N., Rey, P.J., Traveset, A., Verdú, M. & Zamora, R. (2014) Beyond species loss: the extinction of ecological interactions in a changing world. Functional Ecology, 29, 299-307.          
 
-[#Vazquez:2005]: Vázquez, D., Morris, W. & Jordano, P. (2005) Interaction frequency as a surrogate for the total effect of animal mutualists on plants. Ecology Letters, 8, 1088–1094.
+[#Vazquez:2005]: Vázquez, D., Morris, W. & Jordano, P. (2005) Interaction frequency as a surrogate for the total effect of animal mutualists on plants. Ecology Letters, 8, 1088-1094.
 
 [#Vazquez:2009p82]: Vázquez, D.P., Chacoff, N.P. & Cagnolo, L. (2009) Evaluating multiple determinants of the structure of plant-animal mutualistic networks. Ecology, 90, 2039-2046.             
 
