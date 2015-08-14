@@ -33,7 +33,8 @@ E-mail: `jordano@ebd.csic.es`
 2. Robust estimates of the actual number of interactions (links) within diversified ecological networks require adequate sampling effort that needs to be explicitly gauged. Yet we still lack a sampling theory explicitly focusing on  ecological interactions.
 3. While the complete inventory of interactions is likely impossible, a robust characterization of its main patterns and metrics is probably realistic. We must acknowledge that a sizable fraction of the maximum number of interactions $I_{max}$ among, say, $A$ animal species and $P$ plant species (i.e., $I_{max}= AP$) is impossible to record due to forbidden links, the restrictions imposed by the organisms life-histories. Thus, the number of observed interactions $I$ is typically $I<<I_{max}$, resulting in extremely sparse interaction matrices with low connectance.
 4. Reasons for forbidden links are multiple but mainly stem from spatial and temporal uncoupling of partner species encounters and from intrinsically low probabilities of interspecific encounter for many of the potential pairwise interactions. Adequately assessing the completeness of a network of ecological interactions thus needs a deep knowledge of the natural history details embedded, so that forbidden links can be "discounted" when addressing sampling effort. 
-5. Here I provide a review and conceptual framework for interaction sampling by building an explicit analogue to individuals and species sampling, thus extending diversity-monitoring approaches to the characterization of complex networks of ecological interactions. This is crucial to assess the fast-paced and devastating effects of defaunation-driven loss of key ecological interactions and the services they provide.   
+5. Here I provide a review and conceptual framework for interaction sampling by building an explicit analogue to individuals and species sampling, thus extending diversity-monitoring approaches to the characterization of complex networks of ecological interactions. This is crucial to assess the fast-paced and devastating effects of defaunation-driven loss of key ecological interactions and the services they provide.  
+ 
 ---
   
 ## Introduction
@@ -53,7 +54,7 @@ Biodiversity assessment aims at sampling individuals in collections and determin
 	
 ## Sampling interactions: methods
 When we sample interactions in the field we record the presence of two species that interact in some way, i.e., a frugivorous pigeon visits a fruiting tree and detaches and ingests the fruit of a given plant species. For example, Snow and Snow[#Snow:1988iu] recorded an interaction whenever they saw a bird "touching" a fruit on a plant.  In a similar way, interactions between pollinators and plants are tallied by recording any visit of a pollinator entering a flower and touching the androceum and/or the gyneceum. We observe and record feeding observations, visitation, occupancy, presence in pollen loads or in fecal samples, etc.,  of *individuals* animals or plants to accumulate pairwise interactions, i.e., lists of species partners and the frequencies with which we observe them. Therefore, estimating the sampling completeness of plant-animal interactions for the whole network, requires estimating the number (richness) of distinct pairwise interactions accumulated as sampling effort is increased, pooling the data for all plant and animal species.
-	Sampling interactions requires filling the cells of an interaction matrix with data. The matrix, $AP$,  is a 2D representation of the interactions among $A$ animal species (rows) and $P$ plant species (columns) [#E31/2562][#Bascompte:2014to]. An interaction matrix $AP$ consists of an array of zeroes or ones, or an array of numeric values (including zeroes)- if the data (interaction frequencies) are quantified. These figures illustrate the values of the pairwise interactions visualized in the $AP$ matrix, and can be 0 or 1, for presence-absence of a given pairwise interaction, or take a quantitative weight $w_{ij}$ to represent the interaction intensity [#Bascompte:2014to]. Given that the outcomes of most ecological interactions are dependent on frequency of encounters (e.g., visit rate of pollinators, number of records of ant defenders, frequency of seeds in fecal samples), a frequently used proxy for interaction intensities $w_{ij}$  is just how frequent new interspecific encounters, whether or not appropriately weighted to estimate interaction effectiveness [#Vazquez:2005][Schupp:2010].
+	Sampling interactions requires filling the cells of an interaction matrix with data. The matrix, $\Delta=AP$,  is a 2D representation of the interactions among $A$ animal species (rows) and $P$ plant species (columns) [#E31/2562][#Bascompte:2014to]. An interaction matrix $\Delta$ consists of an array of zeroes or ones, or an array of numeric values (including zeroes)- if the data (interaction frequencies) are quantified. These figures illustrate the values of the pairwise interactions visualized in the $\Delta$ matrix, and can be 0 or 1, for presence-absence of a given pairwise interaction, or take a quantitative weight $w_{ji}$ to represent the interaction intensity or unidirectional effect of species $j$ on species $i$ [#Bascompte:2014to][#Vazquez:2015ec]. Given that the outcomes of most ecological interactions are dependent on frequency of encounters (e.g., visit rate of pollinators, number of records of ant defenders, frequency of seeds in fecal samples), a frequently used proxy for interaction intensities $w_{ji}$  is just how frequent new interspecific encounters, whether or not appropriately weighted to estimate interaction effectiveness [#Vazquez:2005][Schupp:2010].
 	We need to define two basic steps in the sampling of interactions: 1) which type of interactions we sample; and 2) which type of record we get to document the existence of an interaction. In step #1 there are two considerations we need to take into account. First is whether we are sampling the whole community of interactor species (all the animals, all the plants) or we sample just a subset of them. Subsets can be: a) We sample all the potential plants interacting with a subset of the animals; b) We sample all the potential animal species interacting with a subset of the plant species; c) We sample a subset of  all the potential animal species interacting with a subset of all the plant species (Fig. 1). While some discussion has considered how to establish the limits of what represents a network [#Strogatz:2001wc] (in analogy to discussion on food-web limits [#Cohen:1978]), it must be noted that situations a-c in Fig. 1 do not represent complete interaction networks. As vividly stated by Cohen et al. [#Cohen:1993aa]: "*As more comprehensive, more detailed, more explicit webs become available, smaller, highly aggregated, incompletely described webs may progressively be dropped from analyses of web structure (though such webs may remain useful for other purposes, such as pedagogy)*". Subnet sampling is generalized in studies of biological networks (e.g., protein interactions, gene regulation), yet it is important to recognize that most properties of subnetworks (even random subsamples) do not represent properties of  whole networks [#Stumpf:2005tn].      
 
 
@@ -76,7 +77,7 @@ Our sampling above would have resulted in a vector $n= [n_1 ... n_C]'$ where $n_
 ## Asymptotic diversity estimates
 Let's assume a sampling of the diversity in a specific locality, over relatively homogeneous landscape where we aim at determining the number of species present for a particular group of organisms. To do that we carry out transects or plot samplings across the landscape, adequately replicated so we obtain a number of samples. Briefly, $S_{obs}$ is the total number of species observed in a sample, or in a set of samples. $S_{est}$ is the estimated number of species in the community represented by the sample, or by the set of samples, where $est$ indicates an estimator. With abundance data, let $S_k$ be the number of species each represented by exactly $k$ individuals in a single sample. Thus, $S_0$ is the number of undetected species (species present in the community but not included in the sample), $S_1$ is the number of singleton species, $S_2$ is the number of doubleton species, etc. The total number of individuals in the sample would be:    
 $$n = 􏰢\sum_{k=1}^{S_{obs}}S_k$$    
-A frequently used asymptotic, bias corrected, estimator is $S_{Chao}$ [#Hortal:2006dc][#Chao:2005wp][#Colwell:2009]:   
+A frequently used asymptotic, bias corrected, estimator is $S_{Chao}$ [#Hortal:2006dc][#Chao:2005wp][#Colwell:2013kj]:   
 	
 $$S_{Chao}= S_{obs} + \frac{S_1 (S_1-1)}{2(S_2+1)}$$    
 
@@ -182,6 +183,7 @@ Missing links are a characteristic feature of all plant-animal interaction netwo
 [#Bosch:2009jga]: Bosch, J., Martín González, A.M., Rodrigo, A. & Navarro, D. (2009) Plant-pollinator networks: adding the pollinator’s perspective. Ecology Letters, 12, 409-419.
 
 [#Brose:2003wv]: Brose, U., Martinez, N. & Williams, R. (2003) Estimating species richness: Sensitivity to sample coverage and insensitivity to spatial patterns. Ecology, 84, 2364-2377.
+
 [#Bunge:1993ux]: Bunge, J. & Fitzpatrick, M. (1993) Estimating the number of species: a review. Journal of the American Statistical Association, 88, 364-373.   
 
 [#Chacoff:2012]: Chacoff, N.P., Vazquez, D.P., Lomascolo, S.B., Stevani, E.L., Dorado, J. & Padrón, B. (2012) Evaluating sampling completeness in a desert plant-pollinator network. Journal of Animal Ecology, 81, 190-200.     
@@ -200,13 +202,13 @@ Missing links are a characteristic feature of all plant-animal interaction netwo
 
 [#Colwell:2009gv]: Colwell, R.K. (2009) Biodiversity: concepts, patterns, and measurement. The Princeton Guide to Ecology Princeton University Press, Princeton.     
 
-[#Colwell:2009]: Colwell RK. (2009) EstimateS: Statistical estimation of species richness and shared species from samples user’s guide and application.`http://purl.oclc.org/estimates`.       
+[#Colwell:2013kj]: Colwell RK. (2013) EstimateS: Statistical estimation of species richness and shared species from samples user’s guide and application.`http://purl.oclc.org/estimates`.     
 
 [#Dorado:2011cf]: Dorado, J., Vázquez, D.P., Stevani, E.L. & Chacoff, N.P. (2011) Rareness and specialization in plant-pollinator networks. Ecology, 92, 19-25.      
 
 [#Dormann:2009aa]: Dormann, C.F., Frund, J., Bluthgen, N. & Gruber, B. (2009) Indices, graphs and null models: Analyzing bipartite ecological networks. Open Ecology Journal, 2, 7-24.     
 
-[#Eklof:2013ed]: Eklöf, A., Jacob, U., Kopp, J., Bosch, J., Castro-Urgal, R., Chacoff, N.P., Dalsgaard, B., de Sassi, C., Galetti, M., Guimaraes, P.R., Lomáscolo, S.B., Martín González, A.M., Pizo, M.A., Rader, R., Rodrigo, A., Tylianakis, J.M., Vazquez, D.P. & Allesina, S. (2013) The dimensionality of ecological networks (ed J Dunne). Ecology Letters, 00, 000-000.
+[#Eklof:2013ed]: Eklöf, A., Jacob, U., Kopp, J., Bosch, J., Castro-Urgal, R., Chacoff, N.P., Dalsgaard, B., de Sassi, C., Galetti, M., Guimaraes, P.R., Lomáscolo, S.B., Martín González, A.M., Pizo, M.A., Rader, R., Rodrigo, A., Tylianakis, J.M., Vazquez, D.P. & Allesina, S. (2013) The dimensionality of ecological networks. Ecology Letters, 00, 000-000.
 
 [#Frund:2015ii]: Frund, J., McCann, K.S. & Williams, N.M. (2015) Sampling bias is a challenge for quantifying specialization and network structure: lessons from a quantitative niche model. Oikos, 00: 000-000.      
 
@@ -214,9 +216,9 @@ Missing links are a characteristic feature of all plant-animal interaction netwo
 
 [#Gotelli:2001uo]: Gotelli, N. & Colwell, R. (2001) Quantifying biodiversity: procedures and pitfalls in the measurement and comparison of species richness. Ecology Letters, 4, 379-391.         
 
-[#GonzalezVaro:2014ij]: González-Varo, J.P., Arroyo, J.M. & Jordano, P. (2014) Who dispersed the seeds? The use of DNA barcoding in frugivory and seed dispersal studies. Methods in Ecology and Evolution, 5, 806-814.
-
 [#Gotelli:2011tb]: Gotelli, N.J. & Colwell, R.K. (2011) Estimating species richness. Biological Diversity Frontiers in Measurement and Assessment (eds A.E. Magurran & B.J. McGill), pp. 39-54. Oxford University Press, Oxford, UK.      
+
+[#GonzalezVaro:2014ij]: González-Varo, J.P., Arroyo, J.M. & Jordano, P. (2014) Who dispersed the seeds? The use of DNA barcoding in frugivory and seed dispersal studies. Methods in Ecology and Evolution, 5, 806-814.
 
 [#Hortal:2006dc]: Hortal, J., Borges, P. & Gaspar, C. (2006) Evaluating the performance of species richness estimators: sensitivity to sample grain size. Journal of Animal Ecology, 75, 274-287.          
 
@@ -268,6 +270,12 @@ Missing links are a characteristic feature of all plant-animal interaction netwo
 
 [#Vazquez:2009p82]: Vázquez, D.P., Chacoff, N.P. & Cagnolo, L. (2009) Evaluating multiple determinants of the structure of plant-animal mutualistic networks. Ecology, 90, 2039-2046.             
 
+[#Vazquez:2015ec]: Vázquez, D.P., Ramos-Jiliberto, R., Urbani, P. & Valdovinos, F.S. (2015) A conceptual framework for studying the strength of plant-animal mutualistic interactions (ed M Eubanks). Ecology Letters, n/a–n/a.
+
+
 ### REFRENCES TO ADD ###
 
 [#Burkle:2012uz]: Burkle, L.A. & Knight, T.M. (2012) Shifts in pollinator composition and behavior cause slow interaction accumulation with area in plant-pollinator networks. Ecology, 93, 2329-2335.
+
+Kissling, W.D. & Schleuning, M. (2014) Multispecies interactions across trophic levels at macroscales: retrospective and future directions. Ecography, 38, 346–357.
+
