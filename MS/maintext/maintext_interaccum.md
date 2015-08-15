@@ -118,24 +118,31 @@ I am indebted to Alfredo Valido, Jordi Bascompte, Thomas Lewinshon, John N. Thom
 
 ---
 ## Tables
+| Link type          | Formulation |    Definition       |  
+| :------------------- | :---------------: | -------------------: |  
+| Potential links  | AP    | Size of network matrix, i.e. maximum number of potentially observable interactions; A and P, numbers of interacting animal and plant species, respectively.   |  
+| Observed links| $I$    | Total number of observed links in the network given a sufficiently strong sampling effort.    |  
+| Unobserved links    | $AP - I$ | Number of zeroes in network matrix.      |  
+| Missing links      | $M$|   Number of links, which do exist in nature but need more sampling effort and/or additional sampling methods to be observed.   |  
+| Forbidden links       |  $F = AP - I - M$   | Number of links, which remain unobserved because of linkage constraints, irrespectively of a sufficiently strong sampling effort. |   
+| 
 [Table 1. A taxonomy of link types for ecological interactions [#Olesen:2011a]. $A$, number of animal species; $P$, number of plant species; $I$, number of links; $C= 100 I/(AP)$, connectance; $F$, number of forbidden links; and $M$, number of missing links.]
-Link typology. All variables are functions of observation time (sampling effort). As natural scientists, our ultimate goal is to eliminate $M$ from the equation $F = AP - I - M$, which probably is not feasible given logistic sampling limitations. When we, during our study, estimate $M$ to be negligible, we cease observing and estimate $I$ and $F$.Link typeFormulationDefinitionPotential links$AP$Size of network matrix, i.e. maximum number of potentially observable interactions; $A$ and $P$, numbers of interacting animal and plant species, respectively.Observed linksITotal number of observed links in the network given a sufficiently strong sampling effort.Unobserved linksAP - INumber of zeroes in network matrix.Missing linksMNumber of links, which do exist in nature but need more sampling effort and/or additional sampling methods to be observed.Forbidden linksF = AP - I - MNumber of links, which remain unobserved because of linkage constraints, irrespectively of a sufficiently strong sampling effort.
+Link typology. All variables are functions of observation time (sampling effort). As natural scientists, our ultimate goal is to eliminate $M$ from the equation $F = AP - I - M$, which probably is not feasible given logistic sampling limitations. When we, during our study, estimate $M$ to be negligible, we cease observing and estimate $I$ and $F$.]
 
-[Table 2. Frequencies of different type of forbidden links in natural plant-animal interaction assemblages.]
-Zackenbergcode For classification see ESM 1286 (1) Visit links I in pollination network98 (2) Missing links M sampled as pollen–load data 
-1507 (4) Forbidden links F530 (5) – due to phenological uncoupling977 (6) – due to other constraints1891 Potential links AP = (1) + (2) + (4)
 
-Hato Ratón
-141 observed links I131 forbidden links F68 — owing to phenological uncoupling63 — owing to other constraints = (a) + (b) + (c)8 (a) accessibility constraints 
-30 (b) size constraints25 (c) unknown272 total potential links AP
-
-Nava Correhuelas
-156 (1) Observed links I in seed–dispersal network (incl. mammals) 
-469 (2) Forbidden links F = (3) + (4)135 (3) – due to phenological uncoupliing334 (4) – due to other constraints = (a) + (b) + (c)56 (a) Accessibility constraints 
-37 (b) Size constraints625 (c) Unknown241 Potential links AP = (1) + (2)
-
-Snow-Ecuador
-
+|  Site              | $AP$    |  $I$  | $M$ | $F$  |    $F_P$   |   $F_S$   |  $F_A$  |   $F_O$  |   $F_U$  |  
+|  :------	| :------:	| :------:	| :------:	| :------:	| :------:	| :------:	| :------:	| :------:	| :------:	|  
+| 
+| Zackenberg                | 1891 |  286 | 98  |  1507   |   530   | ... | ...  |977|  ...  |    
+| Grundvad                  |          |         |       |             |           |      |      |      |       |    
+| Arima Valley              |  522  |  185  |       |             |    ...   | 30  | 150^a | 38^b |   119  |     
+| Hato Ratón                |  272 |  141  |       |   131  |   68    |  30  |  8   |  63  |  25   |    
+|  Nava Correhuelas    |   625   |   156  |       |    469    |    135   |  37    | 56  |  334 |  241 |    
+|      |
+| ^a, Lack of accessibility due to habitat uncoupling, i.e., canopy-foraging species vs. understory species.   |
+|  ^b, Colour restrictions, and reward per flower too small relative to the size of the bird.    |  
+[Table 2. Frequencies of different type of forbidden links in natural plant-animal interaction assemblages. ]
+$AP$, maximum potential links, $I_max$; $I$, number of observed links; $M$, number of missed links; $F$, ; $F_P$, ; $F_S$, ; $F_A$, ; $F_O$, ; $F_U$, .  
 
 [Table 3. A vectorized interaction matrix.]
 | Interaction  | Sample1 | Sample2 |  Sample3 |  
