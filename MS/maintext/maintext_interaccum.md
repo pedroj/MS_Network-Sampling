@@ -129,20 +129,14 @@ I am indebted to Alfredo Valido, Jordi Bascompte, Thomas Lewinshon, John N. Thom
 [Table 1. A taxonomy of link types for ecological interactions [#Olesen:2011a]. $A$, number of animal species; $P$, number of plant species; $I$, number of links; $C= 100 I/(AP)$, connectance; $F$, number of forbidden links; and $M$, number of missing links.]
 Link typology. All variables are functions of observation time (sampling effort). As natural scientists, our ultimate goal is to eliminate $M$ from the equation $F = AP - I - M$, which probably is not feasible given logistic sampling limitations. When we, during our study, estimate $M$ to be negligible, we cease observing and estimate $I$ and $F$.]
 
-
-|  Site              | $AP$    |  $I$  | $M$ | $F$  |    $F_P$   |   $F_S$   |  $F_A$  |   $F_O$  |   $F_U$  |  
-|  :------	| :------:	| :------:	| :------:	| :------:	| :------:	| :------:	| :------:	| :------:	| :------:	|  
-| 
-| Zackenberg                | 1891 |  286 | 98  |  1507   |   530   | ... | ...  |977|  ...  |    
-| Grundvad                  |          |         |       |             |           |      |      |      |       |    
-| Arima Valley              |  522  |  185  |       |             |    ...   | 30  | 150^a | 38^b |   119  |     
-| Hato Ratón                |  272 |  141  |       |   131  |   68    |  30  |  8   |  63  |  25   |    
-|  Nava Correhuelas    |   625   |   156  |       |    469    |    135   |  37    | 56  |  334 |  241 |    
-|      |
+|  Link type              | Zackenberg    | Grundvad | Arima Valley   | Hato Ratón  |  Nava Correhuelas    |  
+|  :------	| :------:	| :------:	| :------:	|:------:	| :------:	|  
+| $AP$               |  1891              |     646              |     522                      |    320                             |  825  |  | $I$  |   384 (0.2031)  |  212 (0.3282)  |  185 (0.3544)  |  151 (0.4719)  |  181 (0.2194)     || $M$ |  1507 (0.7969)  |  434 (0.6718)  |  337 (0.6456)  |  169 (0.5281)  |  644 (0.7806)   || $F$    |  530 (0.3517)  |  107 (0.2465)  |  218 (0.6469)  |  118 (0.6982)  |  302 (0.4689)   || $F_P$   |  530 (1.0000)  |  94 (0.2166)  |  0 (0.0000)    |  67 (0.3964)     |  195 (0.3028)   ||  $F_S$   |  … (…)         |  8 (0.0184)       |  30 (0.0890)  |  31 (0.1834)   |  46 (0.0714)   || $F_A$   |  …  (…)        |  5 (0.0115)       |  150 (0.4451)  |  20 (0.1183)  |  61 (0.0947)   ||  $F_O$  |  … (…)         | … (…)            |  38 (…)           |  … (…)         | 363 (0.5637)  || $F_U$  |  977 (0.6483)  |  327 (0.7535)  |  119 (0.3531)  |  51 (0.3018)  |  342 (0.5311)  |
+|
 | ^a, Lack of accessibility due to habitat uncoupling, i.e., canopy-foraging species vs. understory species.   |
 |  ^b, Colour restrictions, and reward per flower too small relative to the size of the bird.    |  
 [Table 2. Frequencies of different type of forbidden links in natural plant-animal interaction assemblages. ]
-$AP$, maximum potential links, $I_max$; $I$, number of observed links; $M$, number of missed links; $F$, ; $F_P$, ; $F_S$, ; $F_A$, ; $F_O$, ; $F_U$, .  
+$AP$, maximum potential links, $I_max$; $I$, number of observed links; $M$, number of missed links; $F$, number of forbidden links; $F_P$, phenology; $F_S$, size restrictions; $F_A$, accessibility; $F_O$, others; $F_U$, unknown causes.  
 
 [Table 3. A vectorized interaction matrix.]
 | Interaction  | Sample1 | Sample2 |  Sample3 |  
