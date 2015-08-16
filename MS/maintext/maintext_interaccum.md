@@ -161,21 +161,28 @@ I am indebted to Alfredo Valido, Jordi Bascompte, Thomas Lewinshon, John N. Thom
 ## Figures ##
 ![Figure 1. Sampling ecological interaction networks (e.g., plat-animal interactions) usually focus on different types of subsampling the full network, yielding submatrices $\Delta[m,n]$ of the full interaction matrix $\Delta$ with $A$ and $P$ animal and plant species. a) all the potential plants interacting with a subset of the animals (e.g., studying just the hummingbird-pollinated flower species in a community); b) all the potential animal species interacting with a subset of the plant species (e.g., studying the frugivore species feeding on figs *Ficus* in a community); and c) sampling a subset of  all the potential animal species interacting with a subset of all the plant species (e.g., studying the plant-frugivore interactions of the rainforest understory).](../figures/Fig1.pdf "Sampling interactions")
 
+- - -
+
 ![Figure 2. Sampling species interactions in natural communities. Suppose an assemblage with $A= 3$ animal species (red, species 1-3 with  three, two, and 1 individuals, respectively) and $P= 3$ plant species (green, species a-c with three individuals each) (colored balls), sampled with increasing effort in steps 1 to 6 (panels). In Step 1 we record animal species 1 and plant species 1 and 2 with a total of three interactions (black lines) represented as two distinct interactions: $1-a$ and $1-b$. As we advance our sampling (panels 1 to 6, illustrating e.g., additional sampling days) we record new distinct interactions. Note that we actually sample and record interactions among individuals, yet we pool the data across species to get a species by species interaction matrix.](../figures/Fig2.pdf "Sampling species interactions in natural communities")
+
+- - -
 
 ![Figure 3. A progressive sampling like the one depicted in Fig. 1, with increasing sampling effort in the form of additional sampling hours, number of focal plants, or number of samples typically yields cumulative trends in the number of distinct pairwise interactions.](../figures/Fig3.pdf)
 
----
+- - -
 
 ## Online Support Material##
 
----
+- - -      
+
 ##Methods
 
----
+---    
+
 ## References for Online Material ##
 
 ----
+
 
 ## NOTES ##
 
