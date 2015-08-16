@@ -78,7 +78,7 @@ Our sampling above would have resulted in a vector $n= [n_1 ... n_C]'$ where $n_
 
 Estimating the number of interactions with resulting robust estimates of network parameters is a central issue in the study of ecological interaction networks [#E31/2562][#Bascompte:2014to]. In contrast with traditional species diversity estimates, sampling networks has the paradox that despite the potentially interacting species being present in the sampled assemblage (i.e., included in the $A$ and $P$ species lists), some of their pairwise interactions are impossible to be recorded. The reason is forbidden links.  Independently of whether we sample full communities of subset communities we face a problem: some of the interactions that we can visualize in the empty matrix $AP$ will simply not occur. Thus, independently of the sampling effort we put, we'll never document these pairwise interactions. With a total of $AP$ interactions possible, a fraction of them are impossible to record, because they are forbidden [#E31.7324_PDF][#Olesen:2011a]. Forbidden links are constraints for the establishment of new links, and mainly arise from the biological attributes of the species: no link can be established between a plant and an animal mutualist differing in phenology, i.e. the seeds of a winter-ripening plant cannot be dispersed by a frugivore that is a summer stopover migrant [#E31/2562]. Or, for instance, short-tongued pollinators cannot successfully reach the nectar in long-corolla flowers and pollinate them efficiently [#More:2012kx]. Forbidden links are thus represented as structural zeroes in the interaction matrix, i.e., matrix cells that cannot get a non-zero value. So, we need to account for the frequency of these structural zeros in our matrix before proceeding. For example, most measurements of connectance ($C= I/(AP)$) implicitly ignore the fact that by taking the full product $AP$ in the denominator they are underestimating the actual connectance value, i.e., the fraction of actual interactions $I$ relative to the *possible* ones, not to the total maximum $AP$.     
 
-Adjacency matrices are frequently sparse, i.e., they are densely populated with zeroes, with a fraction of them being structural (i.e., unobservable interactions). It would be thus a serious interpretation error to attribute the sparseness of adjacency matrices for bipartite networks to undersampling. Unobserved interactions are represented by zeroes and belong to two categories. Missing interactions actually exist but may require additional sampling or a variety of methods to be observed. Forbidden links, on the other hand, arise due to biological constraints limiting interactions and remain unobservable in nature, irrespectively of sampling effort [#E31.7324_PDF][#Olesen:2011a]. Forbidden links are non-occurrences of pairwise interactions that can be accounted for by biological constraints, such as spatio-temporal uncoupling, size or reward mismatching, foraging constraints (e.g., accessibility), and physiological-biochemical constraints [#E31/2562]. We still have extremely reduced information about the frequency of forbidden links in natural communities [#Olesen:2011a] (Table 1).      
+Adjacency matrices are frequently sparse, i.e., they are densely populated with zeroes, with a fraction of them being structural (i.e., unobservable interactions). It would be thus a serious interpretation error to attribute the sparseness of adjacency matrices for bipartite networks to undersampling. Unobserved interactions are represented by zeroes and belong to two categories. Missing interactions actually exist but may require additional sampling or a variety of methods to be observed. Forbidden links, on the other hand, arise due to biological constraints limiting interactions and remain unobservable in nature, irrespectively of sampling effort [#E31.7324_PDF][#Olesen:2011a]. Forbidden links are non-occurrences of pairwise interactions that can be accounted for by biological constraints, such as spatio-temporal uncoupling, size or reward mismatching, foraging constraints (e.g., accessibility), and physiological-biochemical constraints [#E31/2562]. We still have extremely reduced information about the frequency of forbidden links in natural communities [#Santamaria:2007wl][#Stang:2009cx][#Vazquez:2009p82][#Olesen:2011a][#Ibanez:2012eu][#Vizentin-Bugoni:2014hc] (Table 1).      
 
 Two elements of inference are required in the analysis of missing interactions in plant-animal interaction networks: first, a critical analysis of sampling robustness; second, detailed natural history information on the participant species that allows the inference of biological constraints imposing forbidden links.    
 
@@ -271,6 +271,8 @@ Missing links are a characteristic feature of all plant-animal interaction netwo
 
 [#E31.7324_PDF]: Jordano, P., Bascompte, J. & Olesen, J. (2003) Invariant properties in coevolutionary networks of plant-animal interactions. Ecology Letters, 6, 69-81.       
 
+[#Ibanez:2012eu]: Ibanez, S. (2012) Optimizing size thresholds in a plant–pollinator interaction web: towards a mechanistic understanding of ecological networks. Oecologia, 170, 233–242.
+
 [#Jordano:2009c]:  Jordano, P., Vázquez, D. & Bascompte, J. (2009) Redes complejas de interacciones planta--animal (eds R. Medel, R. Dirzo & R. Zamora, pp. 17-41. Editorial Universitaria, Santiago, Chile.      
 
 [#JuradoRiver:2009cp]: Jurado-Rivera, J.A., Vogler, A.P., Reid, C.A.M., Petitpierre, E. & Gomez-Zurita, J. (2009) DNA barcoding insect-host plant associations. Proceedings of the Royal Society B - Biological Sciences, 276, 639-648.
@@ -299,11 +301,15 @@ Missing links are a characteristic feature of all plant-animal interaction netwo
 
 [#RiveraHutinel:2012vn]: Rivera-Hutinel, A., Bustamante, R.O., Marín, V.H. & Medel, R. (2012) Effects of sampling completeness on the structure of plant-pollinator networks. Ecology, 93, 1593-1603.        
 
+[#Santamaria:2007wl]: Santamaría, L. & Rodríguez-Gironés, M. (2007) Linkage rules for plant–pollinator networks: trait complementarity or exploitation barriers. PLoS Biology, 5, e31.
+
 [#Schleuning:2012eg]: Schleuning, M., Frund, J., Klein, A.-M., Abrahamczyk, S., Alarcón, R., Albrecht, M., Andersson, G.K.S., Bazarian, S., Böhning-Gaese, K., Bommarco, R., Dalsgaard, B., Dehling, D.M., Gotlieb, A., Hagen, M., Hickler, T., Holzschuh, A., Kaiser-Bunbury, C.N., Kreft, H., Morris, R.J., Sandel, B., Sutherland, W.J., Svenning, J.-C., Tscharntke, T., Watts, S., Weiner, C.N., Werner, M., Williams, N.M., Winqvist, C., Dormann, C.F. & Blüthgen, N. (2012) Specialization of mutualistic interaction networks decreases toward tropical latitudes. Current Biology, 22, 1925-1931.
 
 [#Schupp:2010]: Schupp, E.W., Jordano, P. & Gómez, J.M. (2010) Seed dispersal effectiveness revisited: a conceptual review. New Phytologist, 188, 333-353.
 
 [#Snow:1988iu]: Snow, B., Snow, D. (1988) Birds and Berries. Poyser: Calton, UK.   
+
+[#Stang:2009cx]: Stang, M., Klinkhamer, P.G.L., Waser, N.M., Stang, I. & van der Meijden, E. (2009) Size-specific interaction patterns and size matching in a plant-pollinator interaction web. Annals of Botany, 103, 1459–1469.
 
 [#Strogatz:2001wc]: Strogatz, S. (2001) Exploring complex networks. Nature, 410, 268-276.
 
@@ -319,6 +325,7 @@ Missing links are a characteristic feature of all plant-animal interaction netwo
 
 [#Vazquez:2015ec]: Vázquez, D.P., Ramos-Jiliberto, R., Urbani, P. & Valdovinos, F.S. (2015) A conceptual framework for studying the strength of plant-animal mutualistic interactions (ed M Eubanks). Ecology Letters, n/a–n/a.
 
+[#Vizentin-Bugoni:2014hc]: Vizentin-Bugoni, J., Maruyama, P.K. & Sazima, M. (2014) Processes entangling interactions in communities: forbidden links are more important than abundance in a hummingbird-plant network. Proceedings of the Royal Society B-Biological Sciences, 281, 20132397.
 
 ### REFRENCES TO ADD ###
 
