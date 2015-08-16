@@ -118,41 +118,50 @@ I am indebted to Alfredo Valido, Jordi Bascompte, Thomas Lewinshon, John N. Thom
 
 ---
 ## Tables
-| Link type          | Formulation |    Definition       |  
-| :------------------- | :---------------: | -------------------: |  
+
+ 
+[Table 1. A taxonomy of link types for ecological interactions [#Olesen:2011a]. $A$, number of animal species; $P$, number of plant species; $I$, number of links; $C= 100 I/(AP)$, connectance; $F$, number of forbidden links; and $M$, number of missing links. Link typology. All variables are functions of observation time (sampling effort). As natural scientists, our ultimate goal is to eliminate $M$ from the equation $F = AP - I - M$, which probably is not feasible given logistic sampling limitations. When we, during our study, estimate $M$ to be negligible, we cease observing and estimate $I$ and $F$.]
+| Link type   | Formulation | Definition |   
+| :----------- | :-----: | :-----: |
 | Potential links  | AP    | Size of network matrix, i.e. maximum number of potentially observable interactions; A and P, numbers of interacting animal and plant species, respectively.   |  
 | Observed links| $I$    | Total number of observed links in the network given a sufficiently strong sampling effort.    |  
 | Unobserved links    | $AP - I$ | Number of zeroes in network matrix.      |  
 | Missing links      | $M$|   Number of links, which do exist in nature but need more sampling effort and/or additional sampling methods to be observed.   |  
-| Forbidden links       |  $F = AP - I - M$   | Number of links, which remain unobserved because of linkage constraints, irrespectively of a sufficiently strong sampling effort. |   
-| 
-[Table 1. A taxonomy of link types for ecological interactions [#Olesen:2011a]. $A$, number of animal species; $P$, number of plant species; $I$, number of links; $C= 100 I/(AP)$, connectance; $F$, number of forbidden links; and $M$, number of missing links.]
-Link typology. All variables are functions of observation time (sampling effort). As natural scientists, our ultimate goal is to eliminate $M$ from the equation $F = AP - I - M$, which probably is not feasible given logistic sampling limitations. When we, during our study, estimate $M$ to be negligible, we cease observing and estimate $I$ and $F$.]
-
-|  Link type              | Zackenberg    | Grundvad | Arima Valley   | Hato Ratón  |  Nava Correhuelas    |  
-|  :------	| :------:	| :------:	| :------:	|:------:	| :------:	|  
-| $AP$               |  1891              |     646              |     522                      |    320                             |  825  |  | $I$  |   384 (0.2031)  |  212 (0.3282)  |  185 (0.3544)  |  151 (0.4719)  |  181 (0.2194)     || $M$ |  1507 (0.7969)  |  434 (0.6718)  |  337 (0.6456)  |  169 (0.5281)  |  644 (0.7806)   || $F$    |  530 (0.3517)  |  107 (0.2465)  |  218 (0.6469)  |  118 (0.6982)  |  302 (0.4689)   || $F_P$   |  530 (1.0000)  |  94 (0.2166)  |  0 (0.0000)    |  67 (0.3964)     |  195 (0.3028)   ||  $F_S$   |  … (…)         |  8 (0.0184)       |  30 (0.0890)  |  31 (0.1834)   |  46 (0.0714)   || $F_A$   |  …  (…)        |  5 (0.0115)       |  150 (0.4451)  |  20 (0.1183)  |  61 (0.0947)   ||  $F_O$  |  … (…)         | … (…)            |  38 (…)           |  … (…)         | 363 (0.5637)  || $F_U$  |  977 (0.6483)  |  327 (0.7535)  |  119 (0.3531)  |  51 (0.3018)  |  342 (0.5311)  |
-|
-| ^a, Lack of accessibility due to habitat uncoupling, i.e., canopy-foraging species vs. understory species.   |
-|  ^b, Colour restrictions, and reward per flower too small relative to the size of the bird.    |  
-[Table 2. Frequencies of different type of forbidden links in natural plant-animal interaction assemblages. ]
-$AP$, maximum potential links, $I_max$; $I$, number of observed links; $M$, number of missed links; $F$, number of forbidden links; $F_P$, phenology; $F_S$, size restrictions; $F_A$, accessibility; $F_O$, others; $F_U$, unknown causes.  
+| Forbidden links       |  $F = AP - I - M$   | Number of links, which remain unobserved because of linkage constraints, irrespectively of a sufficiently strong sampling effort. |  
+|          |||        
+          
+- - - 
+ 
+[Table 2. Frequencies of different type of forbidden links in natural plant-animal interaction assemblages. $AP$, maximum potential links, $I_max$; $I$, number of observed links; $M$, number of missed links; $F$, number of forbidden links; $F_P$, phenology; $F_S$, size restrictions; $F_A$, accessibility; $F_O$, others; $F_U$, unknown causes. Relative frequencies (in parentheses) calculated over $I_{max}= AP$ for $I$, $M$, and $F$; for all forbidden links types, calculated over $F$. ]
+|  Link type              | Zackenberg    | Grundvad | Arima Valley   | Hato Ratón  |  Nava Correhuelas    |        
+|  :------	| :------:	| :------:	| :------:	|:------:	| :------:	|
+| $AP$               |  1891              |     646              |     522                      |    320                             |  825  |
+| $I$  |   384 (0.2031)  |  212 (0.3282)  |  185 (0.3544)  |  151 (0.4719)  |  181 (0.2194)     |    | $M$ |  1507 (0.7969)  |  434 (0.6718)  |  337 (0.6456)  |  169 (0.5281)  |  644 (0.7806)   |  
+| $F$    |  530 (0.3517)  |  107 (0.2465)  |  218 (0.6469)  |  118 (0.6982)  |  302 (0.4689)   |   | $F_P$   |  530 (1.0000)  |  94 (0.2166)  |  0 (0.0000)    |  67 (0.3964)     |  195 (0.3028)   |   |  $F_S$   |  … (…)         |  8 (0.0184)       |  30 (0.0890)  |  31 (0.1834)   |  46 (0.0714)   |   | $F_A$   |  …  (…)        |  5 (0.0115)       |  150 (0.445)$^a$  |  20 (0.1183)  |  61 (0.0947)   |    |  $F_O$  |  … (…)         | … (…)            |  38 (0.1128)$^b$           |  … (…)         | 363 (0.5637)  |    | $F_U$  |  977 (0.6483)  |  327 (0.7535)  |  119 (0.3531)  |  51 (0.3018)  |  342 (0.5311)  |    
+|    ||||||   
+| $^a$, Lack of accessibility due to habitat uncoupling, i.e., canopy-foraging species vs. understory species. ||||||  
+|  $^b$, Colour restrictions, and reward per flower too small relative to the size of the bird.||||||  
+|    ||||||   
+         
+- - -     
 
 [Table 3. A vectorized interaction matrix.]
-| Interaction  | Sample1 | Sample2 |  Sample3 |  
-| :----------- | :-----: | :-----: | :-----:  |
-| A1 - P2       |    12   |    2    |     0    |
-| A1 - P2       |     0   |    0    |     0    |  
-| ...          |    ...  |   ...   |    ...   |  
-| A5 - P3       |     5   |    0    |     1    |  
-| A5 - P4       |     1   |    0    |     1    |  
-| ...          |    ...  |   ...   |    ...   |  
-| A~i - P~i     |     1   |    0    |     1    |  
+| Interaction  | Sample1 | Sample2 |  Sample3 |     ...    |  Sample*i* |  
+| :----------- | :-----: | :-----: | :-----:  | :-----:  | :-----:  |
+| A1 - P2       |    12   |    2    |     0    |     ...    |     6    |
+| A1 - P2       |     0   |    0    |     0    |     ...    |     1    |  
+| ...          |    ...  |   ...   |    ...   |     ...    |     ...    |  
+| A5 - P3       |     5   |    0    |     1    |     ...    |     18    |  
+| A5 - P4       |     1   |    0    |     1    |     ...    |     3    |  
+| ...          |    ...  |   ...   |    ...   |     ...    |     ...    |  
+| A~i - P~i     |     1   |    0    |     1    |     ...    |     2    |  
+
+- - -    
 
 ## Figures ##
-![Figure 1. Sampling ecological interaction networks (e.g., plat-animal interactions) usually focus on different types of subsampling the full network, yielding submatrices $\Delta[m,n]$ of the full interaction matrix $\Delta$ with $A$ and $P$ animal and plant species. a) all the potential plants interacting with a subset of the animals (e.g., studying just the hummingbird-pollinated flower species in a community); b) all the potential animal species interacting with a subset of the plant species (e.g., studying the frugivore species feeding on figs *Ficus* in a community); and c) sampling a subset of  all the potential animal species interacting with a subset of all the plant species (e.g., studying the plant-frugivore interactions of the rainforest understory).](../figures/Fig1.pdf)
+![Figure 1. Sampling ecological interaction networks (e.g., plat-animal interactions) usually focus on different types of subsampling the full network, yielding submatrices $\Delta[m,n]$ of the full interaction matrix $\Delta$ with $A$ and $P$ animal and plant species. a) all the potential plants interacting with a subset of the animals (e.g., studying just the hummingbird-pollinated flower species in a community); b) all the potential animal species interacting with a subset of the plant species (e.g., studying the frugivore species feeding on figs *Ficus* in a community); and c) sampling a subset of  all the potential animal species interacting with a subset of all the plant species (e.g., studying the plant-frugivore interactions of the rainforest understory).](../figures/Fig1.pdf "Sampling interactions")
 
-![Figure 2. Sampling species interactions in natural communities. Suppose an assemblage with $A= 3$ animal species (red, species 1-3 with  three, two, and 1 individuals, respectively) and $P= 3$ plant species (green, species a-c with three individuals each) (colored balls), sampled with increasing effort in steps 1 to 6 (panels). In Step 1 we record animal species 1 and plant species 1 and 2 with a total of three interactions (black lines) represented as two distinct interactions: $1-a$ and $1-b$. As we advance our sampling (panels 1 to 6, illustrating e.g., additional sampling days) we record new distinct interactions. Note that we actually sample and record interactions among individuals, yet we pool the data across species to get a species by species interaction matrix.](../figures/Fig2.pdf)
+![Figure 2. Sampling species interactions in natural communities. Suppose an assemblage with $A= 3$ animal species (red, species 1-3 with  three, two, and 1 individuals, respectively) and $P= 3$ plant species (green, species a-c with three individuals each) (colored balls), sampled with increasing effort in steps 1 to 6 (panels). In Step 1 we record animal species 1 and plant species 1 and 2 with a total of three interactions (black lines) represented as two distinct interactions: $1-a$ and $1-b$. As we advance our sampling (panels 1 to 6, illustrating e.g., additional sampling days) we record new distinct interactions. Note that we actually sample and record interactions among individuals, yet we pool the data across species to get a species by species interaction matrix.](../figures/Fig2.pdf "Sampling species interactions in natural communities")
 
 ![Figure 3. A progressive sampling like the one depicted in Fig. 1, with increasing sampling effort in the form of additional sampling hours, number of focal plants, or number of samples typically yields cumulative trends in the number of distinct pairwise interactions.](../figures/Fig3.pdf)
 
