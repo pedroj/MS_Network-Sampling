@@ -111,11 +111,13 @@ For example, mixture models incorporating detectabilities have been proposed to 
 \\[ 
 g(y;\lambda) =  \left\{
 \begin{array}{ll}
-\frac{\lambda^y}{y!e^{\lambda}}\\
-\left({T\above 0pt y}\right) \frac{\lambda^y}{(1+\lambda)^T}
+\frac{\lambda^y}{y!e^{\lambda}} \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \                    [1]\\
+\left({T\above 0pt y}\right) \frac{\lambda^y}{(1+\lambda)^T} \ \ \ \ \      [2]
 \end{array}%
 \right.
 \\]
+
+where [1] corresponds to a weighted network, and [2] to a qualitative network.
 
 The detection rates $\lambda_i$ depend on the relative abundances $\phi_i$ of the interactions􏲩, the probability of a pairwise interaction being detected when it is present, and the sample size (the number of interactions recorded), which, in turn, is a function of the sampling effort. Unfortunately, no specific sampling model has been developed along these lines for species interactions and their characteristic features. For example, a complication factor might be that interaction abundances,  $\phi_i$, in real assemblages are a function of the abundances of interacting species, that determine interspecific encounter rates; yet they also depend on biological factors that ultimately determine if the interaction occurs when the partner species are present. It its simplest form,  $\phi_i$ could be estimated from just the product of partner species abundances, an approach recently used as a null model to assess the role of biological constraints in generating forbidden links and explaining interaction patterns [#Vizentin-Bugoni:2014hc]. Yet more complex models should incorporate not only interspecific encounter probabilities, but also phenotypic matching and incidence of forbidden links.
 
@@ -152,22 +154,22 @@ I am indebted to Jens M. Olesen, Alfredo Valido, Jordi Bascompte, Thomas Lewinsh
           
 - - - 
  
-[Table 2. Frequencies of different type of forbidden links in natural plant-animal interaction assemblages. $AP$, maximum potential links, $I_{max}$; $I$, number of observed links; $UL$, number of unobserved links; $FL$, number of forbidden links; $FL_P$, phenology; $FL_S$, size restrictions; $FL_A$, accessibility; $FL_O$, other  types of restrictions; $ML$, unknown causes (missing links). Relative frequencies (in parentheses) calculated over $I_{max}= AP$ for $I$, $ML$, and $FL$; for all forbidden links types, calculated over $FL$. ] 
-|  Link type              | Zackenberg    | Grundvad | Arima Valley   | Hato Ratón  |  Nava Correhuelas    |        
-|  :------	| :------:	| :------:	| :------:	|:------:	| :------:	|
-| $I_{max}= AP$               |  1891              |     646              |     522                      |    320                             |  825  |
-| $I$  |   384 (0.2031)  |  212 (0.3282)  |  185 (0.3544)  |  151 (0.4719)  |  181 (0.2194)     |    
-| $UL$ |  1507 (0.7969)  |  434 (0.6718)  |  337 (0.6456)  |  169 (0.5281)  |  644 (0.7806)   |  
-| $FL$    |  530 (0.3517)  |  107 (0.2465)  |  218 (0.6469)  |  118 (0.6982)  |  302 (0.4689)   |   
-| $FL_P$   |  530 (1.0000)  |  94 (0.2166)  |  0 (0.0000)    |  67 (0.3964)     |  195 (0.3028)   |   
-|  $FL_S$   |  … (…)         |  8 (0.0184)       |  30 (0.0890)  |  31 (0.1834)   |  46 (0.0714)   |   
-| $FL_A$   |  …  (…)        |  5 (0.0115)       |  150 (0.445)$^a$  |  20 (0.1183)  |  61 (0.0947)   |    
-|  $FL_O$  |  … (…)         | … (…)            |  38 (0.1128)$^b$           |  … (…)         | 363 (0.5637)  |    
-| $ML$  |  977 (0.6483)  |  327 (0.7535)  |  119 (0.3531)  |  51 (0.3018)  |  342 (0.5311)  |    
-|    ||||||   
-| $^a$, Lack of accessibility due to habitat uncoupling, i.e., canopy-foraging species vs. understory species. ||||||  
-|  $^b$, Colour restrictions, and reward per flower too small relative to the size of the bird.||||||  
-|    ||||||   
+[Table 2. Frequencies of different type of forbidden links in natural plant-animal interaction assemblages. $AP$, maximum potential links, $I_{max}$; $I$, number of observed links; $UL$, number of unobserved links; $FL$, number of forbidden links; $FL_P$, phenology; $FL_S$, size restrictions; $FL_A$, accessibility; $FL_O$, other  types of restrictions; $ML$, unknown causes (missing links). Relative frequencies (in parentheses) calculated over $I_{max}= AP$ for $I$, $ML$, and $FL$; for all forbidden links types, calculated over $FL$. References, from left to right: Olesen et al. 2008; Olesen & Myrthue unpubl.; Snow & Snow 1972; Vizentin-Bugoni et al. 2014; Jordano et al. 2009; Olesen et al. 2011.] 
+||Pollination|||| Seed dispersal   ||
+|  Link type              | Zackenberg    | Grundvad | Arima Valley   | Sta. Virginia| Hato Ratón  |  Nava Correhuelas    |        
+|  :------	| :------:	| :------:	| :------:	|:------:	| :------:	| :------:	|
+| $I_{max}= AP$       |  1891       |     646      |     522            |     423    |    320      |  825  |
+| $I$  |   384 (0.2031)  |  212 (0.3282)  |  185 (0.3544)  | 86 (0.1042)|  151 (0.4719)  |  181 (0.2194)     |    
+| $UL$ |  1507 (0.7969)  |  434 (0.6718)  |  337 (0.6456)  | 337 (0.4085)  |  169 (0.5281)  |  644 (0.7806)   |  
+| $FL$    |  530 (0.3517)  |  107 (0.2465)  |  218 (0.6469)  | 260 (0.7715)|  118 (0.6982)  |  302 (0.4689)   |   
+| $FL_P$   |  530 (1.0000)  |  94 (0.2166)  |  0 (0.0000)    | 120 (0.1624)|  67 (0.3964)     |  195 (0.3028)   |   
+|  $FL_S$   |  … (…)         |  8 (0.0184)       |  30 (0.0890) | 140 (0.1894) |  31 (0.1834)   |  46 (0.0714)   |   
+| $FL_A$   |  …  (…)        |  5 (0.0115)       |  150 (0.445)$^a$  | … (…)   |  20 (0.1183)  |  61 (0.0947)   |    
+|  $FL_O$  |  … (…)         | … (…)            |  38 (0.1128)$^b$       | … (…)     |  … (…)         | 363 (0.5637)  |    
+| $ML$  |  977 (0.6483)  |  327 (0.7535)  |  119 (0.3531)  | 77 (0.1042)|  51 (0.3018)  |  342 (0.5311)  |    
+|    |||||||  
+| $^a$, Lack of accessibility due to habitat uncoupling, i.e., canopy-foraging species vs. understory species. |||||||  
+|  $^b$, Colour restrictions, and reward per flower too small relative to the size of the bird.|||||||     
          
 - - -     
 
@@ -293,6 +295,8 @@ I am indebted to Jens M. Olesen, Alfredo Valido, Jordi Bascompte, Thomas Lewinsh
 
 [#Olesen:2002wb]: Olesen, J. & Jordano, P. (2002) Geographic patterns in plant-pollinator mutualistic networks. Ecology, 83, 2416-2424.
 
+[#Olesen:2008]: Olesen, J.M., Bascompte, J., Elberling, H. & Jordano, P. (2008) Temporal dynamics in a pollination network. Ecology, 89, 1573-1582.
+
 [#Olesen:2011a]: Olesen, J.M., Bascompte, J., Dupont, Y.L., Elberling, H. & Jordano, P. (2011) Missing and forbidden links in mutualistic networks. Proceedings of the Royal Society B-Biological Sciences, 278, 725-732.        
 
 [#Olito:2014gc]: Olito, C. & Fox, J.W. (2014) Species traits and abundances predict metrics of plant-pollinator network structure, but not pairwise interactions. Oikos, 124, 428-436.        
@@ -312,6 +316,8 @@ I am indebted to Jens M. Olesen, Alfredo Valido, Jordi Bascompte, Thomas Lewinsh
 [#Schleuning:2012eg]: Schleuning, M., Frund, J., Klein, A.-M., Abrahamczyk, S., Alarcón, R., Albrecht, M., Andersson, G.K.S., Bazarian, S., Böhning-Gaese, K., Bommarco, R., Dalsgaard, B., Dehling, D.M., Gotlieb, A., Hagen, M., Hickler, T., Holzschuh, A., Kaiser-Bunbury, C.N., Kreft, H., Morris, R.J., Sandel, B., Sutherland, W.J., Svenning, J.-C., Tscharntke, T., Watts, S., Weiner, C.N., Werner, M., Williams, N.M., Winqvist, C., Dormann, C.F. & Blüthgen, N. (2012) Specialization of mutualistic interaction networks decreases toward tropical latitudes. Current Biology, 22, 1925-1931.
 
 [#Schupp:2010]: Schupp, E.W., Jordano, P. & Gómez, J.M. (2010) Seed dispersal effectiveness revisited: a conceptual review. New Phytologist, 188, 333-353.
+
+[#E31.616]: Snow, B.K. & Snow, D.W. (1972) Feeding niches of hummingbirds in a Trinidad valley. Journal of Animal Ecology, 41, 471–485.
 
 [#Snow:1988iu]: Snow, B., Snow, D. (1988) Birds and Berries. Poyser: Calton, UK.   
 
@@ -334,6 +340,8 @@ I am indebted to Jens M. Olesen, Alfredo Valido, Jordi Bascompte, Thomas Lewinsh
 [#Vizentin-Bugoni:2014hc]: Vizentin-Bugoni, J., Maruyama, P.K. & Sazima, M. (2014) Processes entangling interactions in communities: forbidden links are more important than abundance in a hummingbird-plant network. Proceedings of the Royal Society B-Biological Sciences, 281, 20132397.
 
 ### REFRENCES TO ADD ###
+
+[#Canard:2012jy]: Canard, E., Mouquet, N., Marescot, L., Gaston, K.J., Gravel, D. & Mouillot, D. (2012) Emergence of structural patterns in neutral trophic networks. PLoS ONE, 7, e38295.
 
 [#Burkle:2012uz]: Burkle, L.A. & Knight, T.M. (2012) Shifts in pollinator composition and behavior cause slow interaction accumulation with area in plant-pollinator networks. Ecology, 93, 2329-2335.
 
