@@ -154,7 +154,7 @@ I am indebted to Jens M. Olesen, Alfredo Valido, Jordi Bascompte, Thomas Lewinsh
           
 - - - 
  
-[Table 2. Frequencies of different type of forbidden links in natural plant-animal interaction assemblages. $AP$, maximum potential links, $I_{max}$; $I$, number of observed links; $UL$, number of unobserved links; $FL$, number of forbidden links; $FL_P$, phenology; $FL_S$, size restrictions; $FL_A$, accessibility; $FL_O$, other  types of restrictions; $ML$, unknown causes (missing links). Relative frequencies (in parentheses) calculated over $I_{max}= AP$ for $I$, $ML$, and $FL$; for all forbidden links types, calculated over $FL$. References, from left to right: Olesen et al. 2008; Olesen & Myrthue unpubl.; Snow & Snow 1972; Vizentin-Bugoni et al. 2014; Jordano et al. 2009; Olesen et al. 2011.] 
+[Table 2. Frequencies of different type of forbidden links in natural plant-animal interaction assemblages. $AP$, maximum potential links, $I_{max}$; $I$, number of observed links; $UL$, number of unobserved links; $FL$, number of forbidden links; $FL_P$, phenology; $FL_S$, size restrictions; $FL_A$, accessibility; $FL_O$, other  types of restrictions; $ML$, unknown causes (missing links). Relative frequencies (in parentheses) calculated over $I_{max}= AP$ for $I$, $ML$, and $FL$; for all forbidden links types, calculated over $FL$. References, from left to right: Olesen et al. 2008; Olesen & Myrthue unpubl.; Snow & Snow 1972 and Jordano et al. 2006; Vizentin-Bugoni et al. 2014; Jordano et al. 2009; Olesen et al. 2011.] 
 ||Pollination|||| Seed dispersal   ||
 |  Link type              | Zackenberg    | Grundvad | Arima Valley   | Sta. Virginia| Hato Ratón  |  Nava Correhuelas    |        
 |  :------	| :------:	| :------:	| :------:	|:------:	| :------:	| :------:	|
@@ -273,7 +273,9 @@ I am indebted to Jens M. Olesen, Alfredo Valido, Jordi Bascompte, Thomas Lewinsh
 
 [#E31.7324_PDF]: Jordano, P., Bascompte, J. & Olesen, J. (2003) Invariant properties in coevolutionary networks of plant-animal interactions. Ecology Letters, 6, 69-81.       
 
-[#Jordano:2009c]:  Jordano, P., Vázquez, D. & Bascompte, J. (2009) Redes complejas de interacciones planta--animal (eds R. Medel, R. Dirzo & R. Zamora, pp. 17-41. Editorial Universitaria, Santiago, Chile.      
+[#Jordano:2006aa]: Jordano, P., Bascompte, J. & Olesen, J. (2006) The ecological consequences of complex topology and nested structure in pollination webs. Specialization and generalization in plant-pollinator interactions (eds N.M. Waser & J. Ollerton) pp. 173–199. University of Chicago Press, Chicago, IL, USA.
+
+[#Jordano:2009c]:  Jordano, P., Vázquez, D. & Bascompte, J. (2009) Redes complejas de interacciones planta---animal. Ecología y evolución de interacciones planta-animal, (eds R. Medel, R. Dirzo & R. Zamora) pp. 17–41. Editorial Universitaria, Santiago, Chile.
 
 [#JuradoRiver:2009cp]: Jurado-Rivera, J.A., Vogler, A.P., Reid, C.A.M., Petitpierre, E. & Gomez-Zurita, J. (2009) DNA barcoding insect-host plant associations. Proceedings of the Royal Society B - Biological Sciences, 276, 639-648.
 
