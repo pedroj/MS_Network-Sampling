@@ -5,11 +5,46 @@ date: "agosto 17, 2015"
 output: html_document
 ---
 
-## Rarefaction analysis for faecal samples 
+### Interaction accumulation analyses for two plant-frugivore interaction networks in Mediterranean Spain.
+     
+     
+     
+#### Summary of sampling design and site characteristics.
 
-HR - NEW ANALYSES, based on daily dataset of faecal samples; 15AUG2006.
+ Data  |  Nava de las Correhuelas, NCH   | Hato Ratón, HR      
+----|:-------|:-------    
+Locality |	Nava de las Correhuelas, Sierra Cazorla, Jaén, SE Spain |	Hato Ratón, Villamanrique, Sevilla, SW Spain        
+Habitat |	Mediterranean montane pine forest. |	Mediterranean lowland scrubland.   
+Lat-Long	|  37°55'41.41"N - 2°51'57.05"W |  37°10'40.65"N -  6°19'31.82"W      	
+Altitude | 1615 | 36     
+Sampling area | 10 ha | 25 ha     
+Sampling | Direct observation, census. | Mist netting, direct observation.  
+Study years | 15, 1987-2001 | 3, 1981-1983  
+Study period  | 8 mo/yr | 12 mo 
+Study days/yr | 60 | 95  
+Study h/d | 6 | 10  
+$A$ | 33 | 17  
+$P$ | 25 | 16  
+$A/P$ | 1.3200 | 1.0625  
+$I$ | 154 | 121  
+$M$ | 825 | 272  
+$S$ | 58 | 33  
+$C$ | 0.1867 | 0.4449  
+$I_a$ | 4.67 | 7.12 | 
+$I_p$ | 6.16 | 7.56 | 
+$NOBS$ | 8378 | 3404  
+ |  |   
 
-```{r}
+#### Interaction accumulation analysis for Hato Ratón. Zoo-centric, based on faecal samples analysis.  
+
+HR - NEW ANALYSES, based on daily dataset of faecal samples; based on code 15AUG2006.   
+
+Our final dataset lists all the potential pairwise interactions and the records we got in each sampling day. Each of the columns lists the pairwise interactions recorded (value= 1) in a particular faecal sample.  
+Now we can use accumulation functions to explore how increasing the sampling results in additional distinct interactions being sampled.
+It is as a sampling of diversity, but instead of species we are recording pairwise interactions.
+
+
+```{r hr, eval=TRUE, message=FALSE, fig.height=3}
 require(vegan)
 # Hato Raton dataset. Daily faecal samples pooled by week.
 # Two years sampling.
@@ -34,10 +69,16 @@ sp5<-specaccum(hr_defec,"rarefaction")
 
 par(mfrow=c(1,2))
 # x11()
-plot(sp1, ci.type="poly", col="blue", lwd=2, ci.lty=0, ci.col="lightblue")
+plot(sp1, ci.type="poly", col="blue", lwd=2, ci.lty=0,
+        ci.col="lightblue", main= "Hato Ratón", 
+        sub = "IAC, random",
+        xlab= "Number of samples", 
+        ylab= "No. pairwise interactions")
 boxplot(sp1, col="yellow", add=TRUE, pch="+")
-plot(sp2)
-plot(sp31, ci.type="poly", col="blue", lwd=2, ci.lty=0, ci.col="lightblue")
+plot(sp2, main= " ",
+        sub = "IAC, collector",
+        xlab= "Number of samples", 
+        ylab= "No. pairwise interactions")
 
 #par(mfrow=c(1,1))
 #sp1<-specaccum(hr_defec[,2:476])
@@ -47,3 +88,35 @@ plot(sp31, ci.type="poly", col="blue", lwd=2, ci.lty=0, ci.col="lightblue")
 
 ```
 
+#### Rarefaction analysis for Nava de las Correhuelas. Phyto-centric based on focal observation and spot censuses analysis.  
+
+NCH - NEW ANALYSES, based on weekly dataset of feeding records; based on code 15AUG2006.    
+
+Our final dataset lists all the potential pairwise interactions and the records we got in each sampling day. We combined both focal watches at individual plants of the different species and spot censuses along transects. Each of the columns lists the pairwise interactions recorded (value= 1) in a particular sample. We have pooled the samples for weekly intervals. 
+
+```{r nhc, eval=TRUE, message=FALSE, fig.height=3}
+# Nava de las Correhuelas dataset. Focal observation and spot censuses.
+# Ten years sampling, pooled by month.
+nchcum<-as.matrix(read.table("./data/NCH_raref.txt", header= T,sep= "\t", dec=".", row.names = 1))
+
+# In hr_defec, rows are census weeks and columns are pairwise interactions.
+# Census weeks are pooled for two study seasons.
+sp1<-specaccum(t(nchcum),"random")
+sp2<-specaccum(t(nchcum),"collector")
+sp3<-specaccum(t(nchcum),"exact")
+sp4<-specaccum(t(nchcum),"coleman")
+sp5<-specaccum(t(nchcum),"rarefaction")
+
+par(mfrow=c(1,2))
+# x11()
+plot(sp1, ci.type="poly", col="blue", lwd=2, ci.lty=0, ci.col="lightblue", main= "Nava Correhuelas", 
+        sub = "IAC, random",
+        xlab= "Number of samples", 
+        ylab= "No. pairwise interactions")
+boxplot(sp1, col="yellow", add=TRUE, pch="+")
+plot(sp2, main= " ",
+        sub = "IAC, collector",
+        xlab= "Number of samples", 
+        ylab= "No. pairwise interactions")
+
+```
