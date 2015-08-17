@@ -1,0 +1,17 @@
+HATO_RATON	Cyanopica_cyanus	Turdus_philomelos	Turdus_merula	Ficedula_hypoleuca	Muscicapa_striata	Luscinia_megarhynchos	Phoenicurus_phoenicurus	Saxicola_torquata	Erithacus_rubecula	Sylvia_undata	Sylvia_cantillans	Sylvia_melanocephala	Sylvia_communis	Sylvia_hortensis	Sylvia_borin	Sylvia_atricapilla	Fringilla_coelebs	Sturnus_unicolor
+Smilax_aspera	0	0	1	0.1	0	0	0	0	0.8	0	0	2	0	0.1	10	15	0	0
+Tamus_communis	3	0	7	0	0	0	0	0	0	0	0	0.1	0	0	1	0	0	0
+Asparagus_acutifolius	0	0	0.1	0	0	0	0	0	1	0	0	2	0	0	0.8	15	0	0
+Asparagus_aphyllus	0	0.1	0.1	0	0	0	0	0	0.3	0	0	0.1	0	0	0.3	0.6	0	0
+Osyris_alba	0	2	1	0	0	0	0	0	0	0	0	0.4	0	0	0.7	0.6	0	0
+Myrtus_communis	1	4	5	0	0	0	0	0.1	26	0.3	0.1	2	0	0	0	25	0	2
+Pistacia_lentiscus	12	14	115	41	11	5	9	5	317	14	21	49	17	9	336	1370	12	61
+Daphne_gnidium	0	0	0	0	0	0	0.1	0	0.5	0	3	16	2	0	52	71	0	0
+Crataegus_monogyna	0.5	0	1	0	0	0	0	0	0	0	0	0	0	0	0	1	0	1
+Pyrus_bourgaeana	8	0	1	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0
+Rubus_ulmifolius	0.3	0	9	0.1	0.2	0.3	0.5	0	0.5	0	0.9	8	0.7	0.4	14	4	0	0
+Rhamnus_lycioides	0.1	0	6	2	1	0.7	0.5	0	2.6	0	3	48	4	0	85	21	0	0
+Phillyrea_angustifolia	0.2	0.2	37	6	0	0	0	0	0.2	0	3	14	6	3	15	96	0	0
+Olea_europaea	0.6	20	30	0	0	0	0	1	31	0	0	2	0	0	0.6	146	2	15
+Rubia_pregrina	0	0	0.1	0	0	0	0	0	0	0	0	0	0	0	38	27	0	0
+Lonicera_periclymenum	0	0	1	0	0	0	0	0	0	0	0.2	0.7	0	0	2	1	0	0

@@ -1,0 +1,26 @@
+NA	Turdus viscivorus	Phoenicurus ochruros	Turdus merula	Fringilla coelebs	Turdus torquatus	Parus ater	Turdus iliacus	Erithacus rubecula	Sylvia atricapilla	Garrulus glandarius	Sylvia communis	Parus major	Turdus pilaris	Phoenicurus phoenicurus	Coccothraustes coccothraustes	Parus cristatus	Sitta europaea	Parus caeruleus	Columba palumbus	Sylvia cantillans	Sylvia melanocephala	Corvus corone	Serinus serinus	Pica pica	Dendrocopos major	Turdus philomelos	Loxia curvirostra	Sylvia borin	Serinus citinella	Sylvia conspicillata	Corvus corax	Ficedula hypoleuca	Emberiza cia
+Amelanchier ovalis	0	1	1	1	0	7	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Arum italicum	0	0	3	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Berberis vulgaris	15	91	30	16	112	4	37	29	19	1	0	11	12	7	0	12	0	4	0	14	1	2	0	4	0	0	0	3	0	0	0	0	0
+Cotoneaster granatensis	0	0	1	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Crataegus monogyna	265	49	146	139	423	82	216	36	12	46	0	74	85	0	83	37	22	14	14	4	0	10	7	18	0	12	8	0	0	0	2	0	1
+Daphne laureola	0	0	0	5	0	0	0	1	10	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Hedera helix	8	1	143	2	2	0	7	4	84	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Juniperus communis	17	2	21	1	9	1	1	2	0	0	0	0	0	0	0	7	0	0	2	1	0	0	0	0	0	0	0	0	0	0	0	0	0
+Juniperus oxycedrus	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Juniperus phoenicea	123	8	20	0	183	3	2	0	0	4	0	0	8	0	8	0	0	0	3	0	0	3	0	0	0	0	0	0	0	0	0	0	0
+Juniperus sabina	16	6	7	0	62	1	9	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0
+Lonicera arborea	2	35	19	12	68	14	1	3	12	2	0	17	0	0	0	0	1	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0	0
+Lonicera etrusca	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Lonicera splendida	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Paeonia officinalis	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Polygonatum odoratum	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Prunus mahaleb	829	941	583	783	0	391	0	175	62	135	182	41	0	111	3	37	33	61	56	32	35	19	18	0	21	0	0	8	6	2	0	1	0
+Prunus prostrata	0	0	2	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Rhamnus myrtifolius	0	9	6	0	0	0	0	0	0	1	0	0	0	3	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	0
+Rhamnus saxatilis	0	10	0	1	0	0	1	1	0	0	2	4	0	0	0	1	0	0	0	1	2	0	0	0	0	0	0	0	0	0	0	0	0
+Rosa canina	22	11	50	2	58	1	9	2	0	0	0	5	19	0	4	3	0	2	0	0	0	0	0	0	0	1	5	0	0	0	0	0	0
+Rubia peregrina	1	0	0	0	0	0	0	1	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Rubus ulmifolius	2	2	0	0	0	0	1	1	3	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	1	0	1	0
+Sorbus aria	0	0	2	0	11	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+Taxus baccata	79	47	62	3	19	12	12	12	0	0	0	10	0	0	8	4	26	2	5	0	0	0	0	0	0	0	0	0	0	0	0	0	0
