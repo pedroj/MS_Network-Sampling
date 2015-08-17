@@ -1,0 +1,49 @@
+---
+title: "IAC Analyses. 2015 JAnimEcol paper"
+author: "Pedro Jordano"
+date: "agosto 17, 2015"
+output: html_document
+---
+
+## Rarefaction analysis for faecal samples 
+
+HR - NEW ANALYSES, based on daily dataset of faecal samples; 15AUG2006.
+
+```{r}
+require(vegan)
+# Hato Raton dataset. Daily faecal samples pooled by week.
+# Two years sampling.
+hr_defec <-read.table("./data/Tr_hr_raref_final.txt",header=TRUE,sep="\t",dec=",")
+
+# In hr_defec, rows are census weeks and columns are pairwise interactions.
+# Census weeks are pooled for two study seasons.
+sp1<-specaccum(hr_defec,"random")
+sp2<-specaccum(hr_defec,"collector")
+sp3<-specaccum(hr_defec,"exact")
+sp4<-specaccum(hr_defec,"coleman")
+sp5<-specaccum(hr_defec,"rarefaction")
+
+# ---- NOT RUN
+# Here I transpose the matrix (rows are interactions, cols are censuses)
+#sp11<-specaccum(t(hr_defec),"random")
+#sp21<-specaccum(t(hr_defec),"collector")
+#sp31<-specaccum(t(hr_defec),"exact")
+#sp41<-specaccum(t(hr_defec),"coleman")
+#sp51<-specaccum(t(hr_defec),"rarefaction")
+# ---- NOT RUN
+
+par(mfrow=c(1,2))
+# x11()
+plot(sp1, ci.type="poly", col="blue", lwd=2, ci.lty=0, ci.col="lightblue")
+boxplot(sp1, col="yellow", add=TRUE, pch="+")
+plot(sp2)
+plot(sp31, ci.type="poly", col="blue", lwd=2, ci.lty=0, ci.col="lightblue")
+
+#par(mfrow=c(1,1))
+#sp1<-specaccum(hr_defec[,2:476])
+#sp2<-specaccum(hr_defec[,2:476],"random")
+#plot(sp1, ci.type="poly", col="blue", lwd=2, ci.lty=0, ci.col="lightblue")
+#boxplot(sp2, col="yellow", add=TRUE, pch="+")
+
+```
+

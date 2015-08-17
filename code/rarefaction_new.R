@@ -29,7 +29,7 @@ sp2
 #########################
 library(vegan)
 setwd("/Users/pedro/Documents/Working/MS_Networks/MS_Network-Rarefaction/Data")
-hr_defec <-read.table("Tr_hr_raref_final.txt",header=TRUE,sep="\t",dec=",")
+hr_defec <-read.table("./data/Tr_hr_raref_final.txt",header=TRUE,sep="\t",dec=",")
 # In hr_defec, rows are census weeks and columns are pairwise interactions
 # Census weeks are pooled for two study seasons
 
@@ -51,7 +51,7 @@ sp51<-specaccum(t(hr_defec),"rarefaction")
 
 par(mfrow=c(1,5))
 x11()
-plot(sp4, ci.type="poly", col="blue", lwd=2, ci.lty=0, ci.col="lightblue")
+plot(sp1, ci.type="poly", col="blue", lwd=2, ci.lty=0, ci.col="lightblue")
 boxplot(sp1, col="yellow", add=TRUE, pch="+")
 plot(sp1)
 plot(sp2)
