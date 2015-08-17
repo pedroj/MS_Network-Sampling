@@ -53,5 +53,5 @@ freq <- goodTuring(x)
 goodTuringPlot(x)
 
 # Direct input
-source("./data/interact_vectors.txt")
 nchff<-goodTuring(as.vector(nch), conf=1.96)
+goodTuringPlot(nch)
