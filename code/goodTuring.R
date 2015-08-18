@@ -2,7 +2,6 @@
 # Non-parametric empirical Bayes estimates of the frequencies of observed 
 # (and unobserved) species.
 #
-require(edgeR)
 # Details
 # 
 # Observed counts are assumed to be Poisson distributed. Using an non-parametric empirical Bayes strategy, the algorithm evaluates the posterior expectation of each species mean given its observed count. The posterior means are then converted to proportions. In the empirical Bayes step, the counts are smoothed by assuming a log-linear relationship between frequencies and frequencies of frequencies. The fundamentals of the algorithm are from Good (1953). Gale and Sampson (1995) proposed a simplied algorithm with a rule for switching between the observed and smoothed frequencies, and it is Gale and Sampson's simplified algorithm that is implemented here. The number of zero values in x are not used in the algorithm, but is returned by this function.
@@ -42,17 +41,8 @@ require(edgeR)
 # 
 # Gale, WA, and Sampson, G (1995). Good-Turing frequency estimation without tears. Journal of Quantitative Linguistics 2, 217-237.
 #-----------------------------------------------------------------------
-#  True means of observed species
-lambda <- rnbinom(10000,mu=2,size=1/10)
-lambda <- lambda[lambda>1]
-
-#  Oberved frequencies
-Ntrue <- length(lambda)
-x <- rpois(Ntrue, lambda=lambda)
-freq <- goodTuring(x)
-goodTuringPlot(x)
-
 # Direct input
+require(edgeR)
 nchff<-goodTuring(as.vector(nch), conf=1.96)
 goodTuringPlot(nch)
 
@@ -68,7 +58,6 @@ vector.prob <- function (data) # data is the vector of observed freqs
                               rep(aa[[1]]/aa[[5]], times= aa[[5]]))
                         }
 aa<-vector.prob(nch)
-    
-    
-    
+summary(aa)  
+
     

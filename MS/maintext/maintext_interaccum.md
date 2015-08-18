@@ -121,12 +121,11 @@ where [1] corresponds to a weighted network, and [2] to a qualitative network.
 
 The detection rates $\lambda_i$ depend on the relative abundances $\phi_i$ of the interactions􏲩, the probability of a pairwise interaction being detected when it is present, and the sample size (the number of interactions recorded), which, in turn, is a function of the sampling effort. Unfortunately, no specific sampling model has been developed along these lines for species interactions and their characteristic features. For example, a complication factor might be that interaction abundances,  $\phi_i$, in real assemblages are a function of the abundances of interacting species, that determine interspecific encounter rates; yet they also depend on biological factors that ultimately determine if the interaction occurs when the partner species are present. It its simplest form,  $\phi_i$ could be estimated from just the product of partner species abundances, an approach recently used as a null model to assess the role of biological constraints in generating forbidden links and explaining interaction patterns [#Vizentin-Bugoni:2014hc]. Yet more complex models should incorporate not only interspecific encounter probabilities, but also phenotypic matching and incidence of forbidden links.
 
-Rarefaction analysis and diversity-accumulation analysis [#Magurran:1988mm][#Hortal:2006dc] come up immediately with this type of dataset. This procedure plots the accumulation curve for the expected number of distinct pairwise interactions recorded with increasing sampling effort (Fig. 3). Asymptotic estimates of interaction richness and its associated standard errors and confidence intervals can thus be obtained [#Hortal:2006dc]. It should be noted that the asymptotic estimate of interaction richness implicitly ignores the fact that, due to forbidden links, a number of pairwise interactions among the $I_{max}$ number specified in the adjacency matrix $\Delta$ cannot be recorded, irrespective of sampling effort. Therefore, the asymptotic value most likely is an overestimate of the actual maximum number of links that can be present in an assemblage. If forbidden links are taken into account, the asymptotic estimate should be lower. Yet, to the best of my knowledge, there is no theory developed to estimate this "biologically real" asymptotic value. Not unexpectedly, most recent analyses of sampling effort in ecological network studies found evidences of undersampling [#Chacoff:2012]. This needs not to be true, especially when interaction subwebs  are studied [#Olesen:2011a][#Vizentin-Bugoni:2014hc]. 
-
 #####Fig. 3 here #####
 
-	In addition, we should discuss the problem of rarifying the interaction matrix itself. I mean, are we able to estimate how robust has been the sampling of a given interaction matrix. This would be useful to assess the robustness of information already available, even with no data on sampling effort or with no access to the original individual samples.
+Rarefaction analysis and diversity-accumulation analysis [#Magurran:1988mm][#Hortal:2006dc] come up immediately with this type of dataset. This procedure plots the accumulation curve for the expected number of distinct pairwise interactions recorded with increasing sampling effort (Fig. 3). Asymptotic estimates of interaction richness and its associated standard errors and confidence intervals can thus be obtained [#Hortal:2006dc]. It should be noted that the asymptotic estimate of interaction richness implicitly ignores the fact that, due to forbidden links, a number of pairwise interactions among the $I_{max}$ number specified in the adjacency matrix $\Delta$ cannot be recorded, irrespective of sampling effort. Therefore, the asymptotic value most likely is an overestimate of the actual maximum number of links that can be present in an assemblage. If forbidden links are taken into account, the asymptotic estimate should be lower. Yet, to the best of my knowledge, there is no theory developed to estimate this "biologically real" asymptotic value. Not unexpectedly, most recent analyses of sampling effort in ecological network studies found evidences of undersampling [#Chacoff:2012]. This needs not to be true, especially when interaction subwebs  are studied [#Olesen:2011a][#Vizentin-Bugoni:2014hc], and once the issue of structural zeroes in the interaction matrices is effectively incorporated in the estimates.     
 
+Given that a fraction of unobserved interactions can be accounted for by forbidden links, what about the remaining missing interactions? We have already discussed that some of these could still be related to unaccounted constraints, and still others would be certainly attributable to insufficient sampling. Would this always be the case? Multi specific assemblages of distinct taxonomic relatedness, whose interactions can be represented as bipartite networks (e.g., host-parasite, plant-animal mutualisms, plant-herbivore interactions- with two distinct sets of unrelated higher taxa), are shaped by interspecific encounters among individuals of the partners (Fig. 2). 
 
 ## Discussion ##
 [#Stumpf:2005tn] It is important to note, however, that in practice, many surveyed networks to date have been subnets of much larger networks. This finding is true for protein interaction (5, 6), gene regulation (7), and metabolic networks (8), where only a subset of the molecular entities in a cell have been sampled
@@ -197,20 +196,6 @@ I am indebted to Jens M. Olesen, Alfredo Valido, Jordi Bascompte, Thomas Lewinsh
 
 ![Figure 3. A progressive sampling like the one depicted in Fig. 1, with increasing sampling effort in the form of additional sampling hours, number of focal plants, or number of samples typically yields cumulative trends in the number of distinct pairwise interactions.](../figures/Fig3.pdf)
 
-- - -
-
-## Online Support Material##
-
-- - -      
-
-## References for Online Material ##
-
-----
-
-## NOTES ##
-
-### REFS ###
-
 --------------------------------------------------------------
 ## REFERENCES ##
 [#BanasekRichter:2004ik]: Banasek-Richter, C., Cattin, M. & Bersier, L. (2004) Sampling effects and the robustness of quantitative and qualitative food-web descriptors. Journal of Theoretical Biology, 226, 23-32.
@@ -219,7 +204,7 @@ I am indebted to Jens M. Olesen, Alfredo Valido, Jordi Bascompte, Thomas Lewinsh
 
 [#Bersier:2002p9371]: Bersier, L., Banasek-Richter, C. & Cattin, M. (2002) Quantitative descriptors of food-web matrices. Ecology, 83, 2394-2407.   
 
-[#Bluthgen:2010p9]: Bluthgen, N. (2010) Why network analysis is often disconnected from community ecology: A critique and an ecologist’s guide. Basic And Applied Ecology, 00, 000-000.
+[#Bluthgen:2010p9]: Bluthgen, N. (2010) Why network analysis is often disconnected from community ecology: A critique and an ecologist’s guide. Basic and Applied Ecology, 11, 185–195.
 
 [#Bosch:2009jga]: Bosch, J., Martín González, A.M., Rodrigo, A. & Navarro, D. (2009) Plant-pollinator networks: adding the pollinator’s perspective. Ecology Letters, 12, 409-419.
 
@@ -346,6 +331,4 @@ I am indebted to Jens M. Olesen, Alfredo Valido, Jordi Bascompte, Thomas Lewinsh
 [#Canard:2012jy]: Canard, E., Mouquet, N., Marescot, L., Gaston, K.J., Gravel, D. & Mouillot, D. (2012) Emergence of structural patterns in neutral trophic networks. PLoS ONE, 7, e38295.
 
 [#Burkle:2012uz]: Burkle, L.A. & Knight, T.M. (2012) Shifts in pollinator composition and behavior cause slow interaction accumulation with area in plant-pollinator networks. Ecology, 93, 2329-2335.
-
-Kissling, W.D. & Schleuning, M. (2014) Multispecies interactions across trophic levels at macroscales: retrospective and future directions. Ecography, 38, 346-357.
 
