@@ -55,3 +55,20 @@ goodTuringPlot(x)
 # Direct input
 nchff<-goodTuring(as.vector(nch), conf=1.96)
 goodTuringPlot(nch)
+
+# Probabilities for interactions, including a_ij=0
+prob<- c(rep(p$proportion,times=p$n),rep(p$P0/p$n0,times=p$n0))
+c(rep(p$proportion,times=p$n),rep(p$P0/p$n0,times=p$n0))
+
+vector.prob <- function (data) # data is the vector of observed freqs
+                       {
+                        aa<- goodTuring(as.vector(data), conf= 1.96)
+                        goodTuringPlot(data)
+                        c(rep(aa[[2]], times= aa[[4]]),
+                              rep(aa[[1]]/aa[[5]], times= aa[[5]]))
+                        }
+aa<-vector.prob(nch)
+    
+    
+    
+    
