@@ -243,6 +243,8 @@ I am indebted to Jens M. Olesen, Alfredo Valido, Jordi Bascompte, Thomas Lewinsh
 
 [#Dormann:2009aa]: Dormann, C.F., Frund, J., Bluthgen, N. & Gruber, B. (2009) Indices, graphs and null models: Analyzing bipartite ecological networks. Open Ecology Journal, 2, 7-24.     
 
+[#Eklof:2013ed]: Eklöf, A., Jacob, U., Kopp, J., Bosch, J., Castro-Urgal, R., Chacoff, N.P., Dalsgaard, B., de Sassi, C., Galetti, M., Guimaraes, P.R., Lomáscolo, S.B., Martín González, A.M., Pizo, M.A., Rader, R., Rodrigo, A., Tylianakis, J.M., Vazquez, D.P. & Allesina, S. (2013) The dimensionality of ecological networks. Ecology Letters, 16, 577–583.
+
 [#Dupont:2011aa]: Dupont, Y.L., Trøjelsgaard, K. & Olesen, J.M. (2011) Scaling down from species to individuals: a flower-visitation network between individual honeybees and thistle plants. Oikos, 120, 170-177.
 
 [#Eklof:2013ed]: Eklöf, A., Jacob, U., Kopp, J., Bosch, J., Castro-Urgal, R., Chacoff, N.P., Dalsgaard, B., de Sassi, C., Galetti, M., Guimaraes, P.R., Lomáscolo, S.B., Martín González, A.M., Pizo, M.A., Rader, R., Rodrigo, A., Tylianakis, J.M., Vazquez, D.P. & Allesina, S. (2013) The dimensionality of ecological networks. Ecology Letters, 00, 000-000.
