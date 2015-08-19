@@ -17,7 +17,7 @@ pa<-rlnorm(100, meanlog = 0, sdlog = 1)   # Lognormal A
 pp<-rlnorm(30, meanlog = 0, sdlog = 1)   # Lognormal P
 ppa<- pa/sum(pa)
 ppp<- pp/sum(pp)
-prod<-as.vector(ElementwiseMultiply(ppa,ppp))
+eleprod<- as.vector(ElementwiseMultiply(ppa,ppp))
 hist(prod)
 summary(prod)
 

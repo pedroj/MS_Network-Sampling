@@ -46,10 +46,8 @@ require(edgeR)
 nchff<-goodTuring(as.vector(nch), conf=1.96)
 goodTuringPlot(nch)
 
-# Probabilities for interactions, including a_ij=0
-prob<- c(rep(p$proportion,times=p$n),rep(p$P0/p$n0,times=p$n0))
-c(rep(p$proportion,times=p$n),rep(p$P0/p$n0,times=p$n0))
-
+# Probabilities for interactions, including a_ij=0, estimated 
+# by Good-Turing algorithm
 vector.prob <- function (data) # data is the vector of observed freqs
                        {
                         aa<- goodTuring(as.vector(data), conf= 1.96)
@@ -57,16 +55,23 @@ vector.prob <- function (data) # data is the vector of observed freqs
                         c(rep(aa[[2]], times= aa[[4]]),
                               rep(aa[[1]]/aa[[5]], times= aa[[5]]))
                         }
-aa<-vector.prob(nch)
-summary(aa)  
+
+nch_GT<-vector.prob(nch)
+summary(nch_GT)  
+length(nch_GT)
 
 # Probabilities o interspecific encounter, estimated from local abundance distributions
 #NCH
 # CODE
 ppa<- nch_A/sum(nch_A)
 ppp<- nch_P/sum(nch_P)
-prod<-as.vector(ElementwiseMultiply(ppa,ppp))
-hist(prod)
-summary(prod)
+nch_prod<-as.vector(ElementwiseMultiply(ppa,ppp))
+hist(nch_prod)
+summary(nch_prod)
+length(nch_prod)
 
-    
+# Count number of times observed P values for interactions are 
+# greater than the neutral expected P's
+table(nch_GT > nch_prod)
+
+
