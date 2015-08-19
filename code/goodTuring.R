@@ -60,4 +60,13 @@ vector.prob <- function (data) # data is the vector of observed freqs
 aa<-vector.prob(nch)
 summary(aa)  
 
+# Probabilities o interspecific encounter, estimated from local abundance distributions
+#NCH
+# CODE
+ppa<- nch_A/sum(nch_A)
+ppp<- nch_P/sum(nch_P)
+prod<-as.vector(ElementwiseMultiply(ppa,ppp))
+hist(prod)
+summary(prod)
+
     
