@@ -73,5 +73,18 @@ length(nch_prod)
 # Count number of times observed P values for interactions are 
 # greater than the neutral expected P's
 table(nch_GT > nch_prod)
+table(nch_fb)
+nch_intrct<- data.frame(nch_fb, nch_GT, nch_prod)
+head(nch_intrct)
+colnames(nch_intrct)= c("fb","GT","prod")
 
-
+x<-nch_intrct[nch_intrct$fb=="1",]
+table(x$GT > x$prod)
+x<-nch_intrct[nch_intrct$fb=="E",]
+table(x$GT > x$prod)
+x<-nch_intrct[nch_intrct$fb=="P",]
+table(x$GT > x$prod)
+x<-nch_intrct[nch_intrct$fb=="S",]
+table(x$GT > x$prod)
+x<-nch_intrct[nch_intrct$fb=="U",]
+table(x$GT > x$prod)
