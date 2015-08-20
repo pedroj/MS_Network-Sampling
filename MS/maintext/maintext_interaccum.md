@@ -130,12 +130,17 @@ Given that a fraction of unobserved interactions can be accounted for by forbidd
 
 Given log-normally distributed abundances of the two species groups, the expected "neutral" probabilities of interspecific encounter ($PIE$) would be simply the product of the two lognormal distributions. Thus, we might expect that for low $PIE$ values, pairwise interactions would be either extremely difficult to sample, or just simply non-occurring in nature. Consider the Nava de las Correhuelas interaction web (NCH, Table 2), with $A= \*$, $P= \*$, $I= \*$, and almost half of the unobserved interactions not accounted for by forbidden links missing links, $M= 53.1\%$. Given the robust sampling of this network (Fig. 3), a sizable fraction of these possible but missing links would be simply not occurring in nature, most likely by extremely low $PIE$, in fact asymptotically zero. Given the vectorized list of pairwise interactions for NCH, I computed the $PIE$ values for each one by multiplying element wise the two species abundance distributions. The ${PIE}_{max}= 0.0597$, being a neutral estimate, based on the assumption that interactions occur in proportion to the species-specific local abundances. With ${PIE}_{median}\leqslant 1.4 10^{-4}$ we may safely expect (note the quantile estimate $Q_{75\%}= 3.27 10^{-4}$) that a sizable fraction of these missing interactions may simply not occur according to this neutral expectation[#E31/2562][#Olesen:2011a] (neutral forbidden links, *sensu* [#Canard:2012jy]). Which is the expected frequency for pairwise interactions? and, which is the expected probability for unobserved interactions? More specifically, which is the probability of missing interactions, $M$ (i.e., the unobserved ones that cannot be accounted for as forbidden links)? 
 
-When we consider the vectorized interaction matrix, enumerating all pairwise interactions for the $AP$ combinations, the expected probabilities of finding a given interaction can be estimated with a Good-Turing approximation [#Good:1953tn]. The technique, developed by Alan Turing and I.J. Good with applications to linguistics and word analysis [#Gale:1995uy], estimates the probability of recording an interaction of a hitherto unseen pair of partners, given a set of past records of interactions between other species pairs. Let a sample of $N$ interactions so that $n_r$ distinct pairwise interactions have exactly $r$ records. All Good-Turing estimators obtain the underlying frequencies of events as:
+When we consider the vectorized interaction matrix, enumerating all pairwise interactions for the $AP$ combinations, the expected probabilities of finding a given interaction can be estimated with a Good-Turing approximation [#Good:1953tn]. The technique, developed by Alan Turing and I.J. Good with applications to linguistics and word analysis [#Gale:1995uy] has been recently applied in ecology [#Chao:2015tc], estimates the probability of recording an interaction of a hitherto unseen pair of partners, given a set of past records of interactions between other species pairs. Let a sample of $N$ interactions so that $n_r$ distinct pairwise interactions have exactly $r$ records. All Good-Turing estimators obtain the underlying frequencies of events as:
 \\[
 P(X)= \frac{(N_X + 1)}{T}\centerdot (1-\frac{E(1)}{T})\ \ \ \ \ \ \ \ \ \ \ (1)
-\\]where $X$ is the pairwise interaction, $N_X$ is the number of times interaction $X$ is recorded, $T$ is the sample size (number of distinct interactions recorded) and $E(1)$ is an estimate of how many different interactions were recorded exactly once. Strictly speaking Equation (1) gives the probability that the next interaction type recorded will be $X$, after sampling a given assemblage of interacting species. In other words, we scale down the maximum-likelihood estimator $\frac{n}{T}$ by a factor of $\frac{1-E(1)}{T}$. This reduces all the probabilities for interactions we have recorded, and makes room for interactions we haven’t seen. If we sum over the interactions we have seen, then the sum of $P(X)$ is $1-\frac{1-E(1)}{T}$. Because probabilities sum to one, we have the left-over probability of$P_{new}= \frac{E(1)}{T}$ of seeing something new, where new means that we sample a new pairwise interaction.Note, however, that Good-Turing estimators do not account in our case for the forbidden interactions
+\\]
+where $X$ is the pairwise interaction, $N_X$ is the number of times interaction $X$ is recorded, $T$ is the sample size (number of distinct interactions recorded) and $E(1)$ is an estimate of how many different interactions were recorded exactly once. Strictly speaking Equation (1) gives the probability that the next interaction type recorded will be $X$, after sampling a given assemblage of interacting species. In other words, we scale down the maximum-likelihood estimator $\frac{n}{T}$ by a factor of $\frac{1-E(1)}{T}$. This reduces all the probabilities for interactions we have recorded, and makes room for interactions we haven’t seen. If we sum over the interactions we have seen, then the sum of $P(X)$ is $1-\frac{1-E(1)}{T}$. Because probabilities sum to one, we have the left-over probability of
+$P_{new}= \frac{E(1)}{T}$ of seeing something new, where new means that we sample a new pairwise interaction.
+
+Note, however, that Good-Turing estimators do not account in our case for the forbidden interactions. 
+
 ## Discussion ##
-[#Stumpf:2005tn] It is important to note, however, that in practice, many surveyed networks to date have been subnets of much larger networks. This finding is true for protein interaction (5, 6), gene regulation (7), and metabolic networks (8), where only a subset of the molecular entities in a cell have been sampled
+[#Stumpf:2005tn] It is important to note, however, that in practice, many surveyed networks to date have been subnets of much larger networks. This finding is true for protein interaction (5, 6), gene regulation (7), and metabolic networks (8), where only a subset of the molecular entities in a cell have been sampled.
 
 ### Concluding Remarks ###
 (PUP)Missing links are a characteristic feature of all plant-animal interaction networks. Important natural history details explain a fraction of them, resulting in unobservable interactions (i.e., forbidden interactions) that define structural zeroes in the interaction matrices. Focusing on sampling interactions is a way to monitor biodiversity beyond the simple enumeration of component species and to develop efficient and robust inventories of functional interactions. Focusing just on the realized interactions or treating missing interactions as the expected unique result of sampling bias would miss important components to understand how mutualisms coevolve within complex webs of interdependence among species. 
@@ -164,8 +169,8 @@ I am indebted to Jens M. Olesen, Alfredo Valido, Jordi Bascompte, Thomas Lewinsh
 ||Pollination|||| Seed dispersal   ||
 |  Link type              | Zackenberg    | Grundvad | Arima Valley   | Sta. Virginia| Hato Ratón  |  Nava Correhuelas    |        
 |  :------	| :------:	| :------:	| :------:	|:------:	| :------:	| :------:	|
-| $I_{max}= AP$       |  1891       |     646      |     522            |     423    |    320      |  825  |
-| $I$  |   384 (0.2031)  |  212 (0.3282)  |  185 (0.3544)  | 86 (0.1042)|  151 (0.4719)  |  181 (0.2194)     |    
+| $I_{max}= AP$       |  1891       |     646      |     522            |     423    |    272      |  825  |
+| $I$  |   268 (0.1417)  |  212 (0.3282)  |  185 (0.3544)  | 86 (0.1042)|  151 (0.4719)  |  181 (0.2194)     |    
 | $UL$ |  1507 (0.7969)  |  434 (0.6718)  |  337 (0.6456)  | 337 (0.4085)  |  169 (0.5281)  |  644 (0.7806)   |  
 | $FL$    |  530 (0.3517)  |  107 (0.2465)  |  218 (0.6469)  | 260 (0.7715)|  118 (0.6982)  |  302 (0.4689)   |   
 | $FL_P$   |  530 (1.0000)  |  94 (0.2166)  |  0 (0.0000)    | 120 (0.1624)|  67 (0.3964)     |  195 (0.3028)   |   
@@ -192,7 +197,21 @@ I am indebted to Jens M. Olesen, Alfredo Valido, Jordi Bascompte, Thomas Lewinsh
 
 - - -    
 
-## Figures ##
+[Table 3. Sampling statistics for three plant-animal interaction networks [#Olesen:2011a]. Symbols as in Table 1; $N$, number of records; $Chao1$ and $ACE$ are asymptotic estimators for the number of distinct pairwise interactions $I$ [#Hortal:2006dc], and their standard errors. Scaled asymptotic estimators and their confidence intervals ($CI$) were calculated by weighting $Chao1$ and $ACE$ with the observed frequencies of forbidden links.  ]
+|    |   Hato Ratón  |   Nava Correhuelas  |   Zackenberg  |  
+|  :------:	| :------:	| :------:	| :------:	|  
+|  $A$  |   17  |   33  |   65  |
+|  $P$  |   16  |   25  |   31  |
+|  $I_{max}$  |   272  |   825  |   1891  |
+|  $N$  |   3340  |   8378  |  1245   |
+|  $I$  |   151  |   181  |   268  |
+|  $Chao1$  |   263.1±70.9  |   231.4±14.2  |   509.6±54.7  |
+|  $ACE$  |   240.3±8.9  |   241.3±7.9  |   566.1±14.8  |
+|  $Scaled\ Chao$  |   195.4  |  162.7   | 308.4 |  
+|  $CI$   |  [124.5-266.3]  |  [148.5-176.9]      |  [253.6-363.1] |   
+|  $Scaled\ ACE$  |   178.5  |   169.7   | 342.6 |     
+| $CI$   |  [169.5-187.4]    |   [161.8-177.6]  |  [327.8-357.4] |   	
+## Figures ##   
 ![Figure 1. Sampling ecological interaction networks (e.g., plat-animal interactions) usually focus on different types of subsampling the full network, yielding submatrices $\Delta[m,n]$ of the full interaction matrix $\Delta$ with $A$ and $P$ animal and plant species. a) all the potential plants interacting with a subset of the animals (e.g., studying just the hummingbird-pollinated flower species in a community); b) all the potential animal species interacting with a subset of the plant species (e.g., studying the frugivore species feeding on figs *Ficus* in a community); and c) sampling a subset of  all the potential animal species interacting with a subset of all the plant species (e.g., studying the plant-frugivore interactions of the rainforest understory).](../figures/Fig1.pdf "Sampling interactions")
 
 - - -
@@ -226,6 +245,8 @@ I am indebted to Jens M. Olesen, Alfredo Valido, Jordi Bascompte, Thomas Lewinsh
 [#Chao:2005wp]: Chao, A. (2005) Species richness estimation. Encyclopedia of Statistical Sciences pp. 7909-7916. New York, USA.    
 
 [#Chao:2009wq]: Chao, A., Colwell, R.K., Lin, C.-W. & Gotelli, N.J. (2009) Sufficient sampling for asymptotic minimum species richness estimators. Ecology, 90, 1125-1133.    
+
+[#Chao:2015tc]: Chao, A., Hsieh, T.C., Chazdon, R.L., Colwell, R.K. & Gotelli, N.J. (2015) Unveiling the species-rank abundance distribution by generalizing the Good-Turing sample coverage theory. Ecology, 96, 1189–1201.
 
 [#Coddington:2009fi]: Coddington, J.A., Agnarsson, I., Miller, J.A., Kuntner, M. & Hormiga, G. (2009) Undersampling bias: the null hypothesis for singleton species in tropical arthropod surveys. Journal of Animal Ecology, 78, 573-584.    
 
