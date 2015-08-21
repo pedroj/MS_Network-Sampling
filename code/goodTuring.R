@@ -88,3 +88,33 @@ x<-nch_intrct[nch_intrct$fb=="S",]
 table(x$GT > x$prod)
 x<-nch_intrct[nch_intrct$fb=="U",]
 table(x$GT > x$prod)
+
+# JADE code
+# Aug 2915
+# 
+# install packages, you can skip this commands if you had installed them
+# install.packages(c("devtools","ggplot2"))
+library(devtools)
+install_github('JohnsonHsieh/Jade')
+library(Jade)
+#data(ExAbun)
+#RAD_Abun <- SpecDist(ExAbun, "abundance")
+#ggplot(RAD_Abun, aes(x=rank, y=probability, colour=method)) + 
+#    geom_point(size=3) + geom_line(size=1) + theme(text=element_text(size=18))
+
+RAD_nch <- SpecDist(nch, "abundance")
+ggplot(RAD_nch, aes(x=rank, y=probability, colour=method)) + 
+    geom_point(size=3) + geom_line(size=1) + theme(text=element_text(size=18))
+
+# RAD Function
+RAD <- function (X)  # X is an abundance vector
+    install_github('JohnsonHsieh/Jade')
+    require(Jade)
+            { RAD <- SpecDist(X, "abundance")
+            ggplot(RAD, aes(x=rank, y=probability, 
+                colour=method)) + 
+                geom_point(size=3) + 
+                geom_line(size=1) + 
+                theme(text=element_text(size=18))
+            }
+    
