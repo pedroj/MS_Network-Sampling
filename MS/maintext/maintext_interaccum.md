@@ -210,7 +210,9 @@ I am indebted to Jens M. Olesen, Alfredo Valido, Jordi Bascompte, Thomas Lewinsh
 |  $Scaled\ Chao$  |   195.4  |  162.7   | 308.4 |  
 |  $CI$   |  [124.5-266.3]  |  [148.5-176.9]      |  [253.6-363.1] |   
 |  $Scaled\ ACE$  |   178.5  |   169.7   | 342.6 |     
-| $CI$   |  [169.5-187.4]    |   [161.8-177.6]  |  [327.8-357.4] |   	
+| $CI$   |  [169.5-187.4]    |   [161.8-177.6]  |  [327.8-357.4] |   |  $\%\ unobserved^a$  |   8.33  |   15.38  | 47.8 |  
+| |||| | $^a$, estimated with library Jade [#RCoreTeam:2010][#Chao:2015tc]||||  
+	
 ## Figures ##   
 ![Figure 1. Sampling ecological interaction networks (e.g., plat-animal interactions) usually focus on different types of subsampling the full network, yielding submatrices $\Delta[m,n]$ of the full interaction matrix $\Delta$ with $A$ and $P$ animal and plant species. a) all the potential plants interacting with a subset of the animals (e.g., studying just the hummingbird-pollinated flower species in a community); b) all the potential animal species interacting with a subset of the plant species (e.g., studying the frugivore species feeding on figs *Ficus* in a community); and c) sampling a subset of  all the potential animal species interacting with a subset of all the plant species (e.g., studying the plant-frugivore interactions of the rainforest understory).](../figures/Fig1.pdf "Sampling interactions")
 
