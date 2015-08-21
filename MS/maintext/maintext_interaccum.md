@@ -139,11 +139,15 @@ $P_{new}= \frac{E(1)}{T}$ of seeing something new, where new means that we sampl
 
 Note, however, that Good-Turing estimators, as the traditional asymptotic estimators, do not account in our case for the forbidden interactions. To account for these $FL$ I re-scaled the asymptotic estimates, so that a more meaningful estimate could be obtained (Table 4). The scaling was calculated as $Chao1*(I+{ML})/{AP}$, just correcting for the $FL$ frequency, given that $I+{ML}$ represent the total *feasible* interactions when discounting the forbidden links (Table 1). After scaling, observed $I$ values (Table 2) are within the $Chao1$ and $ACE$ asymptotic estimates but below the $ACE$ estimates for Hato Ratón  and Zackenberg (Table 4).   
 
-## Discussion ##
-[#Stumpf:2005tn] It is important to note, however, that in practice, many surveyed networks to date have been subnets of much larger networks. This finding is true for protein interaction (5, 6), gene regulation (7), and metabolic networks (8), where only a subset of the molecular entities in a cell have been sampled.
 
-### Concluding Remarks ###
-(PUP)Missing links are a characteristic feature of all plant-animal interaction networks. Important natural history details explain a fraction of them, resulting in unobservable interactions (i.e., forbidden interactions) that define structural zeroes in the interaction matrices. Focusing on sampling interactions is a way to monitor biodiversity beyond the simple enumeration of component species and to develop efficient and robust inventories of functional interactions. Focusing just on the realized interactions or treating missing interactions as the expected unique result of sampling bias would miss important components to understand how mutualisms coevolve within complex webs of interdependence among species. 
+## Discussion ##
+Recent work has inferred that most data available for interaction networks are incomplete due to undersampling, resulting in a variety of biased parameters and network patterns []. It is important to note, however, that in practice, many surveyed networks to date have been subnets of much larger networks. This is true for protein interaction, gene regulation, and metabolic networks, where only a subset of the molecular entities in a cell have been sampled [#Stumpf:2005tn]. Despite recent attempts to document whole ecosystem meta-networks [#Pocock:2012ep], it is likely that most ecological interaction networks will illustrate just major ecosystem compartments. Undersampling of ecological networks may originate from the analysis of assemblage subsets (e.g., taxonomically or functionally defined), and/or from logistically-limited sampling effort. It is extremely hard to robustly sample the set of biotic interactions even for relatively simple, species-poor assemblages; yet, concluding that all ecological network datasets are undersampled  would be unrealistic. The reason stems form a biological fact: a sizeable fraction of the maximum, potential links that can be recorded among two distinct sets of  species is simply unobservable, irrespective of sampling effort [#E31/2562].        
+
+Missing links are a characteristic feature of all plant-animal interaction networks. Important natural history details explain a fraction of them, resulting in unobservable interactions (i.e., forbidden interactions) that define structural zeroes in the interaction matrices and contribute to their extreme sparseness. Sampling interactions is a way to monitor biodiversity beyond the simple enumeration of component species and to develop efficient and robust inventories of functional interactions. Yet no sampling theory for interactions is available. Some key components of this sampling are analogous to species sampling and traditional biodiversity inventories; however, there are important differences. Focusing just on the realized interactions or treating missing interactions as the expected unique result of sampling bias would miss important components to understand how mutualisms coevolve within complex webs of interdependence among species. 
+
+Contrary to species inventories, a sizable fraction of non-observed pairwise interactions cannot be sampled, due to biological constraints that forbid their occurrence. A re-scaling of traditional asymptotic estimates for interaction richness can be applied whenever the knowledge of natural history details about the study system is sufficient to estimate at least the main causes of forbidden links. Moreover, recent implementations of inference methods for unobserved species [] can be combined with the forbidden link approach, yet they do not account either for the existence of these ecological constraints. 
+
+Ecological interactions provide the wireframe supporting the lives of species, and they also embed crucial ecosystem functions which are fundamental for supporting the Earth system. Yet we still have a limited knowledge of the biodiversity of ecological interactions, but they are being lost (extinct) at a very fast pace, frequently preceding species extinctions [#ValienteBanuet:2014bw]. We urgently need robust techniques to assess the completeness of ecological interactions networks because this knowledge will allow the identification of the minimal components of ecological complexity that need to be restored after perturbations to rebuild functional ecosystems.
 
 
 ## **Acknowledgements**. ##
@@ -335,6 +339,8 @@ I am indebted to Jens M. Olesen, Alfredo Valido, Jordi Bascompte, Thomas Lewinsh
 
 [#Pereira:2013ji]: Pereira, H.M., Ferrier, S., Walters, M., Geller, G.N., Jongman, R.H.G., Scholes, R.J., Bruford, M.W., Brummitt, N., Butchart, S.H.M., Cardoso, A.C., Coops, N.C., Dulloo, E., Faith, D.P., Freyhof, J., Gregory, R.D., Heip, C., Hoft, R., Hurtt, G., Jetz, W., Karp, D.S., Mcgeoch, M.A., Obura, D., Onoda, Y., Pettorelli, N., Reyers, B., Sayre, R., Scharlemann, J.P.W., Stuart, S.N., Turak, E., Walpole, M. & Wegmann, M. (2013) Essential biodiversity variables. Science, 339, 277-278.        
 
+[#Pocock:2012ep]: Pocock, M.J.O., Evans, D.M. & Memmott, J. (2012) The robustness and restoration of a network of ecological networks. Science, 335, 973–977.
+
 [#E2/813]: Preston, F.W. (1948) The commonness, and rarity, of species. Ecology, 29, 254-283.
 
 [#RCoreTeam:2010]: R Development Core Team. (2010) R: a Language and Environment for Statistical Computing. R Foundation for Statistical Computing. Vienna, Austria. http://www.R-project.org, Vienna, Austria.
@@ -368,8 +374,4 @@ I am indebted to Jens M. Olesen, Alfredo Valido, Jordi Bascompte, Thomas Lewinsh
 [#Vazquez:2015ec]: Vázquez, D.P., Ramos-Jiliberto, R., Urbani, P. & Valdovinos, F.S. (2015) A conceptual framework for studying the strength of plant-animal mutualistic interactions. Ecology Letters, 18, 385–400.
 
 [#Vizentin-Bugoni:2014hc]: Vizentin-Bugoni, J., Maruyama, P.K. & Sazima, M. (2014) Processes entangling interactions in communities: forbidden links are more important than abundance in a hummingbird-plant network. Proceedings of the Royal Society B-Biological Sciences, 281, 20132397.
-
-### REFRENCES TO ADD ###
-
-[#Burkle:2012uz]: Burkle, L.A. & Knight, T.M. (2012) Shifts in pollinator composition and behavior cause slow interaction accumulation with area in plant-pollinator networks. Ecology, 93, 2329-2335.
 
