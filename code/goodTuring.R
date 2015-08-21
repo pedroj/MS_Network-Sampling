@@ -103,6 +103,7 @@ library(Jade)
 #    geom_point(size=3) + geom_line(size=1) + theme(text=element_text(size=18))
 
 RAD_nch <- SpecDist(nch, "abundance")
+
 ggplot(RAD_nch, aes(x=rank, y=probability, colour=method)) + 
     geom_point(size=3) + geom_line(size=1) + theme(text=element_text(size=18))
 
@@ -118,6 +119,7 @@ RAD <- function (X)  # X is an abundance vector
                 geom_line(size=1) + 
                 theme(text=element_text(size=18))
             }
-RAD(nch)    
-RAD(hr)
-RAD(beeh)
+RAD_nch <- SpecDist(nch, "abundance")
+RAD_hr <- SpecDist(hr, "abundance")
+RAD_zack <- SpecDist(zack, "abundance")
+
