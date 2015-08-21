@@ -108,13 +108,16 @@ ggplot(RAD_nch, aes(x=rank, y=probability, colour=method)) +
 
 # RAD Function
 RAD <- function (X)  # X is an abundance vector
-    install_github('JohnsonHsieh/Jade')
-    require(Jade)
-            { RAD <- SpecDist(X, "abundance")
+            { 
+            #    install_github('JohnsonHsieh/Jade')
+            require(Jade)
+            RAD <- SpecDist(X, "abundance")
             ggplot(RAD, aes(x=rank, y=probability, 
                 colour=method)) + 
                 geom_point(size=3) + 
                 geom_line(size=1) + 
                 theme(text=element_text(size=18))
             }
-    
+RAD(nch)    
+RAD(hr)
+RAD(beeh)
