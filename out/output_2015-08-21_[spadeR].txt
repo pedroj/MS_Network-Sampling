@@ -1,0 +1,54 @@
+
+(1) BASIC DATA INFORMATION:
+
+                                                    Variable Value
+Number of observed individuals                             n  1253
+Number of observed species                                 D   453
+Cut-off point                                              k    10
+Number of observed in dividuals for rare species      n_rare   873
+Number of observed species for rare species           D_rare   433
+Estimation of the sample converage for rare species   C_rare 0.707
+Estimation of CV for rare species in ACE             CV_rare 0.861
+Estimation of CV1 for rare species in ACE-1         CV1_rare 1.227
+Number of observed individuals for abundant species   n_abun   380
+Number of observed species for abundant species       D_abun    20
+
+       1  2  3  4  5 6 7 8 9 10
+f(i) 256 79 32 24 19 6 6 6 4  1
+
+
+(2) SPECIES RICHNESS ESTIMATORS TABLE:
+
+                          Estimate Est_s.e. 95% Lower Bound 95% Upper Bound
+Homogenous Model           632.656   24.821         590.214         688.226
+Homogeneous (MLE)          491.365    7.285         479.529         508.481
+Chao1 (Chao, 1984)         867.454   72.613         747.760        1035.751
+Chao1-bc                   860.674   71.177         743.277        1025.550
+iChao1 (Chiu et al. 2014)  935.232   54.852         839.141        1055.235
+ACE (Chao & Lee, 1992)     901.270   64.808         791.153        1047.244
+ACE-1 (Chao & Lee, 1992)  1177.851  130.497         963.770        1481.661
+1st order jackknife        708.796   22.614         668.173         757.087
+2nd order jackknife        885.576   39.150         815.395         969.349
+
+
+(3)DESCRIPTION OF ESTIMATORS/MODELS:
+
+Homogenous Model: This model assumes that all species have the same discovery probabilities. See Eq.(2.3) of Chao and Lee (1992) or Eq. (2.1) of Chao et al. (2000).
+
+Homogenous (MLE): An approximate maximum likelihood estimate under homogenous model. See Eq.(1.1) and Eq.(1.2) of Chao and Lee (1992).
+
+Chao1 (Chao, 1984): This approach uses the numbers of singletons and doubletons to estimate the number of missing species because missing species information is mostly concentrated on those low frequency counts; see Chao (1984), Shen, Chao and Lin (2003) and Chao, Shen and Hwang (2006).
+
+Chao1-bc: a bias-corrected form for the Chao1; see Chao (2005).
+
+iChao1: an improved Chao1 estimtor; see Chiu et al. (2014)
+
+ACE (Abundance-based Coverage Estimator): A non-parametric estimator proposed by Chao and Lee (1992) and Chao, Ma and Yang (1993).  The observed species are separated as rare and abundant groups; only the rare group is used to estimate the number of missing species. The estimated CV is used to characterize the degree of heterogeneity among species discovery probabilities.  See Eq.(2.14) in Chao and Lee (1992) or Eq.(2.2) of Chao et al. (2000).
+
+ACE-1: A modified ACE for highly-heterogeneous communities. See Eq.(2.15) in Chao and Lee (1992).
+
+1st order jackknife: It uses the number of singletons to estimate the number of missing species; see Burnham and Overton (1978).
+
+2nd order jackknife: It uses the numbers of singletons and doubletons to estimate the number of missing species; see Burnham and Overton (1978).
+
+95% Confidence interval: A log-transformation is used so that the lower bound of the resulting interval is at least the number of observed species. See Chao (1987).

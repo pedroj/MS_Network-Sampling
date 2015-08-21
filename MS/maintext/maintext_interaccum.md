@@ -197,21 +197,24 @@ I am indebted to Jens M. Olesen, Alfredo Valido, Jordi Bascompte, Thomas Lewinsh
 
 - - -    
 
-[Table 3. Sampling statistics for three plant-animal interaction networks [#Olesen:2011a]. Symbols as in Table 1; $N$, number of records; $Chao1$ and $ACE$ are asymptotic estimators for the number of distinct pairwise interactions $I$ [#Hortal:2006dc], and their standard errors. Scaled asymptotic estimators and their confidence intervals ($CI$) were calculated by weighting $Chao1$ and $ACE$ with the observed frequencies of forbidden links.  ]
+[Table 3. Sampling statistics for three plant-animal interaction networks [#Olesen:2011a]. Symbols as in Table 1; $N$, number of records; $Chao1$ and $ACE$ are asymptotic estimators for the number of distinct pairwise interactions $I$ [#Hortal:2006dc], and their standard errors; $C$, sample coverage for rare interactions [#Chao:2012vk]. Scaled asymptotic estimators and their confidence intervals ($CI$) were calculated by weighting $Chao1$ and $ACE$ with the observed frequencies of forbidden links.  ]
 |    |   Hato Ratón  |   Nava Correhuelas  |   Zackenberg  |  
 |  :------:	| :------:	| :------:	| :------:	|  
 |  $A$  |   17  |   33  |   65  |
 |  $P$  |   16  |   25  |   31  |
 |  $I_{max}$  |   272  |   825  |   1891  |
 |  $N$  |   3340  |   8378  |  1245   |
-|  $I$  |   151  |   181  |   268  |
+|  $I$  |   151  |   181  |   268  |  
+|  $C$  |   0.917  |   0.886  |   0.707  |  
 |  $Chao1$  |   263.1±70.9  |   231.4±14.2  |   509.6±54.7  |
 |  $ACE$  |   240.3±8.9  |   241.3±7.9  |   566.1±14.8  |
 |  $Scaled\ Chao$  |   195.4  |  162.7   | 308.4 |  
 |  $CI$   |  [124.5-266.3]  |  [148.5-176.9]      |  [253.6-363.1] |   
 |  $Scaled\ ACE$  |   178.5  |   169.7   | 342.6 |     
-| $CI$   |  [169.5-187.4]    |   [161.8-177.6]  |  [327.8-357.4] |   |  $\%\ unobserved^a$  |   8.33  |   15.38  | 47.8 |  
-| |||| | $^a$, estimated with library Jade [#RCoreTeam:2010][#Chao:2015tc]||||  
+| $CI$   |  [169.5-187.4]    |   [161.8-177.6]  |  [327.8-357.4] |   
+|  $\%\ unobserved^a$  |   8.33  |   15.38  | 47.8 |  
+| |||| 
+| $^a$, estimated with library Jade [#RCoreTeam:2010][#Chao:2015tc]||||  
 	
 ## Figures ##   
 ![Figure 1. Sampling ecological interaction networks (e.g., plant-animal interactions) usually focus on different types of subsampling the full network, yielding submatrices $\Delta[m,n]$ of the full interaction matrix $\Delta$ with $A$ and $P$ animal and plant species. a) all the potential plants interacting with a subset of the animals (e.g., studying just the hummingbird-pollinated flower species in a community); b) all the potential animal species interacting with a subset of the plant species (e.g., studying the frugivore species feeding on figs *Ficus* in a community); and c) sampling a subset of  all the potential animal species interacting with a subset of all the plant species (e.g., studying the plant-frugivore interactions of the rainforest understory).](../figures/Fig1.pdf "Sampling interactions")
@@ -247,6 +250,8 @@ I am indebted to Jens M. Olesen, Alfredo Valido, Jordi Bascompte, Thomas Lewinsh
 [#Chao:2005wp]: Chao, A. (2005) Species richness estimation. Encyclopedia of Statistical Sciences pp. 7909-7916. New York, USA.    
 
 [#Chao:2009wq]: Chao, A., Colwell, R.K., Lin, C.-W. & Gotelli, N.J. (2009) Sufficient sampling for asymptotic minimum species richness estimators. Ecology, 90, 1125-1133.    
+
+[#Chao:2012vk]: Chao, A. & Jost, L. (2012) Coverage-based rarefaction and extrapolation: standardizing samples by completeness rather than size. Ecology, 93, 2533–2547.
 
 [#Chao:2015tc]: Chao, A., Hsieh, T.C., Chazdon, R.L., Colwell, R.K. & Gotelli, N.J. (2015) Unveiling the species-rank abundance distribution by generalizing the Good-Turing sample coverage theory. Ecology, 96, 1189–1201.
 
