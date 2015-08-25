@@ -71,9 +71,10 @@ par(mfrow=c(1,2))
 # x11()
 plot(sp1, ci.type="poly", col="blue", lwd=2, ci.lty=0,
         ci.col="lightblue", main= "Hato Ratón", 
-        sub = "IAC, random", ylim=c(0,300),
+        sub = "IAC, random", #ylim=c(0,300),
         xlab= "Number of samples", 
         ylab= "No. pairwise interactions")
+abline(h= c(125,195,266))
 boxplot(sp1, col="yellow", add=TRUE, pch="+")
 plot(sp2, main= " ",
         sub = "IAC, collector",
