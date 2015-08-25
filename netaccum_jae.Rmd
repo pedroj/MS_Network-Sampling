@@ -71,7 +71,7 @@ par(mfrow=c(1,2))
 # x11()
 plot(sp1, ci.type="poly", col="blue", lwd=2, ci.lty=0,
         ci.col="lightblue", main= "Hato Ratón", 
-        sub = "IAC, random",
+        sub = "IAC, random", ylim=c(0,300),
         xlab= "Number of samples", 
         ylab= "No. pairwise interactions")
 boxplot(sp1, col="yellow", add=TRUE, pch="+")
@@ -110,7 +110,7 @@ sp5<-specaccum(t(nchcum),"rarefaction")
 par(mfrow=c(1,2))
 # x11()
 plot(sp1, ci.type="poly", col="blue", lwd=2, ci.lty=0, ci.col="lightblue", main= "Nava Correhuelas", 
-        sub = "IAC, random",
+        sub = "IAC, random", ylim=c(0,300),
         xlab= "Number of samples", 
         ylab= "No. pairwise interactions")
 boxplot(sp1, col="yellow", add=TRUE, pch="+")
