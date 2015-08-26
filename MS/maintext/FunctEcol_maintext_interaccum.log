@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.8.8)  26 AUG 2015 02:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.8.8)  26 AUG 2015 03:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -329,7 +329,11 @@ LaTeX Info: Redefining \\ on input line 3056.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/setspace/setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
-(./FunctEcol_maintext_interaccum.aux)
+(./FunctEcol_maintext_interaccum.aux
+
+LaTeX Warning: Label `TabENFA' multiply defined.
+
+)
 \openout1 = `FunctEcol_maintext_interaccum.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
@@ -383,8 +387,7 @@ driver: pdftex
 
 (1in=72.27pt, 1cm=28.45pt)
 -----------------------
-
-(/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
+ (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count102
 \scratchdimen=\dimen114
@@ -475,566 +478,128 @@ LaTeX Font Info:    Try loading font information for T1+cmtt on input line 38.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-
-Package natbib Warning: Citation `Magurran:1988mm' on page 3 undefined on input
- line 46.
-
-
-Package natbib Warning: Citation `Gotelli:2001uo' on page 3 undefined on input 
-line 46.
-
-
-Package natbib Warning: Citation `Hortal:2006dc' on page 3 undefined on input l
-ine 46.
-
-
-Package natbib Warning: Citation `Gotelli:2011tb' on page 3 undefined on input 
-line 46.
-
-
-Package natbib Warning: Citation `Pereira:2013ji' on page 3 undefined on input 
-line 46.
-
-
-Package natbib Warning: Citation `Memmott:2006vy' on page 3 undefined on input 
-line 46.
-
-
-Package natbib Warning: Citation `ValienteBanuet:2014bw' on page 3 undefined on
- input line 46.
-
-
-Package natbib Warning: Citation `Mao:2005tka' on page 3 undefined on input lin
-e 46.
-
 LaTeX Font Info:    Try loading font information for T1+cmss on input line 47.
+
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/t1cmss.fd
 File: t1cmss.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-) [3]
-
-Package natbib Warning: Citation `Colwell:2012fc' on page 4 undefined on input 
-line 48.
-
-
-Package natbib Warning: Citation `E31/2562' on page 4 undefined on input line 4
-8.
-
-
-Package natbib Warning: Citation `Jordano:2009c' on page 4 undefined on input l
-ine 48.
-
-
-Package natbib Warning: Citation `Vazquez:2009p82' on page 4 undefined on input
- line 48.
-
-
-Package natbib Warning: Citation `Dorado:2011cf' on page 4 undefined on input l
-ine 48.
-
-
-Package natbib Warning: Citation `RiveraHutinel:2012vn' on page 4 undefined on 
-input line 48.
-
-
-Package natbib Warning: Citation `Mao:2005tka' on page 4 undefined on input lin
-e 48.
-
-
-Package natbib Warning: Citation `E2/813' on page 4 undefined on input line 48.
-
-
-[4]
-
-Package natbib Warning: Citation `Martinez:1991aa' on page 5 undefined on input
- line 50.
-
-
-Package natbib Warning: Citation `Martinez:1993ti' on page 5 undefined on input
- line 50.
-
-
-Package natbib Warning: Citation `E31/2562' on page 5 undefined on input line 5
-0.
-
-
-Package natbib Warning: Citation `Ollerton:2002jw' on page 5 undefined on input
- line 50.
-
-
-Package natbib Warning: Citation `Nielsen:2007' on page 5 undefined on input li
-ne 50.
-
-
-Package natbib Warning: Citation `Vazquez:2009p82' on page 5 undefined on input
- line 50.
-
-
-Package natbib Warning: Citation `Gibson:2011eh' on page 5 undefined on input l
-ine 50.
-
-
-Package natbib Warning: Citation `Olesen:2011a' on page 5 undefined on input li
-ne 50.
-
-
-Package natbib Warning: Citation `RiveraHutinel:2012vn' on page 5 undefined on 
-input line 50.
-
-
-Package natbib Warning: Citation `Olito:2014gc' on page 5 undefined on input li
-ne 50.
-
-
-Package natbib Warning: Citation `Vizentin-Bugoni:2014hc' on page 5 undefined o
-n input line 50.
-
-
-Package natbib Warning: Citation `Frund:2015ii' on page 5 undefined on input li
-ne 50.
-
-
-Package natbib Warning: Citation `Colwell:2012fc' on page 5 undefined on input 
-line 50.
-
-
-Package natbib Warning: Citation `Nielsen:2007' on page 5 undefined on input li
-ne 50.
-
-
-Package natbib Warning: Citation `Dorado:2011cf' on page 5 undefined on input l
-ine 50.
-
-
-Package natbib Warning: Citation `Olesen:2011a' on page 5 undefined on input li
-ne 50.
-
-
-Package natbib Warning: Citation `RiveraHutinel:2012vn' on page 5 undefined on 
-input line 50.
-
-
-Package natbib Warning: Citation `Olito:2014gc' on page 5 undefined on input li
-ne 50.
-
-
-Package natbib Warning: Citation `Frund:2015ii' on page 5 undefined on input li
-ne 50.
-
-
-Package natbib Warning: Citation `Frund:2015ii' on page 5 undefined on input li
-ne 50.
-
-
-Package natbib Warning: Citation `Ollerton:2002jw' on page 5 undefined on input
- line 50.
-
-[5]
-
-Package natbib Warning: Citation `Snow:1988iu' on page 6 undefined on input lin
-e 55.
-
-[6]
-
-Package natbib Warning: Citation `E31/2562' on page 7 undefined on input line 5
-7.
-
-
-Package natbib Warning: Citation `Vazquez:2015ec' on page 7 undefined on input 
-line 57.
-
-
-Package natbib Warning: Citation `Vazquez:2005' on page 7 undefined on input li
-ne 57.
-
-
-Package natbib Warning: Citation `Strogatz:2001wc' on page 7 undefined on input
- line 59.
-
-
-Package natbib Warning: Citation `Stumpf:2005tn' on page 7 undefined on input l
-ine 59.
-
-[7]
-
-Package natbib Warning: Citation `Schleuning:2012eg' on page 8 undefined on inp
-ut line 66.
-
-
-Package natbib Warning: Citation `Thebault:2010jv' on page 8 undefined on input
- line 66.
-
-
-Package natbib Warning: Citation `Eklof:2013ed' on page 8 undefined on input li
-ne 66.
-
-
-Package natbib Warning: Citation `Dormann:2009aa' on page 8 undefined on input 
-line 66.
-
-
-Package natbib Warning: Citation `E31/5591' on page 8 undefined on input line 6
-6.
-
-
-Package natbib Warning: Citation `Olesen:2002wb' on page 8 undefined on input l
-ine 66.
-
-[8]
-
-Package natbib Warning: Citation `JuradoRivera:2009cp' on page 9 undefined on i
-nput line 68.
-
-
-Package natbib Warning: Citation `GonzalezVaro:2014ij' on page 9 undefined on i
-nput line 68.
-
-[9]
-
-Package natbib Warning: Citation `Dupont:2011aa' on page 10 undefined on input 
-line 74.
-
-[10]
-
-Package natbib Warning: Citation `E31/2562' on page 11 undefined on input line 
-81.
-
-
-Package natbib Warning: Citation `E31.7324_PDF' on page 11 undefined on input l
-ine 81.
-
-
-Package natbib Warning: Citation `Olesen:2011a' on page 11 undefined on input l
-ine 81.
-
-
-Package natbib Warning: Citation `E31/2562' on page 11 undefined on input line 
-81.
-
-
-Package natbib Warning: Citation `More:2012kx' on page 11 undefined on input li
-ne 81.
-
-[11]
-
-Package natbib Warning: Citation `E31.7324_PDF' on page 12 undefined on input l
-ine 86.
-
-
-Package natbib Warning: Citation `Olesen:2011a' on page 12 undefined on input l
-ine 86.
-
-
-Package natbib Warning: Citation `E31/2562' on page 12 undefined on input line 
-86.
-
-
-Package natbib Warning: Citation `E31.7324_PDF' on page 12 undefined on input l
-ine 86.
-
-
-Package natbib Warning: Citation `Stang:2009cx' on page 12 undefined on input l
-ine 86.
-
-
-Package natbib Warning: Citation `Vazquez:2009p82' on page 12 undefined on inpu
-t line 86.
-
-
-Package natbib Warning: Citation `Olesen:2011a' on page 12 undefined on input l
-ine 86.
-
-
-Package natbib Warning: Citation `Ibanez:2012eu' on page 12 undefined on input 
-line 86.
-
-
-Package natbib Warning: Citation `Maruyama:2014gt' on page 12 undefined on inpu
-t line 86.
-
-
-Package natbib Warning: Citation `Vizentin-Bugoni:2014hc' on page 12 undefined 
-on input line 86.
-
-
-Package natbib Warning: Citation `E31.616' on page 12 undefined on input line 8
-6.
-
-[12] [13]
-Underfull \hbox (badness 10000) in paragraph at lines 96--97
+) [3] [4] [5]
+[6] [7] [8] [9] [10] [11] [12] [13] [14]
+Underfull \hbox (badness 10000) in paragraph at lines 92--93
 
  []
 
-[14]
-
-Package natbib Warning: Citation `Hortal:2006dc' on page 15 undefined on input 
-line 98.
-
-
-Package natbib Warning: Citation `Gotelli:2001uo' on page 15 undefined on input
- line 102.
-
-
-Package natbib Warning: Citation `E31/2562' on page 15 undefined on input line 
-106.
-
-
-Package natbib Warning: Citation `Jordano:2009c' on page 15 undefined on input 
-line 106.
-
-
-Package natbib Warning: Citation `Olesen:2011a' on page 15 undefined on input l
-ine 106.
-
-
-Package natbib Warning: Citation `RCoreTeam:2010' on page 15 undefined on input
- line 106.
-
-
-Package natbib Warning: Citation `Gotelli:2001uo' on page 15 undefined on input
- line 106.
-
-
-Package natbib Warning: Citation `Jordano:2009c' on page 15 undefined on input 
-line 106.
-
-
-Package natbib Warning: Citation `Olesen:2011a' on page 15 undefined on input l
-ine 106.
-
-
-Package natbib Warning: Citation `Jordano:2009c' on page 15 undefined on input 
-line 106.
-
-[15] [16]
-
-Package natbib Warning: Citation `Mao:2005tka' on page 17 undefined on input li
-ne 116.
-
-
-Package natbib Warning: Citation `Mao:2005tka' on page 17 undefined on input li
-ne 116.
-
-
-Package natbib Warning: Citation `Mao:2005tka' on page 17 undefined on input li
-ne 116.
-
-
-Package natbib Warning: Citation `Mao:2005tka' on page 17 undefined on input li
-ne 116.
-
-[17]
-
-Package natbib Warning: Citation `Vizentin-Bugoni:2014hc' on page 18 undefined 
-on input line 129.
-
-[18]
-
-Package natbib Warning: Citation `Magurran:1988mm' on page 19 undefined on inpu
-t line 131.
-
-
-Package natbib Warning: Citation `Hortal:2006dc' on page 19 undefined on input 
-line 131.
-
-
-Package natbib Warning: Citation `Jordano:2009c' on page 19 undefined on input 
-line 131.
-
-
-Package natbib Warning: Citation `Olesen:2011a' on page 19 undefined on input l
-ine 131.
-
-
-Package natbib Warning: Citation `Hortal:2006dc' on page 19 undefined on input 
-line 131.
-
-
-Package natbib Warning: Citation `Olesen:2011a' on page 19 undefined on input l
-ine 131.
-
-
-Package natbib Warning: Citation `Vizentin-Bugoni:2014hc' on page 19 undefined 
-on input line 131.
-
-[19]
-
-Package natbib Warning: Citation `Jordano:2009c' on page 20 undefined on input 
-line 138.
-
-./FunctEcol_maintext_interaccum.tex:138: Undefined control sequence.
-l.138 ...l abundances. With $PIE_{median}\leqslant
-                                                   1.4\centerdot10^{-4}$ we ...
-
-? s
-OK, entering \scrollmode...
-./FunctEcol_maintext_interaccum.tex:138: Undefined control sequence.
-l.138 ...With $PIE_{median}\leqslant 1.4\centerdot
-                                                  10^{-4}$ we may safely exp...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-./FunctEcol_maintext_interaccum.tex:138: Undefined control sequence.
-l.138 ...antile estimate $Q_{75\%}= 3.27\centerdot
-                                                  10^{-4}$) that a sizable f...
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-Package natbib Warning: Citation `E31/2562' on page 20 undefined on input line 
-138.
-
-
-Package natbib Warning: Citation `Olesen:2011a' on page 20 undefined on input l
-ine 138.
-
-[20]
-
-Package natbib Warning: Citation `Good:1953tn' on page 21 undefined on input li
-ne 140.
-
-
-Package natbib Warning: Citation `Gale:1995uy' on page 21 undefined on input li
-ne 140.
-
-./FunctEcol_maintext_interaccum.tex:143: Undefined control sequence.
-l.143 P(X)= \frac{(N_X + 1)}{T}\centerdot
-                                         (1-\frac{E(1)}{T})
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-[21]
-
-Package natbib Warning: Citation `Stumpf:2005tn' on page 22 undefined on input 
-line 153.
-
-
-Package natbib Warning: Citation `Pocock:2012ep' on page 22 undefined on input 
-line 153.
-
-
-Package natbib Warning: Citation `E31/2562' on page 22 undefined on input line 
-153.
-
-[22] [23]
-
-Package natbib Warning: Citation `ValienteBanuet:2014bw' on page 24 undefined o
-n input line 159.
-
-[24] (./FunctEcol_maintext_interaccum.bbl
-Underfull \hbox (badness 10000) in paragraph at lines 167--1
+[15] [16] [17] [18]
+Overfull \hbox (0.55766pt too wide) in paragraph at lines 126--128
+[]\T1/cmr/m/n/12 Rarefaction anal-y-sis and diversity-accumulation anal-y-sis (
+Magur-ran, 1988; Hor-
+ []
+
+[19] [20] [21] [22] [23] [24] (./FunctEcol_maintext_interaccum.bbl
+Underfull \hbox (badness 10000) in paragraph at lines 162--1
 
  []
 
-[25] [26])
-Runaway argument?
-{\}, pp. 1--33. \par \bibitem [{Colwell, Dunn \& Harris(2012)}]{Colwe\ETC.
-./FunctEcol_maintext_interaccum.tex:170: File ended while scanning use of \emph
- .
-<inserted text> 
-                \par 
-l.170 \bibliography{FunctEcol_maintext_interaccum}
-                                                    % The .bib file(s)
-I suspect you have forgotten a `}', causing me
-to read past where you wanted me to stop.
-I'll try to recover; but if the error is serious,
-you'd better type `E' or `X' now and fix your file.
-
-[27]
-
-Package natbib Warning: Citation `Dupont:2014ex' on page 28 undefined on input 
-line 175.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 174--177
+[25] [26] [27] [28] [29] [30] [31] [32] [33]) [34]
+Underfull \hbox (badness 10000) in paragraph at lines 170--171
 
  []
 
-[28] <../figures/Fig1.pdf, id=110, 441.65pt x 323.2075pt>
+
+Underfull \hbox (badness 10000) in paragraph at lines 172--173
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--175
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 176--178
+
+ []
+
+[35] [36]
+Overfull \hbox (85.04353pt too wide) in paragraph at lines 183--194
+ [] 
+ []
+
+[37]
+Overfull \hbox (145.10818pt too wide) in paragraph at lines 202--221
+ [] 
+ []
+
+[38] [39]
+Overfull \hbox (16.9854pt too wide) in paragraph at lines 250--271
+ [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 275--278
+
+ []
+
+[40] [41] <../figures/Fig1.pdf, id=152, 441.65pt x 323.2075pt>
 File: ../figures/Fig1.pdf Graphic file (type pdf)
 
 <use ../figures/Fig1.pdf>
-Package pdftex.def Info: ../figures/Fig1.pdf used on input line 182.
+Package pdftex.def Info: ../figures/Fig1.pdf used on input line 283.
 (pdftex.def)             Requested size: 455.24408pt x 333.17375pt.
 
-Overfull \hbox (36.9904pt too wide) in paragraph at lines 182--183
+Overfull \hbox (36.9904pt too wide) in paragraph at lines 283--284
  [] 
  []
 
-[29 <../figures/Fig1.pdf>]
-<../figures/Fig2.pdf, id=161, 772.8875pt x 506.89375pt>
+[42 <../figures/Fig1.pdf>]
+<../figures/Fig2.pdf, id=204, 772.8875pt x 506.89375pt>
 File: ../figures/Fig2.pdf Graphic file (type pdf)
 
 <use ../figures/Fig2.pdf>
-Package pdftex.def Info: ../figures/Fig2.pdf used on input line 190.
+Package pdftex.def Info: ../figures/Fig2.pdf used on input line 291.
 (pdftex.def)             Requested size: 455.24408pt x 298.5697pt.
 
-Overfull \hbox (36.9904pt too wide) in paragraph at lines 190--191
+Overfull \hbox (36.9904pt too wide) in paragraph at lines 291--292
  [] 
  []
 
+[43 <../figures/Fig2.pdf>] (./FunctEcol_maintext_interaccum.aux)
 
-Package natbib Warning: There were undefined citations.
+LaTeX Warning: There were multiply-defined labels.
 
-
-./FunctEcol_maintext_interaccum.tex:194: LaTeX Error: \begin{thebibliography} o
-n input line 1 ended by \end{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.194 \end{document}
-                    
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-[30 <../figures/Fig2.pdf>] (./FunctEcol_maintext_interaccum.aux) )
-(\end occurred inside a group at level 1)
-
-### semi simple group (level 1) entered at line 1 (\begingroup)
-### bottom level 
+ ) 
 Here is how much of TeX's memory you used:
  2948 strings out of 493089
- 40632 string characters out of 6134843
- 108036 words of memory out of 5000000
- 6377 multiletter control sequences out of 15000+600000
- 16680 words of font info for 39 fonts, out of 8000000 for 9000
+ 40606 string characters out of 6134843
+ 109352 words of memory out of 5000000
+ 6376 multiletter control sequences out of 15000+600000
+ 17444 words of font info for 40 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,8n,25p,3432b,410s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/cm-super/cm
--super-t1.enc}</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmex10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmmi12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmmi6.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-mi8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr1
-2.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.p
-fb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pf
-b></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></
-usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfbi1728.pfb></us
-r/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/
-local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/lo
-cal/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/loca
-l/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/
-texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/te
-xlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb></usr/local/texl
-ive/2015/texmf-dist/fonts/type1/public/cm-super/sfss0600.pfb></usr/local/texliv
-e/2015/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/
-2015/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on FunctEcol_maintext_interaccum.pdf (30 pages, 683231 bytes).
+ 38i,11n,25p,3435b,343s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
+/usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></
+usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></us
+r/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/
+local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/lo
+cal/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local
+/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/
+texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/te
+xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texl
+ive/2015/texmf-dist/fonts/type1/public/cm-super/sfbi1728.pfb></usr/local/texliv
+e/2015/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/
+2015/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/20
+15/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2015
+/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2015/t
+exmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2015/tex
+mf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2015/texmf
+-dist/fonts/type1/public/cm-super/sfrm2074.pfb></usr/local/texlive/2015/texmf-d
+ist/fonts/type1/public/cm-super/sfss0600.pfb></usr/local/texlive/2015/texmf-dis
+t/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2015/texmf-dist/
+fonts/type1/public/cm-super/sftt1200.pfb>
+Output written on FunctEcol_maintext_interaccum.pdf (43 pages, 722423 bytes).
 PDF statistics:
- 971 PDF objects out of 1000 (max. 8388607)
- 583 compressed objects within 6 object streams
+ 1020 PDF objects out of 1200 (max. 8388607)
+ 617 compressed objects within 7 object streams
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
