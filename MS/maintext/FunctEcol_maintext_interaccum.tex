@@ -9,13 +9,17 @@
 \usepackage[running]{lineno}
 \usepackage{setspace}
 \doublespacing
+\usepackage{fancyhdr} % This should be set AFTER setting up the page geometry
+\pagestyle{fancy}                  % options: empty , plain , fancy
+\renewcommand{\headrulewidth}{0pt} % customise the layout...
+\lhead{{\scriptsize Jordano - Sampling networks}}\chead{}\rhead{}
+%--------------------------------------------------------------------------------
 \title{Sampling networks of ecological interactions}
 \author[a]{Pedro Jordano\thanks{jordano@ebd.csic.es}}
 \affil[a]{Integrative Ecology Group, Estaci\'on Biol\'ogica de Do\~nana, Consejo Superior de Investigaciones Cient\'ificas (EBD-CSIC), Avenida Americo Vespucio s\slash n, E--41092 Sevilla, Spain}
 %\renewcommand\Authands{ and }
-\date{*Corresponding author: jordano@ebd.csic.es}
-
-%
+\date{Sevilla, \today}
+%--------------------------------------------------------------------------------
 \begin{document}
 \maketitle
 \section*{Summary}
