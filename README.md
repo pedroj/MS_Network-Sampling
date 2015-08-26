@@ -1,5 +1,6 @@
 interaccum: Sampling interactions in ecological networks
 ==========
+[![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.29437.svg)](http://dx.doi.org/10.5281/zenodo.29437)
 
 This is the page for the interactions accumulation analysis project. Here I explore how to detemine sampling robustness for interaction networks by analogy with sampling species diversity.
 
