@@ -1,5 +1,5 @@
 ---
-title: "IAC Analyses. 2015 JAnimEcol paper"
+title: "IAC Analyses. 2015 Functional Ecol. paper"
 author: "Pedro Jordano"
 date: "agosto 17, 2015"
 output: html_document
