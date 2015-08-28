@@ -1,3 +1,5 @@
+# Hato Raton vecorized weighted adjacency matrix.
+#
 1370
 146
 96

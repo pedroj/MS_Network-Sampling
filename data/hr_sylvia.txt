@@ -1,3 +1,5 @@
+# Hato Raton. Individual samples for Sylvia species. Columns are fruit species.
+#
 species	number	date	PLEN	OEUR	PANG	RLYC	DGNI	RULM	RPER	SASP	CMON	AACU	LPER	SNIG	MCOM	OALB	PBOU	TCOM	OPUN
 SATR	J64177	12-02-81	3.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0
 SATR	J64185	26-02-81	0.0	0.1	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0	0.0

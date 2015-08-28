@@ -9,7 +9,7 @@ library(vegan)
 # of pairwwise interactions" with the frequency of each one of the possible 
 # pairwise interactions (A*P).
 # NOTE that this method includes all potential interactions (A*P) without taking into account forbidden links.
-source("pairwise.R")
+source("../functions/pairwise.R")
 # Hato Raton
 temp<-pairwise(hrq)              # List of intraction names
 hr_int<-as.vector(hrq)           # Vectorized interaction matrix
