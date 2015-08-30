@@ -1,3 +1,5 @@
+# Zackenberg vectorized adjacency matrix.
+#
 9
 9
 9

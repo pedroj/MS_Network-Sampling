@@ -1,0 +1,121 @@
+# Nava de las Correhuelas forbidden links adjacency matrix.
+#
+NA	Prunus mahaleb	Crataegus monogyna	Berberis vulgaris	Juniperus phoenicea	Taxus baccata	Hedera helix	Rosa canina	Lonicera arborea	Juniperus sabina	Juniperus communis	Rhamnus saxatilis	Rhamnus myrtifolius	Daphne laureola	Sorbus aria	Rubus ulmifolius	Amelanchier ovalis	Arum italicum	Prunus prostrata	Rubia peregrina	Cotoneaster granatensis	Juniperus oxycedrus	Lonicera etrusca	Lonicera splendida	Paeonia officinalis	Polygonatum odoratum
+Turdus merula	1	1	1	1	1	U	1	1	1	1	1	U	E	E	1	U	U	1	1	E	1	U	E	1	1
+Turdus viscivorus	1	1	1	1	1	1	1	1	1	1	1	1	E	E	U	U	1	E	U	E	U	1	U	E	U
+Erithacus rubecula	1	1	1	S	U	1	S	1	1	U	U	S	1	1	U	1	1	1	1	U	1	E	U	U	U
+Turdus iliacus	P	1	1	1	1	1	1	1	1	1	1	U	P	P	P	1	P	P	U	P	P	P	P	P	P
+Turdus torquatus	P	1	1	1	1	P	1	1	1	1	1	1	P	P	P	P	P	P	P	P	P	P	P	P	P
+Phoenicurus ochruros	1	S	1	S	1	1	P	1	1	P	P	S	U	1	1	1	P	S	U	U	U	S	U	E	E
+Fringilla coelebs	1	1	1	S	1	U	S	U	1	U	U	S	1	U	U	U	U	U	U	1	S	S	U	U	U
+Parus ater	1	1	U	S	1	U	S	U	U	U	U	1	U	1	U	U	U	U	U	1	S	S	1	U	U
+Sylvia atricapilla	1	1	1	S	1	1	S	U	1	P	P	P	1	U	U	U	U	U	P	U	U	S	U	U	U
+Coccothraustes coccothraustes	1	1	P	1	P	U	1	1	U	U	U	U	U	U	U	U	U	U	U	U	U	U	U	U	U
+Columba palumbus	1	1	E	1	E	U	E	1	U	1	U	U	E	E	U	U	U	E	E	E	U	U	E	E	U
+Corvus corone	1	1	1	1	E	U	E	U	E	U	1	U	E	E	U	U	U	E	E	E	U	U	E	E	U
+Parus major	1	1	1	S	1	U	S	U	U	U	S	U	1	U	U	U	U	U	U	U	U	S	U	U	U
+Turdus pilaris	P	1	1	1	P	P	1	P	U	U	U	U	P	P	P	P	P	P	P	P	P	U	P	P	P
+Garrulus glandarius	1	1	E	1	E	U	U	U	U	U	U	U	E	E	U	U	U	U	U	E	U	U	E	U	U
+Parus caeruleus	1	1	1	S	U	U	U	U	U	U	S	U	U	U	U	U	U	U	U	U	U	S	U	U	U
+Phoenicurus phoenicurus	1	P	1	S	P	P	P	P	P	P	P	P	E	P	1	U	P	U	P	U	U	P	P	P	P
+Sitta europaea	1	1	U	U	U	U	U	1	U	U	E	1	U	U	U	U	U	U	U	U	U	E	U	U	U
+Sylvia communis	1	P	P	P	P	1	P	P	P	P	P	P	P	P	U	U	1	U	P	U	U	P	U	P	P
+Turdus philomelos	P	1	U	U	U	1	1	U	U	U	U	U	P	P	P	P	P	P	U	P	P	U	P	P	P
+Emberiza cia	S	1	U	S	U	U	U	U	U	U	S	1	U	U	U	U	U	U	U	U	U	S	U	U	U
+Ficedula hypoleuca	1	P	P	P	P	1	P	P	P	P	P	P	S	P	U	U	P	U	P	U	U	P	U	P	P
+Loxia curvirostra	U	1	U	U	E	U	1	U	U	U	U	U	U	U	U	U	U	U	U	U	U	U	U	U	U
+Parus cristatus	1	1	U	S	U	U	U	U	U	U	S	U	U	U	U	U	U	U	U	U	U	S	U	U	U
+Pica pica	U	1	1	U	E	U	U	U	U	U	U	U	E	U	U	U	U	U	U	E	U	U	E	U	U
+Sylvia conspicillata	1	P	P	P	P	1	P	P	P	P	P	P	P	P	U	U	P	U	P	U	U	P	U	P	P
+Corvus corax	U	1	E	U	E	U	E	U	E	U	U	U	E	E	U	U	U	U	E	E	U	U	E	U	U
+Dendrocopos major	1	U	E	U	E	U	U	U	U	U	U	U	E	U	U	U	U	E	U	E	U	U	E	E	U
+Serinus citrinella	1	S	P	U	U	P	S	P	P	P	P	U	U	U	P	P	U	P	U	U	U	S	U	P	U
+Serinus serinus	1	S	P	P	P	P	S	P	P	P	P	P	U	P	U	U	U	U	U	U	U	P	U	P	P
+Sylvia borin	1	P	P	P	P	P	P	P	P	P	P	P	P	P	U	U	P	P	P	U	U	P	P	P	P
+Sylvia cantillans	1	E	P	E	P	P	E	P	P	P	P	E	P	P	U	U	P	U	P	U	U	E	P	P	P
+Sylvia melanocephala	1	S	U	S	U	U	S	U	U	P	P	S	P	P	U	U	U	P	P	P	P	S	U	U	U
+Vulpes vulpes	1	1	U	1	E	1	1	1	E	U	U	1	U	1	U	U	U	U	U	E	1	1	E	U	U
+Martes foina	1	1	U	1	E	1	1	U	E	U	U	1	U	1	U	U	U	U	U	E	1	1	E	U	U
+Meles meles	1	1	U	1	E	1	1	U	E	U	U	U	U	U	U	U	U	U	U	E	U	1	E	U	U
+#
+#
+#
+# Hato Raton forbidden links  adjacency matrix.
+#
+NA	Pistacia lentiscus	Olea europaea	Phillyrea angustifolia	Rhamnus lycioides	Smilax aspera	Rubus ulmifolius	Myrtus communis	Daphne gnidium	Rubia pregrina	Osyris alba	Crataegus monogyna	Lonicera periclymenum	Asparagus aculeatus	Tamus communis	Pyrus bourgaeana	Asparagus aphyllus
+Sylvia atricapilla	1	1	1	1	1	1	1	1	1	1	1	1	1	P	1	1
+Sylvia borin	1	1	1	1	1	1	P	1	1	1	P	1	P	1	P	1
+Erithacus rubecula	1	1	1	1	1	1	1	1	1	S	S	P	1	P	S	1
+Sylvia melanocephala	1	1	1	1	1	1	1	1	1	1	S	1	1	1	S	1
+Turdus merula	1	1	1	1	1	1	1	E	1	E	1	1	1	1	1	1
+Turdus philomelos	1	1	1	P	U	P	1	E	P	P	1	P	U	P	S	P
+Sylvia communis	1	P	1	1	1	1	P	1	P	1	P	1	P	S	P	1
+Sylvia hortensis	1	P	1	1	1	1	P	1	P	1	P	1	P	1	P	1
+Sylvia cantillans	1	P	1	1	S	1	1	1	P	S	P	S	P	S	P	U
+Ficedula hypoleuca	1	S	1	1	1	1	P	U	P	U	P	1	P	S	P	U
+Phoenicurus phoenicurus	1	P	1	1	1	1	P	1	P	U	P	U	P	S	P	U
+Sylvia undata	1	S	S	S	S	S	1	U	S	S	S	S	S	S	S	S
+Saxicola torquata	1	1	1	P	1	P	1	E	U	E	1	P	1	P	S	P
+Cyanopica cyanus	1	1	1	1	1	1	1	E	U	E	1	U	1	1	1	U
+Luscinia megarhynchos	1	P	U	1	U	1	P	U	P	S	P	U	P	U	P	U
+Muscicapa striata	1	P	U	1	U	1	P	U	P	S	P	U	P	S	P	U
+Sturnus unicolor	1	1	P	P	1	P	1	P	1	E	1	P	1	P	P	P
+Meles meles	U	U	U	U	U	1	U	U	U	U	1	E	E	E	1	E
+Vulpes vulpes	U	1	U	U	U	1	U	U	U	U	1	E	E	E	1	E
+Genetta genetta	U	U	U	U	U	1	U	U	U	U	1	E	E	E	1	E
+#
+#
+#
+# Grundvad forbidden links  adjacency matrix. (Olesen and Mytrhue, unpubl.).
+#
+NA	Matricaria maritima	Anthemis arvensis	Crepis tectorum	Achillea millefolium	Jasione montana	Leucanthemum vulgare 	Knautia arvensis	Hypochoeris radicata	Campanula rotundifolia	Cirsium arvense	Lapsana communis	Viola tricolor	Artemisia vulgaris	Erodium cicutarium	Hypericum maculatum	Brassica napus	Cerastium arvense	Senecio vernalis	Urtica dioica
+Syritta pipiens	1	1	1	1	1	1	1	1	1	1	1	1	U	1	1	1	1	1	U
+Syrphus vitripennis	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	P	P	P	1
+Episyrphus balteatus	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	U	U	U	U
+Eristalis arbustorum	1	1	1	1	1	1	1	1	U	1	1	U	U	U	1	1	1	1	1
+Scaeva pyrastri	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	P	P	U	PF
+Eupeodes corollae	1	1	1	1	1	1	U	1	1	1	1	1	1	1	1	U	1	U	PF
+Lejogaster metallina	1	1	1	1	1	1	U	1	U	U	U	1	U	U	U	1	1	U	U
+Eristalis interrupta	1	1	1	1	1	1	1	1	U	1	U	U	U	U	U	U	U	U	U
+Helophilus pendulus	1	1	U	1	1	U	1	1	U	U	U	1	U	U	U	1	1	U	U
+Cheilosia vernalis	1	1	1	1	U	U	U	1	1	P	1	1	P	1	U	P	P	P	P
+Syrphus torvus/ribesii	1	1	1	1	1	1	1	1	U	U	U	U	U	U	U	U	U	U	U
+Eristalis intricaria	1	1	1	U	1	U	1	U	U	1	U	U	U	U	U	U	U	1	U
+Eristalis tenax	1	1	1	U	1	U	1	U	U	1	U	U	U	U	U	U	U	1	PF
+Eristalis abusiva	1	1	1	1	S	1	U	U	U	1	U	E	U	U	U	S	P	U	U
+Platycheirus clypeatus	1	U	1	1	S	1	U	U	U	U	1	E	1	U	U	P	P	P	U
+Eristalis horticola	1	U	U	1	S	1	1	U	U	1	U	E	U	U	U	P	P	U	U
+Eristalis pertinax	1	1	U	1	1	1	U	U	U	U	U	U	U	U	U	P	P	U	U
+Melanostoma mellinum	U	P	1	U	S	U	U	U	1	P	1	E	1	U	U	P	P	U	P
+Meliscaeva auricollis	1	U	U	1	S	U	U	1	U	U	1	E	U	U	U	P	P	U	U
+Myathropa florea	1	U	1	1	U	1	U	U	U	U	U	U	U	U	P	P	P	U	U
+Merodon equestris	U	U	1	U	1	U	1	U	U	P	U	U	P	U	U	S	P	U	P
+Platycheirus cyaneus	U	P	U	U	1	1	U	U	U	U	P	U	1	U	P	P	P	P	U
+Rhingia campestris	U	1	U	U	U	U	U	U	1	U	1	U	U	U	U	P	P	P	U
+Eristalinus sepulchralis	1	1	1	P	U	P	U	U	P	P	U	P	P	U	P	S	U	U	P
+Chrysotoxum cautum	U	P	U	U	1	U	1	U	U	U	U	U	U	U	P	P	P	P	U
+Parhelophilus frutetorum/versicolor	U	P	U	U	U	U	1	U	1	U	U	U	U	U	U	P	P	P	U
+Chrysotoxum bicinctum	U	P	U	U	1	U	U	U	1	U	U	U	U	U	P	P	P	P	U
+Meliscaeva cinctella	U	U	U	U	U	1	U	1	U	U	U	U	U	U	U	P	P	U	U
+Arctophila superbiens	A	A	A	A	A	A	1	A	P	P	A	A	P	A	A	P	P	A	P
+Chrysogaster solstitialis	A	P	A	A	A	A	A	A	1	A	A	A	A	A	P	P	P	P	A
+Chrysotoxum arcuatum	A	A	1	A	A	A	A	A	A	P	A	A	P	A	A	P	P	A	P
+Eristalis rupium	P	A	A	A	A	A	A	A	P	P	A	A	P	A	P	1	A	A	P
+Eupeodes luniger	1	P	U	U	U	U	U	U	U	P	U	U	U	U	U	P	P	P	P
+Sericomyia silentis	A	1	A	A	A	A	A	A	A	A	A	A	A	A	A	A	A	A	A
+#
+#
+#
+# Arima Valley forbidden links  adjacency matrix. (Snow and Snow, 1972).
+#
+NA	Isertia parviflora	Calliandra guildingii	Heliconia bihai	Norantea guianensis	Palicourea crocea	Samanea saman	Costus spiralis	Erythrina micropteryx	Gravisia aquilega	Gurania spinulosa	Inga venosa	Justicia sp.	Symphonia globulifera	Doxantha unguis-cati	Heliconia hirsuta	Inga ingoides	Mandevilla hirsuta	Pachystachys coccinea	Psychotria sp.	Ryania speciosa	Warscewiczia coccinea	Cephaelis muscosa	Citrus sp.	Cordia bicolor	Corida curassavica	Duggena hirsuta	Erythrina glauca	Guzmania monostachia	Inga sp.	Lisianthus chelonoides	Pithecellobium jupunba	Tabernaemontana psychotrifolia	Brownea latifolia	Centropogon surinamensis	Aechmea nudicaulis	Clathrotropis brachypetala	Erythrina corallodendron	Eugenia jambos	Hamelia erecta	Marcravia sp.	Psychotria tobagensis	Renialmia sp.	Tabebuia stenocalyx	Tillandsia utriculata	Vitex divaricata	Arrabidaea inaequalis	Aechmea duchlamydea	Aechmea fendleri	Billbergia pyramidalis	Costus sp.	Heliconia psittacorum	Heliconia sp.	Ischnosiphon arouma	Lantana camara	Tabebuia serratifolia	Tillandsia fasciculata	Vriesia procera	Aegiphila perplexa
+Saurottia tobaci	1	1	1	1	1	1	1	1	1	1	1	1	1	1	U	1	S	1	1	1	1	U	1	1	U	1	U	1	1	1	U	U	S	S	1	1	U	1	1	1	U	S	U	U	U	1	1	1	1	S	U	S	U	U	S	U	U	1
+Phaethornis longuemareus	1	1	1	H	1	H	1	H	1	1	H	1	H	1	1	H	1	1	1	U	U	1	U	H	1	1	H	1	1	1	H	1	1	1	1	H	U	H	1	H	1	1	1	1	H	H	U	U	1	1	1	U	1	U	H	U	1	U
+Chlorestes notatus	1	1	1	1	1	1	1	1	U	1	1	1	1	1	U	U	S	U	1	1	1	1	U	U	1	1	U	U	U	1	1	1	S	S	U	U	U	U	U	U	U	S	U	U	1	U	U	U	U	S	U	S	U	1	S	U	U	U
+Amazilia chionopectus	1	1	1	1	1	1	U	1	1	1	1	1	1	S	1	1	S	1	1	U	1	U	U	1	U	U	1	U	U	U	1	U	S	S	1	1	U	1	U	U	U	S	U	U	U	1	U	U	U	S	U	S	U	U	S	U	U	U
+Phaethornis guy	R	1	1	H	1	H	1	H	1	H	H	R	H	H	1	H	1	R	R	1	R	1	C	H	H	R	H	1	H	U	H	1	1	1	U	H	1	H	R	1	1	1	H	1	H	H	R	U	U	C	U	1	C	R	H	1	U	C
+Glaucis hirsuta	1	1	1	1	1	H	1	H	1	H	1	1	H	H	1	H	1	R	R	C	R	1	C	H	H	R	H	U	H	U	H	R	1	1	U	H	1	H	R	H	U	U	H	U	H	H	1	1	U	C	U	U	C	R	H	U	U	C
+Chrysolampis mosquitus	1	C	H	S	H	1	H	S	U	1	S	H	C	S	H	1	H	H	U	H	1	H	1	1	1	H	1	H	1	H	1	C	S	H	H	U	C	C	H	U	H	H	1	H	1	C	H	H	H	H	H	H	H	H	S	H	H	U
+Anthracothorax nigricollis	1	1	H	1	H	1	H	1	H	R	1	H	1	U	H	R	H	1	H	1	H	H	1	R	H	H	1	H	U	H	U	H	H	H	H	U	U	U	H	U	H	H	U	H	R	U	H	H	H	H	H	H	H	H	1	H	H	H
+Florisuga mellivora	H	H	H	1	H	1	H	1	H	R	S	H	1	1	H	1	1	H	H	H	H	H	H	R	H	H	U	H	U	H	U	H	H	H	H	U	U	U	H	U	H	H	U	H	R	U	H	H	H	H	H	H	H	H	S	H	H	H
+

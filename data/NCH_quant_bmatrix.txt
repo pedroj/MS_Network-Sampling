@@ -1,3 +1,5 @@
+# Nava de las Correhuelas weighted adjacency matrix.
+#
 NA	Prunus mahaleb	Crataegus monogyna	Berberis vulgaris	Juniperus phoenicea	Taxus baccata	Hedera helix	Rosa canina	Lonicera arborea	Juniperus sabina	Juniperus communis	Rhamnus saxatilis	Rhamnus myrtifolius	Daphne laureola	Sorbus aria	Rubus ulmifolius	Amelanchier ovalis	Arum italicum	Prunus prostrata	Rubia peregrina	Cotoneaster granatensis	Juniperus oxycedrus	Lonicera etrusca	Lonicera splendida	Paeonia officinalis	Polygonatum odoratum
 Turdus viscivorus	829	265	15	123	79	8	22	2	16	17	0	0	0	0	2	0	0	0	1	0	2	0	0	0	0
 Phoenicurus ochruros	941	49	91	8	47	1	11	35	6	2	10	9	0	0	2	1	0	0	0	0	0	0	0	0	0
