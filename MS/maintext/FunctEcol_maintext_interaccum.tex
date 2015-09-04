@@ -257,11 +257,14 @@ This review does not use new raw data, but includes some re-analyses of previous
       \hline
 \\Link type   &  Formulation   &   Definition\\\\
       \hline
-\\Potential links&$I_{max}= AP$&Size of network matrix, i.e. maximum number of \\ && potentially observable interactions;  \\ && $A$ and $P$, numbers of interacting animal and \\ &&  plant species, respectively.\\\\
-Observed links&$I$&Total number of observed links in the network given \\ &&  a sufficient sampling effort. Number of ones in the  \\ && adjacency matrix.\\\\
-Unobserved links&$UL= I_{max} - I$&Number of zeroes in the adjacency matrix.\\\\
-Forbidden links&$FL$&Number of links, which remain unobserved because  \\ && of linkage constraints, irrespectively of sufficient  \\ && sampling effort.\\\\
-Missing links&$ML= AP - I - FL$&Number of links, which may exist in nature but need  \\ && more sampling effort and\slash or additional sampling  \\ && methods to be observed.\\\\
+\\Potential links&$I_{max}= A_{obs}P_{obs}$&Size of observed network matrix,  \\ && i.e. maximum number of \\ && potentially observable interactions;  \\ && $A_{obs}$ and $P_{obs}$, numbers of interacting  \\ && animal and plant species, \\ &&  respectively. \\&& These might be below the real  \\ && numbers of animal and plant \\ &&  species, $A_{est}$ and $P_{est}$.\\\\
+Observed links&$I_{obs}$&Total number of observed links  \\ && in the network given a sufficient \\ &&  sampling effort. Number of ones in the  \\ && adjacency matrix.\\\\
+True links&$I_{est}$&Total number of links in the network \\ &&  given a sufficient sampling effort;  \\ && expected for the augmented \\ &&  $A_{est}P_{est}$ matrix. \\\\
+Unobserved links&$UL= I_{max} - I_{obs}$&Number of zeroes in the  adjacency \\ && matrix.\\\\
+True unobserved links&$UL*= I_{max} - I_{obs}$&Number of zeroes in the augmented \\ &&  adjacency matrix that, eventually,  \\ &&  includes unobserved species.\\\\
+Forbidden links&$FL$&Number of links, which remain  \\ && unobserved because of linkage \\ &&  constraints, irrespectively of sufficient  \\ && sampling effort.\\\\
+Observed Missing links&$ML= A_{obs}P_{obs} - I_{obs} - FL$&Number of links, which may exist in \\ &&  nature but need more  sampling effort \\ && and\slash or additional sampling methods \\ && to be observed.\\\\
+True Missing links&$ML*= A_{est}P_{est} - I_{est} - FL$&Number of links, which may exist in \\ &&  nature but need more sampling\\ && effort and\slash or additional sampling  \\ && methods to be observed.  \\ && Augments $ML$ for the $A_{est}P_{est}$ matrix.\\\\
       \hline
 		\end{tabular}
  	\end{center}
