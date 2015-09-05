@@ -105,7 +105,8 @@ Our goal is to estimate the true number of non-null $AP$ interactions, including
 
 Forbidden links are non-occurrences of pairwise interactions that can be accounted for by biological constraints, such as spatio-temporal uncoupling \citep{E31/2562}, size or reward mismatching, foraging constraints (e.g., accessibility) \citep{More:2012kx}, and physiological-biochemical constraints \citep{E31/2562}. We still have extremely reduced information about the frequency of forbidden links in natural communities \citep{E31.7324_PDF,Stang:2009cx,Vazquez:2009p82,Olesen:2011a,Ibanez:2012eu,Maruyama:2014gt,Vizentin-Bugoni:2014hc} (Table 1). Forbidden links are thus represented as structural zeroes in the interaction matrix, i.e., matrix cells that cannot get a non-zero value. 
 [ROB]
-UL*: unobserved links between the [Aest = Aobs + A0)] * [Pest = Pobs + P0] interacting species. The total number of cells in the augmented adjacency matrix is thus Aest * Pest.(2) Thus, UL* is a mixture of unobserved links between A and P (your UL), and unobserved links that involve unobserved A or unobserved P (or both).
+UL*: unobserved links between the [Aest = Aobs + A0)] * [Pest = Pobs + P0] interacting species. The total number of cells in the augmented adjacency matrix is thus Aest * Pest.
+(2) Thus, UL* is a mixture of unobserved links between A and P (your UL), and unobserved links that involve unobserved A or unobserved P (or both).
 [ROB]
 
 We might expect different types of $FL$ to occupy different parts of the $\Delta$ matrix, with missing cells due to phenological uncoupling, $FL_P$, largely distributed in the lower-right half $\Delta$ matrix and actually missed links $ML$ distributed in its central part \citep{Olesen:2010fi}. Yet, most of these aspects remain understudied. Therefore, we need to account for the frequency of these structural zeros in our matrix before proceeding. For example, most measurements of connectance $C= I/(AP)$ implicitly ignore the fact that by taking the full product $AP$ in the denominator they are underestimating the actual connectance value, i.e., the fraction of actual interactions $I$ relative to the \emph{biologically possible} ones, not to the total maximum $I_{max}= AP$. 
@@ -126,17 +127,14 @@ To sum up, two elements of inference are required in the analysis of unobserved 
 
 Let's assume a sampling of the diversity in a specific locality, over relatively homogeneous landscape where we aim at determining the number of species present for a particular group of organisms. To do that we carry out transects or plot samplings across the landscape or use any other type of direct or indirect recording method, adequately replicated so we obtain a number of samples. Briefly, $S_{obs}$ is the total number of species observed in a sample, or in a set of samples. $S_{est}$ is the estimated number of species in the community represented by the sample, or by the set of samples, where $est$ indicates an estimator. With abundance data, let $S_k$ be the number of species each represented by exactly $k$ individuals in a single sample. Thus, $S_0$ is the number of undetected species (species present in the community but not included in the sample), $S_1$ is the number of singleton species (represented by just one individual), $S_2$ is the number of doubleton species (species with two individuals), etc. The total number of individuals in the sample would be:\\
 $$n = \sum_{k=1}^{S_{obs}}S_k$$\\
-A frequently used asymptotic, bias corrected, non-parametric estimator is $S_{Chao}$ \citep{Hortal:2006dc,Chao:2005wp,Colwell:2013kj}: 
+A frequently used asymptotic, bias corrected, non-parametric estimator is $S_{Chao1}$ \citep{Hortal:2006dc,Chao:2005wp,Colwell:2013kj}: 
 
-$$S_{Chao}= S_{obs} + \frac{S_1 (S_1-1)}{2(S_2+1)}$$ 
+$$S_{Chao1}= S_{obs} + \frac{S_1 (S_1-1)}{2(S_2+1)}$$ 
 
 %[REVIEW] -------------------------------------------------------------------------
-Another frequently used alternative is the Chao2 estimator, $S_{Chao2}$ \citep{Gotelli:2001uo}, which has been reported to have a limited bias for small sample sizes \citep{Colwell:1994vt,Chao:2005wp}: 
+Another frequently used alternative is the Chao2 estimator, $S_{Chao2}$ \citep{Gotelli:2001uo}, which has been reported to have a limited bias for small sample sizes \citep{Colwell:1994vt,Chao:2005wp}. Instead of using counts it uses incidence frequencies ($Q_k$) among samples (number of species present in just one sample, in to samples, etc.): 
 
-$$S_{Chao2}= S_{obs} + \frac{S_1^2}{2S_2}$$ 
-[ROB]
-No. The unbiased form of Chao2 is identical in formation to Chao1 (above), but instead of counts it uses incidence frequencies among samples (usually Q instead of S).
-[ROB]
+$$S_{Chao2}= S_{obs} + \frac{Q_1 (Q_1-1)}{2(Q_2+1)}$$ 
 %[REVIEW] -------------------------------------------------------------------------
 
 A plot of the cumulative number of species recorded, $S_n$, as a function of some measure of sampling effort (say, $n$ samples taken) yields the species accumulation curve (SAC) or collector's curve \citep{Colwell:1994vt}. Similarly, interaction accumulation curves (IAC), analogous to SACs, can be used to assess the robustness of interactions sampling for plant-animal community datasets \citep{E31/2562,Jordano:2009c,Olesen:2011a}, as discussed in the next section.  
@@ -339,7 +337,7 @@ $ACE$&$240.3\pm8.9$&$241.3\pm7.9$&$566.1\pm14.8$\\\\
 %$Scaled\ Chao$&195.4&162.7&308.4\\
 %$CI$&[124.5--266.3]&[148.5--176.9]&[253.6--363.1]\\\\
 %$Scaled\ ACE$&178.5&169.7&342.6\\
-$CI$&[169.5--187.4]&[161.8--177.6]&[327.8--357.4]\\\\
+%$CI$&[169.5--187.4]&[161.8--177.6]&[327.8--357.4]\\\\
 $\%\ unobserved^a$&8.33&15.38&47.80\\\\
       \hline
 \\\multicolumn{4}{l}{$^a$, estimated with library Jade (R Core Development Team 2010, Chao \emph{et al.} 2015)}\\
