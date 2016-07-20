@@ -64,18 +64,20 @@ Cohen, J.E., Beaver, R.A., Cousins, S.H., DeAngelis, D.L., Goldwasser, L.,
   Wilbur, H.M. \& Yodzis, P. (1993) {Improving Food Webs}. \emph{Ecology}
   \textbf{74}, 252--258.
 
-\bibitem[{Colwell \& Coddington(1994)}]{Colwell:1994vt}
-Colwell, R. \& Coddington, J. (1994) {Estimating terrestrial biodiversity
-  through extrapolation}. \emph{Philosophical Transactions Of The Royal Society
-  Of London Series B-Biological Sciences} \textbf{345}, 101--118.
-
 \bibitem[{Colwell(2009)}]{Colwell:2009gv}
 Colwell, R.K. (2009) {Biodiversity: concepts, patterns, and measurement}.
   \emph{The Princeton Guide to Ecology} (ed. S.A. Levin), pp. 257--263,
   Princeton University Press, Princeton.
 
 \bibitem[{Colwell(2013)}]{Colwell:2013kj}
-Colwell, R.K. (2013) {EstimateS: Biodiversity Estimation}. \emph{-} pp. 1--33.
+Colwell, R.K. (2013) {EstimateS: statistical estimation of species richness and
+  shared species from samples. Version 9.1.0. User's guide and application}.
+  \emph{[http://viceroy.eeb.uconn.edu/estimates]} pp. 1--33.
+
+\bibitem[{Colwell \& Coddington(1994)}]{Colwell:1994vt}
+Colwell, R.K. \& Coddington, J. (1994) {Estimating terrestrial biodiversity
+  through extrapolation}. \emph{Philosophical Transactions of the Royal Society
+  of London Series B-Biological Sciences} \textbf{345}, 101--118.
 
 \bibitem[{Colwell \emph{et~al.}(2012)Colwell, Dunn \& Harris}]{Colwell:2012fc}
 Colwell, R.K., Dunn, R.R. \& Harris, N.C. (2012) {Coextinction and persistence
@@ -123,10 +125,10 @@ Ekl{\"o}f, A., Jacob, U., Kopp, J., Bosch, J., Castro-Urgal, R., Chacoff, N.P.,
   Tylianakis, J.M., V\'azquez, D.P. \& Allesina, S. (2013) {The dimensionality
   of ecological networks}. \emph{Ecology Letters} \textbf{16}, 577--583.
 
-\bibitem[{Frund \emph{et~al.}(2015)Frund, McCann \& Williams}]{Frund:2015ii}
-Frund, J., McCann, K.S. \& Williams, N.M. (2015) {Sampling bias is a challenge
+\bibitem[{Frund \emph{et~al.}(2016)Frund, McCann \& Williams}]{Frund:2015ii}
+Frund, J., McCann, K.S. \& Williams, N.M. (2016) {Sampling bias is a challenge
   for quantifying specialization and network structure: lessons from a
-  quantitative niche model}. \emph{Oikos} pp. n/a--n/a.
+  quantitative niche model}. \emph{Oikos} \textbf{125}, 502–513.
 
 \bibitem[{Gale \& Sampson(1995)}]{Gale:1995uy}
 Gale, W.A. \& Sampson, G. (1995) {Good-Turing frequency estimation without
@@ -225,8 +227,8 @@ Memmott, J., Alonso, D., Berlow, E., Dobson, A., Dunne, J.A., Sol{\'e}, R.V. \&
 \bibitem[{Mor{\'e} \emph{et~al.}(2012)Mor{\'e}, Amorim, Benitez-Vieyra, Medina,
   Sazima \& Cocucci}]{More:2012kx}
 Mor{\'e}, M., Amorim, F.W., Benitez-Vieyra, S., Medina, A.M., Sazima, M. \&
-  Cocucci, A.A. (2012) {Armament Imbalances: Match and Mismatch in
-  Plant-Pollinator Traits of Highly Specialized Long-Spurred Orchids}.
+  Cocucci, A.A. (2012) {Armament imbalances: match and mismatch in
+  plant-pollinator traits of highly specialized long-spurred orchids}.
   \emph{PLoS ONE} \textbf{7}, e41878.
 
 \bibitem[{Morris \emph{et~al.}(2013)Morris, Gripenberg, Lewis \&
@@ -243,8 +245,8 @@ Nielsen, A. \& Bascompte, J. (2007) {Ecological networks, nestedness and
 \bibitem[{Olesen \emph{et~al.}(2011)Olesen, Bascompte, Dupont, Elberling \&
   Jordano}]{Olesen:2011a}
 Olesen, J.M., Bascompte, J., Dupont, Y.L., Elberling, H. \& Jordano, P. (2011)
-  {Missing and forbidden links in mutualistic networks}. \emph{Proceedings Of
-  The Royal Society B-Biological Sciences} \textbf{278}, 725--732.
+  {Missing and forbidden links in mutualistic networks}. \emph{Proceedings of
+  the Royal Society B-Biological Sciences} \textbf{278}, 725--732.
 
 \bibitem[{Olito \& Fox(2014)}]{Olito:2014gc}
 Olito, C. \& Fox, J.W. (2014) {Species traits and abundances predict metrics of
@@ -270,8 +272,8 @@ Pereira, H.M., Ferrier, S., Walters, M., Geller, G.N., Jongman, R.H.G.,
   variables}. \emph{Science} \textbf{339}, 277--278.
 
 \bibitem[{Pocock \emph{et~al.}(2012)Pocock, Evans \& Memmott}]{Pocock:2012ep}
-Pocock, M.J.O., Evans, D.M. \& Memmott, J. (2012) {The Robustness and
-  Restoration of a Network of Ecological Networks}. \emph{Science}
+Pocock, M.J.O., Evans, D.M. \& Memmott, J. (2012) {The robustness and
+  restoration of a network of ecological networks}. \emph{Science}
   \textbf{335}, 973--977.
 
 \bibitem[{Preston(1948)}]{E2/813}
@@ -314,7 +316,7 @@ Snow, B. \& Snow, D. (1988) \emph{{Birds and berries}}. Poyser, Calton, UK.
   Meijden}]{Stang:2009cx}
 Stang, M., Klinkhamer, P., Waser, N.M., Stang, I. \& van~der Meijden, E. (2009)
   {Size-specific interaction patterns and size matching in a plant-pollinator
-  interaction web}. \emph{Annals Of Botany} \textbf{103}, 1459--1469.
+  interaction web}. \emph{Annals of Botany} \textbf{103}, 1459--1469.
 
 \bibitem[{Strogatz(2001)}]{Strogatz:2001wc}
 Strogatz, S. (2001) {Exploring complex networks}. \emph{Nature} \textbf{410},
@@ -370,7 +372,7 @@ Vizentin-Bugoni, J., Maruyama, P.K., Debastiani, V.J., Duarte, L.d.S.,
   Sazima}]{Vizentin-Bugoni:2014hc}
 Vizentin-Bugoni, J., Maruyama, P.K. \& Sazima, M. (2014) {Processes entangling
   interactions in communities: forbidden links are more important than
-  abundance in a hummingbird-plant network}. \emph{Proceedings Of The Royal
+  abundance in a hummingbird-plant network}. \emph{Proceedings of the Royal
   Society B-Biological Sciences} \textbf{281}, 20132397--20132397.
 
 \bibitem[{Wells \& O'Hara(2012)}]{Wells:2012dy}
