@@ -1,4 +1,4 @@
-\begin{thebibliography}{64}
+\begin{thebibliography}{65}
 \providecommand{\natexlab}[1]{#1}
 
 \bibitem[{Bartomeus \emph{et~al.}(2016)Bartomeus, Gravel, Tylianakis, Aizen,
@@ -124,6 +124,13 @@ Ekl{\"o}f, A., Jacob, U., Kopp, J., Bosch, J., Castro-Urgal, R., Chacoff, N.P.,
   S.B., Mart{\'\i}n~Gonz{\'a}lez, A.M., Pizo, M.A., Rader, R., Rodrigo, A.,
   Tylianakis, J.M., V\'azquez, D.P. \& Allesina, S. (2013) {The dimensionality
   of ecological networks}. \emph{Ecology Letters} \textbf{16}, 577--583.
+
+\bibitem[{Evans \emph{et~al.}(2016)Evans, Kitson, Lunt, Straw \&
+  Pocock}]{Evans:2016aa}
+Evans, D., Kitson, J., Lunt, D., Straw, N. \& Pocock, M. (2016) {Merging DNA
+  metabarcoding and ecological network analysis to understand and build
+  resilient terrestrial ecosystems}. \emph{Functional Ecology} \textbf{00},
+  0000--0000.
 
 \bibitem[{Frund \emph{et~al.}(2016)Frund, McCann \& Williams}]{Frund:2015ii}
 Frund, J., McCann, K.S. \& Williams, N.M. (2016) {Sampling bias is a challenge
