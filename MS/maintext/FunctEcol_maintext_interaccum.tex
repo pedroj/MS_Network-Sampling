@@ -227,9 +227,9 @@ This review does not use new raw data, but includes some re-analyses of previous
 \section*{Table captions}
 \noindent \textbf{Table~1.} A taxonomy of link types for ecological interactions (Olesen \emph{et al.} 2011). $A_{obs}$, number of animal species; $P_{obs}$, number of plant species; $I_{obs}$, number of observed links; $FL$, number of forbidden links; and $ML$, number of missing links. As natural scientists, our ultimate goal is to eliminate $ML$ from the equation $FL = AP - I - ML$, which probably is not feasible given logistic sampling limitations. When we, during our study, estimate $ML$ to be negligible, we cease observing and estimate $I$ and $FL$.\\
 
-\noindent \textbf{Table~2.} Frequencies of different type of forbidden links in natural plant-animal interaction assemblages. $AP$, maximum potential links, $I_{max}$; $I$, number of observed links; $UL$, number of unobserved links; $FL$, number of forbidden links; $FL_P$, phenology constraints; $FL_S$, size restrictions; $FL_A$, accessibility constraints; $FL_O$, other types of restrictions; $ML$, unknown causes (missing links). Relative frequencies (in parentheses) calculated over $I_{max}= AP$ for $I$ and $UL$; those for $FL$, and $ML$, over $UL$; for all forbidden links types, calculated over $FL$. Data for Hato Ratón and Nava Correhuelas include interactions with bird and mammal frugivores. References, from left to right: Olesen \emph{et al.} 2008; Olesen \& Myrthue unpubl.; Snow \& Snow 1972 and Jordano \emph{et al.} 2006; Vizentin-Bugoni \emph{et al.} 2014; Jordano \emph{et al.} 2009; Olesen \emph{et al.} 2011.  \\
+\noindent \textbf{Table~2.} Frequencies of different type of forbidden links in natural plant-animal interaction assemblages. $AP$, maximum potential links, $I_{max}$; $I$, number of observed links; $UL$, number of unobserved links; $FL$, number of forbidden links; $FL_P$, phenology constraints; $FL_S$, size restrictions; $FL_A$, accessibility constraints; $FL_O$, other types of restrictions; $ML$, unknown causes (missing links). Relative frequencies (in parentheses) calculated over $I_{max}$ for $I$ and $UL$; those for $FL$, and $ML$, over $UL$; for all forbidden links types ($FL_P$, $FL_S$, $FL_A$, $FL_O$), calculated over $FL$. Data for Hato Ratón and Nava Correhuelas include interactions with bird and mammal frugivores. References, from left to right: Olesen \emph{et al.} 2008; Olesen \& Myrthue unpubl.; Snow \& Snow 1972 and Jordano \emph{et al.} 2006; Vizentin-Bugoni \emph{et al.} 2014; Jordano \emph{et al.} 2009; Olesen \emph{et al.} 2011. \\
 
-\noindent \textbf{Table~3.} A vectorized interaction matrix.\\
+\noindent \textbf{Table~3.} A vectorized interaction matrix corresponding to the sampling shown in Figure 2. All the possible distinct pairwise interactions (cells of the adjacency matrix) between animal species ($A$) $1$, $2$, and $3$ and plant species ($P$) $a$, $b$ and $c$ can be potentially recorded in any of the six sampling periods (panels in figure 1). For each sampling period, $N$ is the cumulative number of records and $I$ is the cumulative number of distinct pairwise interactions recorded (1's in the binary adjacency matrix).\\
 
 \noindent \textbf{Table~4.} Sampling statistics for three plant-animal interaction networks (Olesen \emph{et al.} 2011). Symbols as in Table 1; $N$, number of records; $Chao1$ and $ACE$ are asymptotic estimators for the number of distinct pairwise interactions $I$ (Hortal \emph{et al.} 2006), and their standard errors; $C$, sample coverage for rare interactions (Chao \& Jost 2012). Scaled asymptotic estimators and their confidence intervals ($CI$) were calculated by weighting $Chao1$ and $ACE$ with the observed frequencies of forbidden links. Data for Hato Ratón and Nava Correhuelas include only plant-bird interactions.\\
 %
@@ -291,17 +291,20 @@ $ML$&977 (0.6483)&327 (0.7535)&119 (0.3531)& 77 (0.2285)&51 (0.3018)&399 (0.5549
   \caption{}
   \label{Table_3}
   \begin{center}
-    \begin{tabular}{lccccc}
+    \begin{tabular}{lcccccc}
       \hline
-\\Interaction&Sample\ 1&Sample\ 2&Sample\ 3&{\ldots}&Sample\ \emph{i}\\\\
+\\Interaction&Sample\ 1&Sample\ 2&Sample\ 3&Sample\ 4&Sample\ 5&Sample\ 6\\\\
       \hline
-\\A1 - P1&12&2&0&{\ldots}&6\\
-A1 - P2&0&0&0&{\ldots}&1\\
-{\ldots}&{\ldots}&{\ldots}&{\ldots}&{\ldots}&{\ldots}\\
-A5 - P3&5&0&1&{\ldots}&18\\
-A5 - P4&1&0&1&{\ldots}&3\\
-{\ldots}&{\ldots}&{\ldots}&{\ldots}&{\ldots}&{\ldots}\\
-A\textsubscript{i} - P\textsubscript{i}&1&0&1&{\ldots}&2\\\\
+1-a&2&2&2&3&3&5\\
+1-b&1&2&2&3&4&4\\
+1-c&0&0&1&2&2&2\\
+2-a&0&1&2&2&3&3\\
+2-b&0&0&0&0&0&2\\
+2-c&0&0&0&0&0&0\\
+3-a&0&0&0&0&0&0\\
+3-b&0&0&1&1&1&2\\
+3-c&0&0&0&0&1&2\\      \hline
+$N$&3&5&8&11&14&20\\$I$&2&3&5&5&6&7\\
       \hline
     \end{tabular}
   \end{center}

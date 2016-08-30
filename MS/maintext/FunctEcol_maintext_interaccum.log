@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.8.8)  30 AUG 2016 19:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.8.8)  30 AUG 2016 21:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -515,11 +515,11 @@ Overfull \hbox (65.44316pt too wide) in paragraph at lines 213--214
  [] 
  []
 
-[37 <../figures/Fig1.pdf>] <../figures/Fig2.pdf, id=192, 772.8875pt x 506.89375pt>
+[37 <../figures/Fig1.pdf>] <../figures/Fig2.pdf, id=192, 809.0225pt x 538.01pt>
 File: ../figures/Fig2.pdf Graphic file (type pdf)
  <use ../figures/Fig2.pdf>
 Package pdftex.def Info: ../figures/Fig2.pdf used on input line 221.
-(pdftex.def)             Requested size: 483.69684pt x 317.23322pt.
+(pdftex.def)             Requested size: 483.69684pt x 321.66739pt.
 
 Overfull \hbox (65.44316pt too wide) in paragraph at lines 221--222
  [] 
@@ -540,12 +540,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 232--233
 
  []
 
-
+[39]
 Underfull \hbox (badness 10000) in paragraph at lines 234--237
 
  []
 
-[39]
+
 Overfull \hbox (81.16077pt too wide) in paragraph at lines 243--257
  [] 
  []
@@ -577,24 +577,29 @@ Overfull \hbox (12.0pt too wide) in paragraph at lines 266--286
 LaTeX Warning: Float too large for page by 13.72601pt on input line 287.
 
 
-Overfull \hbox (20.89001pt too wide) in paragraph at lines 315--336
+Overfull \hbox (3.79848pt too wide) in paragraph at lines 294--312
+ [] 
+ []
+
+
+Overfull \hbox (20.89001pt too wide) in paragraph at lines 320--341
  [] 
  []
 
 [41] [42] [43] (./FunctEcol_maintext_interaccum.aux) ) 
 Here is how much of TeX's memory you used:
- 3905 strings out of 493089
- 53473 string characters out of 6134843
- 143990 words of memory out of 5000000
- 7315 multiletter control sequences out of 15000+600000
+ 3904 strings out of 493089
+ 53458 string characters out of 6134843
+ 145990 words of memory out of 5000000
+ 7314 multiletter control sequences out of 15000+600000
  19771 words of font info for 43 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,16n,43p,3068b,496s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfbi1728.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfbx1095.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfbx1728.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfrm2074.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfss0600.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/cm-super/sftt1200.pfb>
-Output written on FunctEcol_maintext_interaccum.pdf (43 pages, 681519 bytes).
+Output written on FunctEcol_maintext_interaccum.pdf (43 pages, 774598 bytes).
 PDF statistics:
- 339 PDF objects out of 1000 (max. 8388607)
- 215 compressed objects within 3 object streams
+ 1029 PDF objects out of 1200 (max. 8388607)
+ 624 compressed objects within 7 object streams
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
