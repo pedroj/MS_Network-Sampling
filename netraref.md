@@ -10,7 +10,7 @@ Analysis of acumulation curves for species interactions
 
 ### Estimating frugivore species richness. A "phytocentric" sampling
 
-We use here a dataset of direct census of animal frugivores visiting *Cecropia glaziouvi* (Cecropiaceae) trees in Intervales, SP, Brazil (March 2012). 
+We use here a dataset of direct census of animal frugivores visiting *Cecropia glaziovii* (Cecropiaceae) trees in Intervales, SP, Brazil (March 2012). 
 We use each tree observed as a census, and we accumulate across trees the number of frugivore species recorded visiting the plant. The idea is that as we sample additional individual trees we may get a more complete account of the actual frugivore species interacting with the plant. Eventually, for a large sample size, the number of frugivore species recorded reaches a plateu, that can be considered a robust estimate of the actual spcies richness of the frugivore assemblage.
 
 Species (taxa) are in rows. Census samples are the columns.  
