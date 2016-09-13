@@ -47,7 +47,7 @@ all<-specaccum(mat, method="random")
 plot(all, col="blue", lwd=2, 
      ci.type="poly", ci.lty=0, ci.col="lightblue",
      ylim=c(0,45),
-     main="Cecropia glaziouvi",
+     main="Cecropia glaziovii",
      xlab="Number of trees",
      ylab="Number of frugivore species")
 boxplot(all, col="yellow", add=TRUE, pch="+")
