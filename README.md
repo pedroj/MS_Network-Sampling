@@ -5,7 +5,7 @@ interaccum: Sampling interactions in ecological networks
 This is the page for the interactions accumulation analysis project. Here I explore how to detemine sampling robustness for interaction networks by analogy with sampling species diversity.
 
 The repo is for a new MS on sampling plant-animal interaction networks:
-Jordano, P. (2016). Sampling networks of ecological interactions. Functional Ecology 00: 000-000. This MS is now in early view. Hopefully it will see the light as an invited contribution to the Extended Spotlight "From species traits to network structure" coordinated by D. Stouffer, T. Poisot and S. Kefi.
+Jordano, P. (2016). Sampling networks of ecological interactions. Functional Ecology 00: 000-000. This MS is now [in early view](http://onlinelibrary.wiley.com/doi/10.1111/1365-2435.12763/full). Hopefully it will see the light as an invited contribution to the Extended Spotlight "From species traits to network structure" coordinated by D. Stouffer, T. Poisot and S. Kefi.
 
 Interactions in natural ecosystems can be a much better indicator of the richness and diversity of ecosystem functions than a simple list of taxa. Thus, sampling interactions should be a central issue when identifying and diagnosing ecosystem services (e.g., pollination, natural seeding by frugivores, etc.). This is a primer on assessing the completeness of sampling for ecological networks. I focus specifically on bipartite, plant-animal interactions, such as those between fleshy-fruited plants and the mutualistic animal frugivores that disperse their seeds.
 
