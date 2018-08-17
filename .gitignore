@@ -1,0 +1,56 @@
+# History files
+.Rhistory
+
+# Example code in package build process
+*-Ex.R
+.Rproj.user
+
+# tex stuff
+*.aux
+*.bbl
+*.log
+*.blg
+*.synctex.gz
+
+
+*.gz
+
+*.log
+
+*.blg
+
+*.aux
+
+*.ltx
+
+*.gz
+
+*.gz
+
+MS/maintext/FunctEcol_maintext_interaccum.synctex.gz
+
+MS/FE_submission*
+
+MS/maintext/CovLett_R2.md
+
+MS/maintext/CovLett_R2.pdf
+
+MS/maintext/CovLett_R2.tex
+
+MS/maintext/CovLett_R2 2.pdf
+
+MS/maintext/CovLett_R2 2.pdf
+
+MS/maintext/CovLett_R2 2.pdf
+
+MS/maintext/CovLett_R2 2.pdf
+
+MS/maintext/CovLett_R3.md
+
+MS/maintext/CovLett_R2 2.pdf
+
+MS/maintext/CovLett_R2 2.pdf
+
+MS/maintext/CovLett_R2 2.pdf
+
+MS/figures/Fig2.graffle
