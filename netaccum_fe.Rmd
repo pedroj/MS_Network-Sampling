@@ -95,7 +95,7 @@ NCH - NEW ANALYSES, based on weekly dataset of feeding records; based on code 15
 
 Our final dataset lists all the potential pairwise interactions and the records we got in each sampling day. We combined both focal watches at individual plants of the different species and spot censuses along transects. Each of the columns lists the pairwise interactions recorded (value= 1) in a particular sample. We have pooled the samples for weekly intervals. 
 
-```{r nhc, eval=TRUE, message=FALSE, fig.height=3}
+```{r nch, eval=TRUE, message=FALSE, fig.height=3}
 # Nava de las Correhuelas dataset. Focal observation and spot censuses.
 # Ten years sampling, pooled by month.
 nchcum<-as.matrix(read.table("./data/NCH_raref.txt", header= T,sep= "\t", dec=".", row.names = 1))
