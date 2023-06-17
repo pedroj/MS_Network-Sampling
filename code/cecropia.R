@@ -18,13 +18,13 @@ library(ade4)
 # Data. Input the census table as matrix here.
 # Cecropia-frugivore interactions.
 # Frugivore species are rows. Columns are Cecropia individuals.
-focal <- read.table("/Users/pedro/Documents/Working/MS_Network-Sampling/Data/data/cecropia.txt", header=T, sep="\t", dec=".", na.strings="NA")
-# Cecropia labels. Individual trees are cols 10-37 in "focal" dataframe.
-mat<-as.matrix(focal[,10:37],col.names=c("cec18","cec02","cec03","cec25","cec22","cec06","cec16","cec13","cec05","cec15","cec28","cec24","cec11","cec21","cec20","cec01","cec04","cec23","cec14","cec12","cec09","cec17","cec07","cec19","cec08","cec10","cec26","cec27"))
+focal <- read.table("/Users/pedro/Documents/Working/MS_Network-Sampling/data/cecropia2.txt", header=T, sep="\t", dec=".", na.strings="NA")
+# Cecropia labels. Individual trees are cols 10-36 in "focal" dataframe.
+mat<-as.matrix(focal[,10:36],col.names=c("cec18","cec02","cec03","cec25","cec22","cec06","cec16","cec13","cec05","cec15","cec28","cec24","cec11","cec21","cec20","cec01","cec04","cec23","cec14","cec12","cec09","cec17","cec07","cec19","cec08","cec10","cec26"))
 
 # Frugivore individual labels.
-row.names(focal)<-c("Thr_orna","Bro_tiri","Eup_chal","Pyr_fron","Coe_flav","Cis_leve","Tur_flav","Ind_Inde","Mel_flav","Thr_cyan","For_xant","Chl_cyan","Cac_chry","Tac_coro","Tan_sele","Ort_chlo","Thr_palm","Chl_spiz","Dac_caya","Tan_cyan","Tro_viri","Tan_prec","Tit_caya","Tur_rufi","Cyc_guja","Eup_cyan","Tan_desm","Eup_viol","Tro_surr","Dac_nigr","Pio_maxi","Abu_jacu","Bar_rufi","Hem_rufi","Sal_simi","Dac_sp.","Sel_macu","Tit_inqu","Pte_bail","Ram_dico","Bra_arac","Ceb_nigr")
-row.names(mat)<-c("Thr_orna","Bro_tiri","Eup_chal","Pyr_fron","Coe_flav","Cis_leve","Tur_flav","Ind_Inde","Mel_flav","Thr_cyan","For_xant","Chl_cyan","Cac_chry","Tac_coro","Tan_sele","Ort_chlo","Thr_palm","Chl_spiz","Dac_caya","Tan_cyan","Tro_viri","Tan_prec","Tit_caya","Tur_rufi","Cyc_guja","Eup_cyan","Tan_desm","Eup_viol","Tro_surr","Dac_nigr","Pio_maxi","Abu_jacu","Bar_rufi","Hem_rufi","Sal_simi","Dac_sp.","Sel_macu","Tit_inqu","Pte_bail","Ram_dico","Bra_arac","Ceb_nigr")
+row.names(focal)<-c("Thr_orna","Bro_tiri","Eup_chal","Pyr_fron","Coe_flav","Cis_leve","Tur_flav","Ind_Inde","Mel_flav","Thr_cyan","For_xant","Chl_cyan","Cac_chry","Tac_coro","Tan_sele","Ort_chlo","Thr_palm","Chl_spiz","Dac_caya","Tan_cyan","Tro_viri","Tan_prec","Tit_caya","Tur_rufi","Cyc_guja","Eup_cyan","Tan_desm","Eup_viol","Tro_surr","Dac_nigr","Pio_maxi","Abu_jacu","Bar_rufi","Hem_rufi","Sal_simi","Dac_sp.","Sel_macu","Tit_inqu")
+row.names(mat)<-c("Thr_orna","Bro_tiri","Eup_chal","Pyr_fron","Coe_flav","Cis_leve","Tur_flav","Ind_Inde","Mel_flav","Thr_cyan","For_xant","Chl_cyan","Cac_chry","Tac_coro","Tan_sele","Ort_chlo","Thr_palm","Chl_spiz","Dac_caya","Tan_cyan","Tro_viri","Tan_prec","Tit_caya","Tur_rufi","Cyc_guja","Eup_cyan","Tan_desm","Eup_viol","Tro_surr","Dac_nigr","Pio_maxi","Abu_jacu","Bar_rufi","Hem_rufi","Sal_simi","Dac_sp.","Sel_macu","Tit_inqu")
 
 #-----------------------------------------------------------------------------
 # Assign the matrix
@@ -117,4 +117,44 @@ text(80,3.6, "QC= 10.0", cex=0.6, pos=4, col="red")
 text(80,7, "QC= 15.0", cex=0.6, pos=4, col="red")
 text(80,11, "QC= 20.0", cex=0.6, pos=4, col="red")
 ##############################################################################
+
+#-----------------------------------------------------------------------------
+# iNEXT analysis.
+# ----------------------------------------------------------------------------
+# Create list of data frame using list()
+listOfDataframe = list(cecropia= t(cec))
+
+## Taxonomic diversity
+output1 = AO.link(data = listOfDataframe, diversity = 'TD', q = seq(0, 2, 0.2))
+output1
+
+ggAO.link(output1)
+
+DataInfo.link(
+    data= listOfDataframe,
+    diversity = "TD",
+    row.tree = NULL,
+    col.tree = NULL,
+    row.distM = NULL,
+    col.distM = NULL
+)
+
+output1 = iNEXT.link(data = listOfDataframe, diversity = 'TD', 
+                         q = c(0, 1, 2))
+output1
+ggiNEXT.link(
+    output1,
+    type = c(1, 2, 3),
+    facet.var = "Assemblage",
+    color.var = "Order.q"
+)
+
+outcome<- Completeness.link(
+    data= listOfDataframe,
+    q = seq(0, 2, 0.2),
+    conf = 0.95,
+    nboot = 30)
+
+ggCompleteness.link(outcome)
+
 
