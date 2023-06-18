@@ -5,16 +5,20 @@ library(here)
 library(iNEXT.link)
 
 ### Nava Correhuelas
-nchq<- read.table(here("data/nchq.txt"), header=F, sep="\t", dec=".", na.strings="NA")
+nchq<- read.table(here("data/nchq.txt"), header=F, sep="\t", dec=".", 
+                  na.strings="NA")
 
 ### Hato Raton
-hrq<- read.table(here("data/hrq.txt"), header=F, sep="\t", dec=".", na.strings="NA")
+hrq<- read.table(here("data/hrq.txt"), header=F, sep="\t", dec=".", 
+                 na.strings="NA")
 
 ### Nava Noguera
-nnogq<- read.table(here("data/sdw03_adj_vis.csv"), header=F,sep=",",dec=".",na.strings="NA")
+nnogq<- read.table(here("data/sdw03_adj_vis.csv"), header=F, sep=",",
+                   dec=".", na.strings="NA")
 
 ### Zackenberg
-zackq<- read.table(here("data/zackq.txt"),header=F,sep="\t",dec=".",na.strings="NA")
+zackq<- read.table(here("data/zackq.txt"),header=F,sep="\t",dec=".",
+                   na.strings="NA")
 
 # Create list of data frame using list()
 listOfDataframe = list(nch= t(nchq), hr= t(hrq), nnog= nnogq, zack= t(zackq))
@@ -56,6 +60,7 @@ output1 <- estimateD.link(listOfDataframe, diversity = 'TD',
                           base = "coverage", level = 0.7, nboot = 30)
 output1
 
-output1 = iNEXTbeta.link(data = listOfDataframe, diversity = 'TD', level = seq(0.5, 0.9, 0.4), q = c(0, 1, 2))
+output1 = iNEXTbeta.link(data = listOfDataframe, diversity = 'TD', 
+                         level = seq(0.5, 0.9, 0.4), q = c(0, 1, 2))
 output1
 
