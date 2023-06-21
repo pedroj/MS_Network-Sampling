@@ -9,8 +9,16 @@ nchq<- read.table(here("data/nchq.txt"), header=F, sep="\t", dec=".",
                   na.strings="NA")
 
 ### Hato Raton
-hrq<- read.table(here("data/hrq.txt"), header=F, sep="\t", dec=".", 
-                 na.strings="NA")
+hrq<- read.table(here("data/hrq.txt"), header=F, sep="\t", 
+                 dec=".",na.strings="NA")
+hr_GTS<- read.table(here("data/HR_GTS.csv"), header=F, sep=",", 
+                    dec=".", na.strings="NA")
+hr_MMS<- read.table(here("data/HR_MMS.csv"), header=F, sep=",", 
+                    dec=".", na.strings="NA")
+hr_QC<- read.table(here("data/HR_QC.csv"), header=F, sep=",", 
+                   dec=".", na.strings="NA")
+hr_QS<- read.table(here("data/HR_QS.csv"), header=F, sep=",", 
+                   dec=".", na.strings="NA")
 
 ### Nava Noguera
 nnogq<- read.table(here("data/sdw03_adj_vis.csv"), header=F, sep=",",
@@ -21,14 +29,10 @@ zackq<- read.table(here("data/zackq.txt"),header=F,sep="\t",dec=".",
                    na.strings="NA")
 
 # Create list of data frame using list()
-listOfDataframe = list(nch= t(nchq), hr= t(hrq), nnog= nnogq, zack= t(zackq))
+listOfDataframe = list(nch= t(nchq), hr2= t(hr_QS), 
+                       nnog= nnogq)
 
 ## Taxonomic diversity
-output1 = AO.link(data = listOfDataframe, diversity = 'TD', q = seq(0, 2, 0.2))
-output1
-
-ggAO.link(output1)
-
 DataInfo.link(
     data= listOfDataframe,
     diversity = "TD",
@@ -47,6 +51,11 @@ ggiNEXT.link(
     facet.var = "Assemblage",
     color.var = "Order.q"
 )
+
+output1 = AO.link(data = listOfDataframe, diversity = 'TD', q = seq(0, 2, 0.2))
+output1
+
+ggAO.link(output1)
 
 outcome<- Completeness.link(
     data= listOfDataframe,
