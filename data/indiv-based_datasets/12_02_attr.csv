@@ -1,0 +1,16 @@
+ind,crop,neigh_inter,neigh_intra,se_obs_h,fruit_color,seeds_per_fruit
+BURD01,1636.4,N,Y,2,purple,1
+BURD02,2225.4,N,N,1.5,purple,1
+BURD03,2476.8,N,N,2.2,purple,1
+BURD04,979.2,N,N,1.8,purple,1
+BURD05,2040,N,N,2,purple,1
+BURD06,4500,N,N,2,purple,1
+BURD07,4500,N,N,2.2,purple,1
+BURD08,320,N,Y,2.2,purple,1
+BURD09,15456,N,Y,1.8,purple,1
+BURD10,3635.2,N,Y,2,purple,1
+BURD11,6975,N,N,2,purple,1
+BURD12,1411.2,N,Y,2,purple,1
+BURD13,851.2,N,Y,2,purple,1
+BURD14,1555.2,N,Y,2,purple,1
+BURD15,806.4,N,N,2,purple,1

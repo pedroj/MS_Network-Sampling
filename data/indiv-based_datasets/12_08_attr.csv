@@ -1,0 +1,11 @@
+ind,crop,neigh_inter,neigh_intra,se_obs_h,fruit_color,seeds_per_fruit
+PLEP01,54,Y,N,2.5,yellow,1.5
+PLEP03,1440,N,N,2.5,yellow,1.5
+PLEP04,17,Y,Y,2.5,yellow,1.5
+PLEP05,38,N,Y,2.5,yellow,1.5
+PLEP06,453,N,N,1.5,yellow,1.5
+PLEP07,1248,N,Y,2.5,yellow,1.5
+PLEP08,2016,N,Y,2.3,yellow,1.5
+PLEP09,134.4,N,Y,2.5,yellow,1.5
+PLEP10,2850,N,Y,2.6,yellow,1.5
+PLEP12,36000,Y,N,2,yellow,1.5

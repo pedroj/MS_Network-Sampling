@@ -1,0 +1,64 @@
+ ## Interaction dataset:	
+
+Name of dataset comprises two numbers, first one for study and second for network (in case there is more than one). Numbers are given in "selected_individual_networks.xlsx" and followd by "_int" (e.g. 01_01_int.csv).
+
+First column name is "ind" and has the plant ID.	
+Animal species go in columns and their names go in full with "_" in between genus and species.
+Non identified species have their own column called "NO_ID".
+
+
+
+## Attributes dataset:	
+
+Name of dataset comprises two numbers, first one for study and second for network (in case there is more than one). Numbers are given in "selected_individual_networks.xlsx" and followed by "_attr" (e.g. 01_01_attr.csv).
+
+Relevant attributes to include if available:
+"ind" = plant individual ID
+"canopy_cover_m2"
+"height_cm"	
+"crop"	
+"d1_cm"	= plant diameter
+"d2_cm"	
+"trunk_diam" = trunk basal diameter (cm)
+"canopy_vol" = Canopy volume in m3
+
+"x" = X coord (longitude)
+"y" = Y coord (latitude)
+"fruit_d1_mm"	
+"fruit_d2_mm"	
+"fruit_mass_mg"	
+"n_seeds" = mean number of seeds per fruit
+"total_seed_weight"
+"one_seed_weight"
+"pulp_weight"
+"fruit_type"	
+"fruit_color"	
+"protein" = % in dry pulp content
+"fibre"   = % in dry pulp content
+"lipids"  = % in dry pulp content
+"ash"     = % in dry pulp content
+"seed_viability" = % viable seeds	
+"neigh_radio" = radio in meters in which neighbourhood traits were measured
+"neigh_radio_2" = Bigger radio in meters in which more general vegetation context traits were measured
+"vegetation_cover" = Percentage of area covered by vegetation in a larger buffer "neigh_radio_2". 
+"neigh_fecundity_intra"	
+"neigh_fecundity_inter"	
+"neigh_density_intra"	
+"neigh_density_inter"
+"neigh_fecundity_total" = Both intra and inter
+"n_inf" = total number of inflorescences	
+"nearest_neigh" = distance to de nearest infraspecific individual
+"fruiting_length" = fruiting duration in Nº days
+"infra_cover" = human infrastructure cover (i.e., buildings,streets, and roads)
+
+Sampling effort data:
+"se_cam_h" = number of hours camera was recording in individual
+"se_cam_days" = number of days camera  was recording in individual
+"se_bc_area" = area in square meters (m2) of seed-tray(s) located under individual
+"se_per_bc_cover" = percentage of plant's cover sampled with barcoding tray
+"se_obs_h" = number of hours plant was observed
+
+... etc
+
+Include others relevant traits if available.
+	

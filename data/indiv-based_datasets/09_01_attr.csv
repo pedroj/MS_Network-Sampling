@@ -1,0 +1,20 @@
+ind,fruit_d1_mm,fruit_d1_mm_sd,sucrose_mg_g,fructose_mg_g,glucose_mg_g,height_cm,fruit_type,fruit_color,seeds_per_fruit,se_obs_h
+A ,16.01,1.51,11.29 ,70.27 ,45.58 ,600,berry,red,multi-seeded,20
+B ,14.95,1.17,7.9 ,63.25 ,37.34 ,500,berry,red,multi-seeded,20
+C ,14.1,1.58,6.73 ,55.58 ,34.88 ,800,berry,red,multi-seeded,20
+D ,8.09,1.26,18.22 ,82.79 ,50.95 ,400,berry,red,multi-seeded,20
+E ,15.43,1.37,4.63 ,51.91 ,30.35 ,1000,berry,red,multi-seeded,20
+F ,15.5,0.88,11.97 ,60.24 ,38.18 ,600,berry,red,multi-seeded,20
+G ,15.01,1.3,7.08 ,99.38 ,66.99 ,450,berry,red,multi-seeded,20
+H ,13.51,1.68,4.85 ,79.02 ,47.86 ,300,berry,red,multi-seeded,20
+I ,16.11,0.99,6.42 ,61.61 ,43.47 ,1200,berry,red,multi-seeded,20
+J ,16.28,1.48,7.4 ,50.89 ,35.56 ,800,berry,red,multi-seeded,20
+K ,15.44,0.77,11.87 ,58.04 ,37.65 ,700,berry,red,multi-seeded,20
+L ,15.29,1.04,13.42 ,36.55 ,37.24 ,800,berry,red,multi-seeded,20
+M ,16.88,1.31,7.69 ,56.02 ,39.1 ,600,berry,red,multi-seeded,20
+N ,15.06,0.98,3.61 ,52.1 ,34.42 ,800,berry,red,multi-seeded,20
+O ,17.14,1.23,13 ,77.39 ,50.84 ,350,berry,red,multi-seeded,20
+P ,18.33,1.11,10.87 ,67.12 ,47.14 ,280,berry,red,multi-seeded,20
+Q ,17.7,1.4,11.37 ,60.48 ,35.02 ,400,berry,red,multi-seeded,20
+R ,16.34,0.92,10.6 ,84.61 ,58.72 ,500,berry,red,multi-seeded,20
+S ,15,0.82,10.23 ,55.99 ,29.92 ,400,berry,red,multi-seeded,20

@@ -1,0 +1,11 @@
+ind,crop,neigh_inter,neigh_intra,se_obs_h,fruit_color,seeds_per_fruit
+FLUL02,511.2,Y,Y,2,white,4
+FLUL03,799.2,Y,Y,2,white,4
+FLUL05,1548.8,N,Y,2,white,4
+FLUL06,2296.8,N,Y,2,white,4
+FLUL07,868.8,N,Y,2,white,4
+FLUL09,1152,Y,Y,1.8,white,4
+FLUL10,1353.6,Y,Y,2,white,4
+FLUL11,1689.6,Y,Y,2,white,4
+FLUL14,1524,Y,Y,2.3,white,4
+FLUL15,3267.5,N,Y,2.2,white,4

@@ -1,0 +1,15 @@
+ind,crop,neigh_inter,neigh_intra,se_obs_h,fruit_color,seeds_per_fruit
+SANA01,180,Y,Y,2,purple–black,1
+SANA02,19238.4,Y,Y,2,purple–black,1
+SANA03,7680,Y,N,2,purple–black,1
+SANA04,6014.4,Y,N,2,purple–black,1
+SANA05,4420,Y,N,2,purple–black,1
+SANA06,60,N,Y,2,purple–black,1
+SANA07,12172.8,Y,Y,2,purple–black,1
+SANA09,5640,Y,Y,2,purple–black,1
+SANA10,16203,Y,N,2,purple–black,1
+SANA11,3709.8,Y,Y,2,purple–black,1
+SANA12,2288,Y,Y,2,purple–black,1
+SANA13,9900,Y,Y,2,purple–black,1
+SANA14,912,Y,Y,2,purple–black,1
+SANA15,537.6,N,Y,2,purple–black,1

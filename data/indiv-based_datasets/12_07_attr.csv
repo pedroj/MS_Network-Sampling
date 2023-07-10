@@ -1,0 +1,4 @@
+ind,crop,neigh_inter,neigh_intra,se_obs_h,fruit_color,seeds_per_fruit
+MEBA01,3504,N,N,2,red,4
+MEBA04,1314,Y,N,2,red,4
+MEBA09,1176,Y,Y,2,red,4

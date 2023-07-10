@@ -1,0 +1,8 @@
+ind,crop,neigh_inter,neigh_intra,se_obs_h,fruit_color,seeds_per_fruit
+LANC01,2841.6,Y,Y,2,black,1
+LANC02,633.6,Y,Y,2,black,1
+LANC05,2626.4,Y,Y,2,black,1
+LANC06,6945.5,Y,Y,2.2,black,1
+LANC07,9525.6,Y,N,2,black,1
+LANC13,1062.4,Y,N,2,black,1
+LANC14,8350,N,Y,2,black,1

@@ -1,0 +1,15 @@
+ind,site_type,crop,neigh_n_fruits,neigh_fruiting_sp,neigh_and_focal_n_fruits,DBH_cm,height_cm,neigh_radio_m,fruit_type,fruit_color,seeds_per_fruit,se_obs_h
+45,high invasion,264205,3069,2,264292,100,700,20,drupe,white-greyish,1,4
+46,high invasion,275669,9633,2,275760,50,600,20,drupe,white-greyish,1,4
+47,high invasion,127654,2926,2,127654,45,600,20,drupe,white-greyish,1,4
+48,high invasion,94787,44615,2,94787,57,700,20,drupe,white-greyish,1,4
+49,high invasion,239418,6450,2,239629,65,800,20,drupe,white-greyish,1,4
+50,high invasion,70456,1590,2,72046,45,600,20,drupe,white-greyish,1,4
+51,high invasion,128942,5007,2,128942,55,600,20,drupe,white-greyish,1,4
+52,high invasion,96376,16094,2,97421,60,700,20,drupe,white-greyish,1,4
+53,high invasion,149688,988,2,149688,60,600,20,drupe,white-greyish,1,4
+54,high invasion,118404,4900,2,118404,50,700,20,drupe,white-greyish,1,4
+55,high invasion,95639,3065,2,98596,48,600,20,drupe,white-greyish,1,4
+56,high invasion,209468,756,2,210224,56,800,20,drupe,white-greyish,1,4
+57,high invasion,83745,899,2,84074,65,600,20,drupe,white-greyish,1,4
+58,high invasion,78564,127,2,78691,45,550,20,drupe,white-greyish,1,4

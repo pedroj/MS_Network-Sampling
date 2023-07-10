@@ -1,0 +1,13 @@
+ind,crop,neigh_inter,neigh_intra,se_obs_h,fruit_color,seeds_per_fruit
+ERYM01,856,Y,Y,2,red,1
+ERYM02,184.8,N,N,1.7,red,1
+ERYM04,444,Y,Y,2,red,1
+ERYM05,1296,Y,Y,2,red,1
+ERYM07,22629.6,Y,Y,2,red,1
+ERYM09,10497.6,Y,N,2,red,1
+ERYM10,3300,Y,N,2,red,1
+ERYM11,10731,Y,Y,2,red,1
+ERYM12,26749.8,Y,N,1.8,red,1
+ERYM13,24472,Y,N,2,red,1
+ERYM14,27216,Y,Y,2.2,red,1
+ERYM15,6030,Y,Y,2,red,1
