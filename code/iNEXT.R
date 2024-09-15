@@ -28,9 +28,18 @@ nnogq<- read.table(here("data/sdw03_adj_vis.csv"), header=F, sep=",",
 zackq<- read.table(here("data/zackq.txt"),header=F,sep="\t",dec=".",
                    na.strings="NA")
 
+### Individual-based networks
+indb_01<- read.table(here("data/indiv-based_datasets/01_01_int.csv"), 
+                     header=T, sep=",", dec=".", na.strings="NA")
+indb_01<- indb_01[,2:28]
+stindb_01<- read.csv(here("data/indiv-based_datasets/webs_gts/st01_01_int.csv"), 
+                       header=T, sep=",", dec=".", na.strings="NA")
+stindb_01<- t(stindb_01[,2:28])
+
 # Create list of data frame using list()
-listOfDataframe = list(nch= t(nchq), hr2= t(hr_QS), 
-                       nnog= nnogq)
+listOfDataframe = list(#nch= t(nchq)), 
+    stindb_01)#, 
+                       #indb_01= stindb_01)
 
 ## Taxonomic diversity
 DataInfo.link(
@@ -73,3 +82,7 @@ output1 = iNEXTbeta.link(data = listOfDataframe, diversity = 'TD',
                          level = seq(0.5, 0.9, 0.4), q = c(0, 1, 2))
 output1
 
+# Analysis with INEXT.3D
+# diversity = 'TD'
+out1 <- iNEXT3D(hrq, diversity = 'TD', q = c(0,1,2), datatype = "abundance")
+ggiNEXT3D(out1, facet.var = "Assemblage")
